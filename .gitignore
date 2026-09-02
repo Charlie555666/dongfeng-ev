@@ -1,0 +1,5 @@
+# Internal research / build materials (not part of the public site)
+_research/
+*.log
+.DS_Store
+Thumbs.db
