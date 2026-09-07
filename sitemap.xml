@@ -40,4 +40,34 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/index.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/dongfeng-tz3v-8x4-electric-dump-truck-600kwh-mining-quarry.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/dongfeng-tz5e-6x4-electric-dump-truck-400kwh-urban-construction.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/catl-lfp-battery-dongfeng-electric-trucks-safety-cycle-life.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/dongfeng-electric-trucks-african-mining-ports-heat-dust-altitude.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/dongfeng-electric-truck-charging-120kw-240kw-360kw-solar-hybrid.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
