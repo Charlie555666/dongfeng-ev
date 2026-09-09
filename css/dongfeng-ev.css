@@ -161,7 +161,7 @@ a { color: var(--primary); text-decoration:none; }
   padding: 7px 16px; border: 1px solid rgba(0,200,83,0.55); border-radius: 30px;
   background: rgba(0,200,83,0.08);
 }
-.slide-content h2 { font-size: clamp(34px, 5.2vw, 60px); color: #fff; line-height: 1.08; font-weight: 800; }
+.slide-content h1, .slide-content h2 { font-size: clamp(34px, 5.2vw, 60px); color: #fff; line-height: 1.08; font-weight: 800; }
 .slide-content p.desc { color: rgba(255,255,255,0.88); font-size: clamp(15px, 1.6vw, 19px); margin-top: 16px; max-width: 640px; }
 .slide-actions { margin-top: 30px; display: flex; gap: 14px; flex-wrap: wrap; }
 .slide-actions .btn-primary { padding: 14px 30px; font-size: 15px; }
