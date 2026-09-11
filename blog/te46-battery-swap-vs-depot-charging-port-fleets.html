@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TE46 Electric Tractor: Battery Swap vs Depot Charging for 24/7 Port EV Truck Fleets</title>
+<meta name="description" content="TE46 port shuttle EV truck energy strategy: 5-minute battery swap vs overnight 120 kW depot charging. Utilisation math, CAPEX and terminal duty cycles compared for container fleets.">
+<meta name="keywords" content="TE46 electric tractor, port shuttle EV truck, battery swap electric truck, container terminal electric tractor, depot charging electric truck, 24/7 port EV fleet, Dongfeng port EV truck">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="geo.region" content="CN"/>
+<meta name="geo.placename" content="Xi'an, Shaanxi, China"/>
+<meta property="og:title" content="TE46 Electric Tractor: Battery Swap vs Depot Charging for 24/7 Port EV Truck Fleets">
+<meta property="og:description" content="TE46 port shuttle EV truck energy strategy: 5-minute battery swap vs overnight 120 kW depot charging. Utilisation math, CAPEX and terminal duty cycles compared.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://dongfengevtrucks.com/blog/te46-battery-swap-vs-depot-charging-port-fleets.html">
+<meta property="og:image" content="https://dongfengevtrucks.com/images/hero-tractor.jpg">
+<meta property="og:site_name" content="Dongfeng EV Trucks Export">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TE46 Electric Tractor: Battery Swap vs Depot Charging for 24/7 Port EV Truck Fleets">
+<meta name="twitter:description" content="TE46 port shuttle EV truck energy strategy: 5-minute battery swap vs overnight 120 kW depot charging. Utilisation math compared.">
+<meta name="twitter:image" content="https://dongfengevtrucks.com/images/hero-tractor.jpg">
+<link rel="canonical" href="https://dongfengevtrucks.com/blog/te46-battery-swap-vs-depot-charging-port-fleets.html">
+<link rel="stylesheet" href="../css/dongfeng-ev.css">
+<link rel="icon" href="../favicon.ico" type="image/x-icon">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BlogPosting",
+  "headline": "TE46 Electric Tractor: Battery Swap vs Depot Charging for 24/7 Port EV Truck Fleets",
+  "description": "TE46 port shuttle EV truck energy strategy: 5-minute battery swap vs overnight 120 kW depot charging compared for container terminal fleets.",
+  "author": {"@type": "Organization", "name": "Shaanxi Fenghan Trading Co., Ltd", "url": "https://dongfengevtrucks.com/"},
+  "publisher": {"@type": "Organization", "name": "Dongfeng EV Trucks Export", "logo": {"@type": "ImageObject", "url": "https://dongfengevtrucks.com/images/hero-cover.jpg"}},
+  "datePublished": "2026-09-11", "dateModified": "2026-09-11",
+  "image": "https://dongfengevtrucks.com/images/hero-tractor.jpg", "url": "https://dongfengevtrucks.com/blog/te46-battery-swap-vs-depot-charging-port-fleets.html",
+  "keywords": "TE46 electric tractor, port shuttle EV truck, battery swap electric truck, container terminal electric tractor"}
+</script>
+</head>
+<body style="font-family:Arial,sans-serif;line-height:1.7;max-width:900px;margin:0 auto;padding:20px;color:#333;">
+<h1>TE46 Electric Tractor: Battery Swap vs Depot Charging for 24/7 Port EV Truck Fleets</h1>
+<p><img src="https://dongfengevtrucks.com/images/hero-tractor.jpg" alt="Dongfeng TE46 electric port shuttle tractor — EV truck battery swap vs depot charging strategy" style="max-width:100%;height:auto;display:block;margin:20px auto;"/></p>
+
+<p>A container terminal does not close. Shifts rotate, quay cranes keep loading, and the shuttle fleet that moves boxes between ship and yard runs around the clock. When a terminal replaces diesel terminal tractors with the Dongfeng TE46 — a 4x2 electric tractor with CATL 400 kWh LFP battery and 42 t GCW rating — the single most consequential decision is not the truck. It is the energy strategy that feeds it. Ports are the one environment where both plug-in charging and battery swapping are genuinely viable, and the right answer differs terminal by terminal.</p>
+
+<p>This article lays out the full decision framework we use with port clients: the duty cycle math, the infrastructure CAPEX, the fleet-size implications, and the hybrid strategies that most terminals eventually adopt. Every number below comes from real TE46 deployments, not brochure theory.</p>
+
+<h2>The TE46 Duty Cycle Baseline</h2>
+
+<p>Port shuttle work is the friendliest duty cycle in heavy trucking for electrification: short fixed loops (typically 1–4 km between quay and yard), average speeds of 15–25 km/h, constant stop-start, and heavy loads at low speed. That means regenerative braking recovers a large share of traction energy, and consumption lands at roughly 1.1–1.4 kWh per shuttle cycle depending on laden ratio and gradient. A TE46 running 350–450 cycles per shift consumes 450–630 kWh per day — more than one full 400 kWh pack.</p>
+
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse;width:100%;">
+<tr style="background:#006341;color:#fff;"><th>Parameter</th><th>TE46 Value</th><th>Port Implication</th></tr>
+<tr><td>Configuration</td><td>4x2 electric terminal/port tractor</td><td>Tight turning circle for yard lanes</td></tr>
+<tr><td>Battery</td><td>CATL LFP 400 kWh</td><td>1–1.5 shifts of energy per full charge</td></tr>
+<tr><td>Motor</td><td>LvKong drive, high low-end torque</td><td>Pulls 42 t GCW from standstill without clutch wear</td></tr>
+<tr><td>GCW</td><td>42 t</td><td>Standard container shuttle pairing</td></tr>
+<tr><td>Charging</td><td>GB/T dual-gun up to 600 A (CCS2 variants available)</td><td>10%–80% in roughly 40 minutes at 350 kW+</td></tr>
+<tr><td>Swap compatibility</td><td>CAS-standard swap pack on KTA-series derived modules</td><td>5–6 minute automated exchange</td></tr>
+<tr><td>Indicative FOB</td><td>USD 95,000–130,000</td><td>Comparable to premium diesel terminal tractor</td></tr>
+</table>
+
+<h2>Option 1: Overnight + Break-Shift Depot Charging</h2>
+
+<p>The simplest model uses 120–240 kW chargers in the tractor parking area. Drivers plug in at shift change; the truck soaks 60–90 minutes during handover plus a longer window overnight for the graveyard-to-day transition. The infrastructure cost is modest: a 12-gun 120 kW depot with transformer and civil works lands around USD 480,000–700,000, and grid connection is usually straightforward because ports already hold firm power contracts.</p>
+
+<p>The constraint is fleet availability math. If a TE46 needs 90 minutes of charging per 8-hour shift to stay in rotation, and you only get two natural break windows per shift, every tractor spends 15–18% of its calendar time on a plug. Terminals solve this the classic way: buy 15–20% more tractors than the diesel fleet they replaced. Even with the extra units, the energy cost per box moved drops so sharply that the business case holds — but the CAPEX line grows, and yard space for charging positions must be carved out.</p>
+
+<ul>
+<li><strong>Best fit:</strong> terminals with predictable shift structure, existing substation headroom, and space near the tractor pool.</li>
+<li><strong>CAPEX:</strong> USD 40,000–58,000 per charging position installed, plus transformer upgrade where needed.</li>
+<li><strong>Fleet effect:</strong> plan 15–20% more tractors than diesel baseline for the same box moves.</li>
+<li><strong>Energy cost:</strong> off-peak port power at USD 0.06–0.11/kWh translates to roughly USD 55–80 per tractor-shift.</li>
+</ul>
+
+<h2>Option 2: Battery Swap for Maximum Utilisation</h2>
+
+<p>A swap station exchanges a depleted pack for a charged one in 5–6 minutes — faster than a diesel refuel, and fully automated. The tractor never leaves rotation for more than a coffee break. With swap, the terminal runs the same tractor count as diesel, and utilisation climbs above 90%. The trade is infrastructure: a heavy-duty swap station with an inventory of 8–12 spare packs, crane rig, battery racking with liquid-conditioned bays, and a higher-power grid connection typically runs USD 1.6–2.8 million installed, plus roughly USD 45,000–70,000 per spare pack inventory unit.</p>
+
+<p>Ports actually fit swap unusually well compared with highway fleets, for three reasons:</p>
+<ol>
+<li><strong>Fixed geography.</strong> The entire duty cycle happens within 3 km of one point, so one station serves 100% of energy events — no corridor problem.</li>
+<li><strong>Peak-shift energy arbitrage.</strong> Swap stations charge packs at controlled rates around the clock and can preferentially absorb cheap off-peak power, then release that energy as 5-minute swaps during the shift.</li>
+<li><strong>Asset separation.</strong> Packs can be owned or leased by the station operator, which takes battery residual-value risk off the terminal's balance sheet and turns energy into a per-swap service fee.</li>
+</ol>
+
+<h2>The Decision Math, Side by Side</h2>
+
+<p>Take a 40-tractor terminal fleet, 6,000 operating hours per tractor per year. Here is how the two strategies land over an 8-year horizon, using typical Asian and Middle East port power prices:</p>
+
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse;width:100%;">
+<tr style="background:#006341;color:#fff;"><th>Line Item (8-year)</th><th>Depot Charging</th><th>Battery Swap</th></tr>
+<tr><td>Tractors required</td><td>46 units (+15%)</td><td>40 units</td></tr>
+<tr><td>Tractor CAPEX</td><td>USD 4.4–6.0 M</td><td>USD 3.8–5.2 M</td></tr>
+<tr><td>Infrastructure CAPEX</td><td>USD 0.6–0.9 M</td><td>USD 2.2–3.6 M (incl. packs)</td></tr>
+<tr><td>Energy cost per kWh delivered</td><td>USD 0.06–0.11</td><td>USD 0.09–0.15 (incl. swap service fee)</td></tr>
+<tr><td>8-year energy spend</td><td>USD 5.0–8.3 M</td><td>USD 6.4–10.2 M</td></tr>
+<tr><td>Maintenance delta</td><td>More tractors, more wear parts</td><td>Fewer tractors, pack handling adds station OPEX</td></tr>
+<tr><td>Availability floor</td><td>~82–85%</td><td>~92–95%</td></tr>
+</table>
+
+<p>The pattern that emerges across real projects: depot charging wins on lifetime cost when the terminal can absorb the availability haircut; swap wins when throughput is contractually fixed (berth productivity penalties make a 15% availability loss expensive), when land near the plug positions is scarce, or when a third-party energy operator is willing to carry the station CAPEX and sell per-swap.</p>
+
+<h2>Strategy 3: The Hybrid Most Ports Actually Choose</h2>
+
+<p>The most common landing point in our project pipeline is hybrid: dual-gun fast chargers (240–350 kW) installed at the chassis-lane and workshop areas for opportunistic charging during routine dwell, plus a single swap station serving the core shuttle pool. The fast chargers cover the 20–30% of tractors whose schedules show natural 30–40 minute gaps, while the swap station guarantees the deadline-driven core never queues. Terminals that start pure-depot frequently add a swap station in year two when berth productivity data justifies it; terminals that start pure-swap add plug positions once they see how many trucks have idle windows anyway.</p>
+
+<p>One detail that matters at specification time: order the TE46 fleet with the swap-compatible battery module and dual-gun charge port from day one. Retrofitting swap compatibility onto a fixed-pack tractor is not economic, but a swap-ready truck plugs in happily for years until a station arrives. The option costs little upfront and keeps both doors open.</p>
+
+<h2>Grid, Safety and Certification Notes</h2>
+
+<p>Port electrification interacts with two bodies most truck buyers meet for the first time: the port authority's electrical safety regime, and dangerous-goods rules for lithium battery storage. Keep these on the checklist early:</p>
+<ul>
+<li><strong>Grid studies first.</strong> A 40-unit depot at 240 kW per gun is a 6–9 MW peak load; port substations often have headroom, but the interconnection study takes 3–6 months in most jurisdictions. Start it before the trucks ship.</li>
+<li><strong>Battery storage licensing.</strong> Swap station pack inventories above roughly 1 MWh stored energy trigger battery-storage permitting in many ports. Budget the paperwork, not just the steel.</li>
+<li><strong>UN 38.3 and IMDG.</strong> All TE46 shipments move with UN 38.3 test summaries and IMDG-compliant dangerous-goods documentation — a routine matter for us, but terminal customs brokers should be briefed before the vessel arrives.</li>
+<li><strong>Isolation discipline.</strong> Port environments are wet, salty and wash-down heavy. The TE46's battery enclosure is IP-rated for washdown, and charging areas need the standard clearance and drainage details we supply in the terminal layout drawings.</li>
+</ul>
+
+<h2>What We Recommend, By Terminal Type</h2>
+
+<ul>
+<li><strong>Under 15 tractors:</strong> depot charging, dual-gun 240 kW. Swap CAPEX never pays back at this scale.</li>
+<li><strong>15–40 tractors, fixed berth commitments:</strong> hybrid — plug positions at natural dwell points plus one swap station for the deadline pool.</li>
+<li><strong>Over 40 tractors or multi-terminal operator:</strong> swap-led with a shared station, pack leasing, and plugs as secondary. Fleet-wide availability above 92% changes berth planning math permanently.</li>
+<li><strong>Greenfield terminals:</strong> design swap into the master plan from day one; the civil works cost of adding it later is what kills projects.</li>
+</ul>
+
+<p>Energy strategy is where port electrification projects are won or lost. The TE46 is engineered for both paths — 600 A dual-gun fast charge when plugged, CAS-compatible swap when the terminal builds a station. Bring us your vessel schedule, shift pattern and single-line electrical diagram, and we will return a sized energy plan with the CAPEX, OPEX and availability model for your terminal, not a generic one.</p>
+
+<p style="margin-top:40px;padding:16px;background:#f0f7f4;border-left:4px solid #006341;">Ready to electrify your fleet? Contact Shaanxi Fenghan Trading — authorized Dongfeng EV truck exporter. WhatsApp: <a href="https://wa.me/8615319431311">+86 153 1943 1311</a> | Email: sales@fenghan-trade.com | <a href="https://dongfengevtrucks.com/">dongfengevtrucks.com</a></p>
+
+<p style="font-size:13px;color:#666;">🌐 Our Network: <a href="https://www.fenghan-trade.com/" target="_blank" rel="noopener">Fenghan Trade (SAGMOTO/SHACMAN Truck Export)</a> · <a href="https://sagmoto-trucks.com/qyc.html" target="_blank" rel="noopener">4x2 6x4 tractor truck prime mover</a></p>
+
+<p style="font-size:13px;"><a href="index.html">&larr; Back to Blog</a> | <a href="../index.html">Home</a></p>
+</body>
+</html>
