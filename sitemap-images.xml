@@ -1,354 +1,812 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://dongfengevtrucks.com/about-us.html</loc>
     <image:image>
       <image:loc>https://dongfengevtrucks.com/images/hero-tractor.jpg</image:loc>
+      <image:title>Hero Tractor</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/africa-ev-truck-import-tariff-incentive-policy-guide.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p02_01.jpg</image:loc>
+      <image:title>P02 01</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/carbon-credit-ev-truck-export-co2-revenue-stream.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/hero-cover.jpg</image:loc>
+      <image:title>Hero Cover</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/catl-lfp-battery-dongfeng-electric-trucks-safety-cycle-life.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/cat-dump.jpg</image:loc>
+      <image:title>Cat Dump</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/hero-cargo.jpg</image:loc>
+      <image:title>Hero Cargo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/hero-cover.jpg</image:loc>
+      <image:title>Hero Cover</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p06_00.jpg</image:loc>
+      <image:title>P06 00</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/dongfeng-electric-truck-charging-120kw-240kw-360kw-solar-hybrid.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/cat-mixer.jpg</image:loc>
+      <image:title>Cat Mixer</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/cat-special.jpg</image:loc>
+      <image:title>Cat Special</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/hero-cover.jpg</image:loc>
+      <image:title>Hero Cover</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p12_00.jpg</image:loc>
+      <image:title>P12 00</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/dongfeng-electric-truck-tco-total-cost-ownership-vs-diesel-8x4-dump.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/cat-dump2.jpg</image:loc>
+      <image:title>Cat Dump2</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p07_08.jpg</image:loc>
+      <image:title>P07 08</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p10_00.jpg</image:loc>
+      <image:title>P10 00</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/dongfeng-electric-trucks-african-mining-ports-heat-dust-altitude.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/cat-dump2.jpg</image:loc>
+      <image:title>Cat Dump2</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/hero-cargo.jpg</image:loc>
+      <image:title>Hero Cargo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/hero-cover.jpg</image:loc>
+      <image:title>Hero Cover</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/hero-tractor.jpg</image:loc>
+      <image:title>Hero Tractor</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p13_00.jpg</image:loc>
+      <image:title>P13 00</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/dongfeng-ev-truck-aftermarket-parts-supply-export-fleet-support.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/cat-mixer.jpg</image:loc>
+      <image:title>Cat Mixer</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p07_05.jpg</image:loc>
+      <image:title>P07 05</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p07_06.jpg</image:loc>
+      <image:title>P07 06</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p08_02.jpg</image:loc>
+      <image:title>P08 02</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/dongfeng-ev-truck-battery-swap-cas-swap-station-export.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/cat-dump.jpg</image:loc>
+      <image:title>Cat Dump</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p03_00.jpg</image:loc>
+      <image:title>P03 00</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p07_00.jpg</image:loc>
+      <image:title>P07 00</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p09_00.jpg</image:loc>
+      <image:title>P09 00</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/dongfeng-ev-truck-telemetry-fleet-management.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p08_03.jpg</image:loc>
+      <image:title>P08 03</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/dongfeng-ev-truck-vs-byd-foton-competitor-comparison.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/hero-cover.jpg</image:loc>
+      <image:title>Hero Cover</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/dongfeng-kt3f-electric-sprinkler-truck-dust-control.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/cat-special.jpg</image:loc>
+      <image:title>Cat Special</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/dongfeng-kt5j-electric-delivery-truck-tco-last-mile.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p07_04.jpg</image:loc>
+      <image:title>P07 04</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/dongfeng-kt5m-electric-box-truck-urban-logistics.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/hero-cargo.jpg</image:loc>
+      <image:title>Hero Cargo</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/dongfeng-kt7a-electric-sprinkler-heavy-duty.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p14_00.jpg</image:loc>
+      <image:title>P14 00</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/dongfeng-kt9x-electric-mixer-eu-type-approval.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p16_00.jpg</image:loc>
+      <image:title>P16 00</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/dongfeng-kta1-electric-dump-truck-southeast-asia-market.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p11_10.jpg</image:loc>
+      <image:title>P11 10</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/dongfeng-kth1-electric-heavy-cargo-truck-review.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p08_00.jpg</image:loc>
+      <image:title>P08 00</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/dongfeng-kth3-electric-cargo-truck-central-asia-import.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p08_03.jpg</image:loc>
+      <image:title>P08 03</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/dongfeng-te46-electric-tractor-port-shuttle-terminal-operations.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p05_00.jpg</image:loc>
+      <image:title>P05 00</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/dongfeng-te8l-electric-vs-diesel-tractor-line-haul-comparison.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p04_09.jpg</image:loc>
+      <image:title>P04 09</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/dongfeng-te8m-electric-tractor-import-guide-southeast-asia.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p05_02.jpg</image:loc>
+      <image:title>P05 02</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/dongfeng-te8p-electric-tractor-120t-heavy-haul-review.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/hero-tractor.jpg</image:loc>
+      <image:title>Hero Tractor</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/dongfeng-te9l-electric-tractor-gcc-middle-east-market.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p04_00.jpg</image:loc>
+      <image:title>P04 00</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/dongfeng-tz3v-8x4-electric-dump-truck-600kwh-mining-quarry.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/cat-dump2.jpg</image:loc>
+      <image:title>Cat Dump2</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/hero-cover.jpg</image:loc>
+      <image:title>Hero Cover</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/hero-tractor.jpg</image:loc>
+      <image:title>Hero Tractor</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p13_00.jpg</image:loc>
+      <image:title>P13 00</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/dongfeng-tz3v-vs-diesel-mining-dump-truck-cost-comparison.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p11_14.jpg</image:loc>
+      <image:title>P11 14</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/dongfeng-tz3z-electric-dump-truck-construction-review.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/cat-dump.jpg</image:loc>
+      <image:title>Cat Dump</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/dongfeng-tz5e-6x4-electric-dump-truck-400kwh-urban-construction.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/cat-dump.jpg</image:loc>
+      <image:title>Cat Dump</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/cat-dump2.jpg</image:loc>
+      <image:title>Cat Dump2</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/hero-cover.jpg</image:loc>
+      <image:title>Hero Cover</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p12_00.jpg</image:loc>
+      <image:title>P12 00</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/dongfeng-tz5y-vs-tz3v-electric-dump-truck-mining-comparison.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/cat-dump2.jpg</image:loc>
+      <image:title>Cat Dump2</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/dongfeng-tz8j-electric-concrete-mixer-construction-sites.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/cat-mixer.jpg</image:loc>
+      <image:title>Cat Mixer</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/east-africa-electric-truck-market-kenya-tanzania-uganda.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/hero-cover.jpg</image:loc>
+      <image:title>Hero Cover</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/eu-battery-passport-ev-truck-compliance.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p16_00.jpg</image:loc>
+      <image:title>P16 00</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/eu-battery-regulation-2026-ev-truck-export-certification.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/hero-cover.jpg</image:loc>
+      <image:title>Hero Cover</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/ev-truck-baas-battery-as-a-service-economics.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p14_09.jpg</image:loc>
+      <image:title>P14 09</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/ev-truck-battery-warranty-residual-value-insurance.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p15_01.jpg</image:loc>
+      <image:title>P15 01</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/ev-truck-charging-vs-battery-swap-fleet-strategy.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p06_00.jpg</image:loc>
+      <image:title>P06 00</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/ev-truck-fleet-electrification-roadmap-12-month.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p15_00.jpg</image:loc>
+      <image:title>P15 00</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/ev-truck-import-payment-shipping-inspection-guide.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/hero-tractor.jpg</image:loc>
+      <image:title>Hero Tractor</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/ev-truck-lfp-battery-thermal-management.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/render_09.jpg</image:loc>
+      <image:title>Render 09</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/index.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/hero-cover.jpg</image:loc>
+      <image:title>Hero Cover</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/kt3f-electric-sprinkler-mining-haul-roads.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/cat-special.jpg</image:loc>
+      <image:title>Cat Special</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/kt3f-electric-sprinkler-solar-hybrid-charging.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/cat-special.jpg</image:loc>
+      <image:title>Cat Special</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/kt5j-electric-delivery-truck-deep-dive.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/hero-cargo.jpg</image:loc>
+      <image:title>Hero Cargo</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/kt5j-electric-delivery-truck-ecommerce-fleet.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p10_00.jpg</image:loc>
+      <image:title>P10 00</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/kt5j-electric-delivery-truck-philippines-market.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p07_04.jpg</image:loc>
+      <image:title>P07 04</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/kt5m-electric-box-truck-airport-cold-chain.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/hero-cargo.jpg</image:loc>
+      <image:title>Hero Cargo</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/kt5m-electric-box-truck-brazil-urban-freight.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p12_01.jpg</image:loc>
+      <image:title>P12 01</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/kt5m-electric-box-truck-gcc-city-logistics.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p12_01.jpg</image:loc>
+      <image:title>P12 01</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/kt7a-electric-sprinkler-desert-highway-dust-control.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p14_00.jpg</image:loc>
+      <image:title>P14 00</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/kt7a-electric-sprinkler-municipal-fleet-electrification.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/cat-special.jpg</image:loc>
+      <image:title>Cat Special</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/kt7a-vs-kt3f-electric-sprinkler-truck-comparison.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/cat-special.jpg</image:loc>
+      <image:title>Cat Special</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/kt9x-electric-mixer-european-zero-emission-zones.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/cat-mixer.jpg</image:loc>
+      <image:title>Cat Mixer</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/kt9x-electric-mixer-truck-deep-dive-review.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/cat-mixer.jpg</image:loc>
+      <image:title>Cat Mixer</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/kt9x-vs-volvo-fm-electric-mixer.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p16_00.jpg</image:loc>
+      <image:title>P16 00</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/kta1-electric-dump-truck-battery-swap-quarry.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p14_00.jpg</image:loc>
+      <image:title>P14 00</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/kth1-electric-cargo-truck-middle-east-import-guide.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/hero-cargo.jpg</image:loc>
+      <image:title>Hero Cargo</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/kth1-electric-cargo-truck-uzbekistan-cis-market.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p09_01.jpg</image:loc>
+      <image:title>P09 01</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/kth1-vs-kth3-electric-cargo-truck-comparison.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p11_00.jpg</image:loc>
+      <image:title>P11 00</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/kth3-electric-cargo-truck-bangladesh-logistics.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p08_03.jpg</image:loc>
+      <image:title>P08 03</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/latin-america-electric-truck-import-tariffs-regulations.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/cat-dump2.jpg</image:loc>
+      <image:title>Cat Dump2</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/megawatt-charging-mcs-ev-truck-standard.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p06_00.jpg</image:loc>
+      <image:title>P06 00</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/saudi-arabia-uae-ev-truck-policy-incentives.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p02_01.jpg</image:loc>
+      <image:title>P02 01</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/second-life-battery-ev-truck-residual-value-recycling.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/hero-cover.jpg</image:loc>
+      <image:title>Hero Cover</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/te46-battery-swap-vs-depot-charging-port-fleets.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/hero-tractor.jpg</image:loc>
+      <image:title>Hero Tractor</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/te46-electric-tractor-east-africa-rhd-corridor.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p05_02.jpg</image:loc>
+      <image:title>P05 02</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/te46-electric-tractor-egypt-suez-canal-corridor.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p05_00.jpg</image:loc>
+      <image:title>P05 00</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/te8l-electric-tractor-central-asia-winter-line-haul.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p04_00.jpg</image:loc>
+      <image:title>P04 00</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/te8l-pakistan-electric-truck-market-analysis.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p04_00.jpg</image:loc>
+      <image:title>P04 00</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/te8l-vs-te8m-electric-tractor-comparison.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p02_00.jpg</image:loc>
+      <image:title>P02 00</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/te8m-electric-tractor-cement-plant-logistics.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p03_01.jpg</image:loc>
+      <image:title>P03 01</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/te8m-electric-tractor-leasing-financing-options.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p02_00.jpg</image:loc>
+      <image:title>P02 00</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/te8m-electric-tractor-turkey-market-analysis.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p03_01.jpg</image:loc>
+      <image:title>P03 01</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/te8p-electric-heavy-haul-latam-mining-chile-peru.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/cat-dump2.jpg</image:loc>
+      <image:title>Cat Dump2</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/te8p-electric-tractor-mongolia-mining-heavy-haul.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p10_02.jpg</image:loc>
+      <image:title>P10 02</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/te8p-electric-tractor-wind-farm-blade-transport.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/render_06.jpg</image:loc>
+      <image:title>Render 06</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/te9l-electric-tractor-morocco-north-africa-market.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p01_00.jpg</image:loc>
+      <image:title>P01 00</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/te9l-vs-te8l-electric-tractor-comparison.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p07_00.jpg</image:loc>
+      <image:title>P07 00</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/te9l-vs-tesla-semi-electric-truck-comparison.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p04_09.jpg</image:loc>
+      <image:title>P04 09</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/tz3v-electric-dump-truck-africa-import-guide.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/cat-dump2.jpg</image:loc>
+      <image:title>Cat Dump2</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/tz3v-electric-dump-truck-underground-tunnel-ventilation.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p13_00.jpg</image:loc>
+      <image:title>P13 00</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/tz3v-vs-xcmg-sany-electric-mining-dump-truck.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p13_00.jpg</image:loc>
+      <image:title>P13 00</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/tz3z-electric-dump-truck-city-redevelopment.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/cat-dump.jpg</image:loc>
+      <image:title>Cat Dump</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/tz3z-electric-dump-truck-vietnam-infrastructure.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p10_01.jpg</image:loc>
+      <image:title>P10 01</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/tz3z-vs-kta1-electric-dump-truck-comparison.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p06_00.jpg</image:loc>
+      <image:title>P06 00</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/tz5e-electric-dump-truck-algeria-construction.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p12_00.jpg</image:loc>
+      <image:title>P12 00</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/tz5e-electric-dump-truck-southeast-asia-market.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/cat-dump.jpg</image:loc>
+      <image:title>Cat Dump</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/tz5e-electric-dump-truck-west-africa-construction.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p07_08.jpg</image:loc>
+      <image:title>P07 08</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/tz5e-vs-tz5y-electric-dump-truck-comparison.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p04_07.jpg</image:loc>
+      <image:title>P04 07</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/tz5y-80t-electric-mining-truck-deep-dive-review.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/cat-dump.jpg</image:loc>
+      <image:title>Cat Dump</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/tz5y-electric-mining-truck-indonesia-nickel-swap.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p11_13.jpg</image:loc>
+      <image:title>P11 13</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/tz5y-electric-mining-truck-mexico-battery-swap.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p13_00.jpg</image:loc>
+      <image:title>P13 00</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/tz8j-electric-mixer-dam-hydropower-construction.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/cat-mixer.jpg</image:loc>
+      <image:title>Cat Mixer</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/tz8j-electric-mixer-tco-per-cubic-meter.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/cat-mixer.jpg</image:loc>
+      <image:title>Cat Mixer</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/blog/west-africa-port-logistics-lome-tema-abidjan-dongfeng-ev-truck-routing.html</loc>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p04_06.jpg</image:loc>
+      <image:title>P04 06</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p04_07.jpg</image:loc>
+      <image:title>P04 07</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p04_09.jpg</image:loc>
+      <image:title>P04 09</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://dongfengevtrucks.com/images/models/p07_00.jpg</image:loc>
+      <image:title>P07 00</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://dongfengevtrucks.com/contact-us.html</loc>
     <image:image>
       <image:loc>https://dongfengevtrucks.com/images/hero-tractor.jpg</image:loc>
+      <image:title>Hero Tractor</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://dongfengevtrucks.com/faq.html</loc>
     <image:image>
       <image:loc>https://dongfengevtrucks.com/images/hero-tractor.jpg</image:loc>
+      <image:title>Hero Tractor</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://dongfengevtrucks.com/index.html</loc>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/hero-tractor.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://dongfengevtrucks.com/products\electric-cargo.html</loc>
+    <loc>https://dongfengevtrucks.com/products/electric-cargo.html</loc>
     <image:image>
       <image:loc>https://dongfengevtrucks.com/images/hero-cargo.jpg</image:loc>
+      <image:title>Hero Cargo</image:title>
     </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/models/p08_01.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/models/p09_00.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/models/p09_01.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/models/p07_04.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/models/p07_09.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/models/p10_00.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/models/p10_01.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/models/p08_00.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/models/p08_02.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/models/p07_00.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/models/p10_02.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/models/p08_03.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/hero-tractor.jpg</image:loc>
-    </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/products/electric-dump.html</loc>
     <image:image>
       <image:loc>https://dongfengevtrucks.com/images/cat-dump2.jpg</image:loc>
+      <image:title>Cat Dump2</image:title>
     </image:image>
+  </url>
+  <url>
+    <loc>https://dongfengevtrucks.com/products/electric-special.html</loc>
     <image:image>
       <image:loc>https://dongfengevtrucks.com/images/cat-special.jpg</image:loc>
+      <image:title>Cat Special</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://dongfengevtrucks.com/products\electric-dump.html</loc>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/cat-dump2.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/models/p11_10.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/models/p12_00.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/cat-dump.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/models/p13_00.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/models/p11_00.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/models/p12_01.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/models/render_11.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/models/p11_11.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/models/p11_14.jpg</image:loc>
-    </image:image>
+    <loc>https://dongfengevtrucks.com/products/electric-tractor.html</loc>
     <image:image>
       <image:loc>https://dongfengevtrucks.com/images/hero-tractor.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/hero-cargo.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/cat-mixer.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://dongfengevtrucks.com/products\electric-special.html</loc>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/cat-special.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/models/p14_07.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/models/p14_00.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/models/p15_00.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/models/render_14.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/models/p15_01.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/models/p16_00.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/cat-mixer.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/hero-tractor.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/cat-dump2.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/hero-cargo.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://dongfengevtrucks.com/products\electric-tractor.html</loc>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/hero-tractor.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/models/p05_01.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/models/p05_00.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/models/p06_00.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/models/render_04.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/models/p04_09.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/models/p04_00.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/models/p05_02.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/hero-cover.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/cat-dump2.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/hero-cargo.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/cat-special.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://dongfengevtrucks.com/blog\carbon-credit-ev-truck-export-co2-revenue-stream.html</loc>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/hero-cover.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://dongfengevtrucks.com/blog\catl-lfp-battery-dongfeng-electric-trucks-safety-cycle-life.html</loc>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/hero-cover.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/hero-cargo.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/cat-dump.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/models/p06_00.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://dongfengevtrucks.com/blog\dongfeng-electric-truck-charging-120kw-240kw-360kw-solar-hybrid.html</loc>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/hero-cover.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/cat-mixer.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/cat-special.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/models/p12_00.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://dongfengevtrucks.com/blog\dongfeng-electric-truck-tco-total-cost-ownership-vs-diesel-8x4-dump.html</loc>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/models/p07_08.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/models/p10_00.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/cat-dump2.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://dongfengevtrucks.com/blog\dongfeng-electric-trucks-african-mining-ports-heat-dust-altitude.html</loc>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/hero-cover.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/hero-tractor.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/cat-dump2.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/models/p13_00.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/hero-cargo.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://dongfengevtrucks.com/blog\dongfeng-ev-truck-aftermarket-parts-supply-export-fleet-support.html</loc>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/models/p08_02.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/models/p07_05.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/cat-mixer.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/models/p07_06.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://dongfengevtrucks.com/blog\dongfeng-ev-truck-battery-swap-cas-swap-station-export.html</loc>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/models/p09_00.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/models/p07_00.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/cat-dump.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/models/p03_00.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://dongfengevtrucks.com/blog\dongfeng-tz3v-8x4-electric-dump-truck-600kwh-mining-quarry.html</loc>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/hero-cover.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/hero-tractor.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/cat-dump2.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/models/p13_00.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://dongfengevtrucks.com/blog\dongfeng-tz5e-6x4-electric-dump-truck-400kwh-urban-construction.html</loc>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/hero-cover.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/cat-dump.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/models/p12_00.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/cat-dump2.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://dongfengevtrucks.com/blog\eu-battery-regulation-2026-ev-truck-export-certification.html</loc>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/hero-cover.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://dongfengevtrucks.com/blog\index.html</loc>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/hero-cover.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://dongfengevtrucks.com/blog\second-life-battery-ev-truck-residual-value-recycling.html</loc>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/hero-cover.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://dongfengevtrucks.com/blog\west-africa-port-logistics-lome-tema-abidjan-dongfeng-ev-truck-routing.html</loc>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/models/p04_09.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/models/p04_06.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/models/p04_07.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://dongfengevtrucks.com/images/models/p07_00.jpg</image:loc>
+      <image:title>Hero Tractor</image:title>
     </image:image>
   </url>
 </urlset>
