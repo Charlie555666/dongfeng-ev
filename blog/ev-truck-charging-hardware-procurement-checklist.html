@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EV Truck Charging Hardware: A Procurement Checklist for Fleet Buyers</title>
+<meta name="description" content="Charging hardware procurement for EV truck fleets: charger sizing, OCPP openness, connector standards, grid studies, spares strategy and the contract clauses that protect buyers.">
+<meta name="keywords" content="EV truck charging hardware procurement, fleet charger buying guide, OCPP charger, DC fast charger fleet, CCS2 charger truck, depot charging infrastructure, charger procurement checklist">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="geo.region" content="CN"/>
+<meta name="geo.placename" content="Xi'an, Shaanxi, China"/>
+<meta property="og:title" content="EV Truck Charging Hardware: A Procurement Checklist for Fleet Buyers">
+<meta property="og:description" content="Charging hardware procurement for EV truck fleets: charger sizing, OCPP openness, connector standards, grid studies, spares strategy and the contract clauses that protect buyers.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://dongfengevtrucks.com/blog/ev-truck-charging-hardware-procurement-checklist.html">
+<meta property="og:image" content="https://dongfengevtrucks.com/images/models/p10_00.jpg">
+<meta property="og:site_name" content="Dongfeng EV Trucks Export">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="EV Truck Charging Hardware: A Procurement Checklist for Fleet Buyers">
+<meta name="twitter:description" content="Charging hardware procurement for EV truck fleets: sizing, OCPP openness, grid studies and contract clauses that protect buyers.">
+<meta name="twitter:image" content="https://dongfengevtrucks.com/images/models/p10_00.jpg">
+<link rel="canonical" href="https://dongfengevtrucks.com/blog/ev-truck-charging-hardware-procurement-checklist.html">
+<link rel="stylesheet" href="../css/dongfeng-ev.css">
+<link rel="icon" href="../favicon.ico" type="image/x-icon">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BlogPosting",
+  "headline": "EV Truck Charging Hardware: A Procurement Checklist for Fleet Buyers",
+  "description": "Charging hardware procurement for EV truck fleets: charger sizing, OCPP openness, connector standards, grid studies, spares strategy and the contract clauses that protect buyers.",
+  "author": {"@type": "Organization", "name": "Shaanxi Fenghan Trading Co., Ltd", "url": "https://dongfengevtrucks.com/"},
+  "publisher": {"@type": "Organization", "name": "Dongfeng EV Trucks Export", "logo": {"@type": "ImageObject", "url": "https://dongfengevtrucks.com/images/hero-cover.jpg"}},
+  "datePublished": "2026-09-16", "dateModified": "2026-09-16",
+  "image": "https://dongfengevtrucks.com/images/models/p10_00.jpg", "url": "https://dongfengevtrucks.com/blog/ev-truck-charging-hardware-procurement-checklist.html",
+  "keywords": "EV truck charging hardware procurement, fleet charger buying guide, OCPP charger, depot charging infrastructure"}
+</script>
+</head>
+<body style="font-family:Arial,sans-serif;line-height:1.7;max-width:900px;margin:0 auto;padding:20px;color:#333;">
+<h1>EV Truck Charging Hardware: A Procurement Checklist for Fleet Buyers</h1>
+<p><img src="https://dongfengevtrucks.com/images/models/p10_00.jpg" alt="Dongfeng EV trucks at depot chargers — charging hardware procurement for electric truck fleets" style="max-width:100%;height:auto;display:block;margin:20px auto;"/></p>
+
+<p>Fleets spend months choosing electric trucks and days choosing the chargers that feed them — exactly backwards. The charger is the infrastructure your entire operation stands on: it determines your duty-cycle ceiling, your energy bill, your uptime risk and, through its data, your visibility of the fleet. And unlike the trucks, chargers from different suppliers vary enormously in openness, durability and the commercial terms wrapped around them. Having supported depot charging deployments on four continents, we have assembled the procurement checklist we wish every fleet buyer arrived with. It is organised the way the purchase actually unfolds: sizing, standards, site, supply, contract and lifecycle.</p>
+
+<h2>Step One: Size From the Duty Cycle, Not the Truck Count</h2>
+
+<p>The governing question is not "how many trucks?" but "how many kWh must move through this site, in which windows, at what rates?" Work it in three passes:</p>
+<ol>
+<li><strong>Daily energy demand:</strong> fleet size × per-truck daily kWh (measured from your range testing, plus 8–12% charge losses). A 20-truck fleet consuming 250 kWh each moves ~5.5 MWh a day through the site.</li>
+<li><strong>Window analysis:</strong> how much of that must flow in the off-peak window (typically 6–10 hours)? 5.5 MWh over 8 hours requires ~700 kW of aggregate charging — which is a grid question before it is a hardware question.</li>
+<li><strong>Mix of rates:</strong> the efficient pattern is a backbone of overnight 60–120 kW positions plus one or two 240 kW dual-gun units for opportunity charging. Over-buying power you use two hours a day is the most common capital mistake; under-buying opportunity capacity is the second.</li>
+</ol>
+
+<h2>Step Two: Demand Openness — The Non-Negotiables</h2>
+
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse;width:100%;">
+<tr style="background:#006341;color:#fff;"><th>Requirement</th><th>What to demand</th><th>Why it matters</th></tr>
+<tr><td>OCPP compliance</td><td>Open Charge Point Protocol, current version, verified</td><td>Your charger must talk to any CSMS/fleet platform — not lock you to the vendor's software</td></tr>
+<tr><td>Connector standards</td><td>CCS2 (or market standard) on DC; plain Type 2 AC</td><td>Any truck, any charger, no adapters</td></tr>
+<tr><td>Metering</td><td>Certified revenue-grade metering, data exportable</td><td>Energy accounting, tariff optimisation, cost allocation</td></tr>
+<tr><td>Local control mode</td><td>Charger operable if the network/cloud is down</td><td>Uptime: a cloud outage must not stop your fleet</td></tr>
+<tr><td>API/documentation</td><td>Full protocol documentation and APIs in the contract</td><td>Your telemetry and billing systems integrate on day one</td></tr>
+</table>
+
+<p>The pattern to refuse: attractively priced hardware wrapped in proprietary software, per-vehicle subscription fees, or data that lives only in the vendor's portal. Chargers outlive software strategies; buy the ones designed to be orphaned gracefully.</p>
+
+<h2>Step Three: The Site and Grid Study</h2>
+
+<p>Before any purchase order, commission the electrical study: transformer capacity and headroom, switchgear condition, the utility's connection process and timeline (in many emerging markets this is the critical path — 6–18 months for significant new capacity), earthing quality, and the physical layout (cable runs, charge positions vs truck parking discipline, canopy and lighting). Two disciplines pay for themselves immediately: plan positions for the fleet you will have in five years, not the pilot; and co-locate the metering point so truck-charging energy is separable from site load for tariff and reporting purposes. If solar is in your plan — and for most of our export markets it should be — the study should scope the array, the stationary buffer and the charge-management system that orchestrates truck demand against solar supply and tariff windows.</p>
+
+<h2>Step Four: Hardware Durability for Your Climate and Duty</h2>
+
+<ul>
+<li><strong>Enclosure rating and temperature range:</strong> desert sites need high-ambient derating curves and dust protection; steppe sites need cabinet heaters and cold-rated cable insulation. Check the operating envelope against your site's P95 conditions, not the brochure's.</li>
+<li><strong>Cable and connector quality:</strong> the highest-wear components. Liquid-cooled cable options on high-power units improve handling life; ask for connector cycle ratings and keep spare cables and connectors in stock from day one.</li>
+<li><strong>Dual-gun architecture:</strong> for truck depots, dual-gun DC units (as Dongfeng EV trucks accept natively) split power across two positions — more trucks served per cabinet, and graceful degradation if one gun fails.</li>
+<li><strong>Load management:</strong> dynamic load management across positions — the difference between needing a transformer upgrade and not needing one.</li>
+<li><strong>Physical security:</strong> guarded sites, camera coverage, and tamper alarms; copper theft is a real line item in several of our markets.</li>
+</ul>
+
+<h2>Step Five: The Supplier Test</h2>
+
+<p>The questions that separate infrastructure partners from box-shifters:</p>
+<ol>
+<li><strong>Reference fleets:</strong> sites of comparable size and climate, with contactable operators. Ask those operators about year-three reliability, not commissioning-week enthusiasm.</li>
+<li><strong>Local service footprint:</strong> who repairs a failed power module, in what SLA, from where? A 48-hour SLA is meaningless if the technician is 4,000 km away.</li>
+<li><strong>Spares philosophy:</strong> module-level repair versus whole-unit replacement; what is pre-stocked at your site versus air-freighted on failure.</li>
+<li><strong>Firmware policy:</strong> who controls updates, and are security patches included for the unit's life?</li>
+<li><strong>Warranty structure:</strong> years on the cabinet, years on the power modules (the real failure surface), and the availability of extended coverage.</li>
+</ol>
+
+<h2>Step Six: Contract Clauses That Protect You</h2>
+
+<ul>
+<li><strong>Acceptance test:</strong> commissioning against defined performance — rated power sustained over a thermal-soak session, metering accuracy verified, load management demonstrated across positions.</li>
+<li><strong>Uptime SLA with teeth:</strong> monthly availability percentage with service credits; define "available" as "delivering rated power," not "powered on."</li>
+<li><strong>Data ownership:</strong> all charging session data exportable in standard formats; you own the record.</li>
+<li><strong>Escrow or openness:</strong> protocol documentation and, ideally, firmware escrow — so a vendor exit does not strand your infrastructure.</li>
+<li><strong>Training:</strong> your technicians certified on first-line maintenance; the trainer-of-trainers model that keeps competence local.</li>
+</ul>
+
+<h2>The Economics Frame</h2>
+
+<p>Budget the honest stack: hardware is typically only half of a depot charging project — grid connection, civil works, switchgear, canopy/solar and engineering consume the rest. For a 20-truck depot in our export markets, all-in figures usually land between USD 250,000 and 600,000 depending on power and grid distance. Amortised across the fleet over eight years, charging infrastructure adds USD 0.01–0.03 per km to truck operating cost — against the USD 0.10–0.25 per km the electric truck saves versus diesel on energy and maintenance. The infrastructure is not the obstacle; it is simply the part of the project that deserves the same procurement rigour you applied to the trucks. Buy it that way, and it will still be charging your second generation of electric trucks a decade from now.</p>
+
+<h2>Sizing Reference: Charger Fleets by Truck Count</h2>
+
+<p>To make the sizing step concrete, the reference configurations we design around (assuming measured consumption typical of Dongfeng EV truck classes and an eight-hour overnight window):</p>
+
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse;width:100%;">
+<tr style="background:#006341;color:#fff;"><th>Fleet size</th><th>Overnight backbone</th><th>Opportunity layer</th><th>Indicative aggregate power</th></tr>
+<tr><td>5–8 trucks (pilot)</td><td>2–3 dual-gun 60–120 kW positions</td><td>1 × 120 kW dual-gun</td><td>150–250 kW</td></tr>
+<tr><td>10–15 trucks</td><td>4–6 dual-gun 120 kW positions</td><td>1–2 × 240 kW dual-gun</td><td>400–600 kW</td></tr>
+<tr><td>20–30 trucks</td><td>8–12 dual-gun 120 kW positions</td><td>2–3 × 240 kW dual-gun</td><td>0.8–1.2 MW</td></tr>
+<tr><td>30+ trucks</td><td>Load-managed position fleet</td><td>240 kW layer + buffer storage evaluation</td><td>1.2 MW+, or buffered lower</td></tr>
+</table>
+
+<p>Read the table with two cautions. First, these are planning shapes, not designs — your measured kWh/truck-day from the range-testing protocol, your tariff windows and your grid connection govern the real configuration, and a five-minute load-management study routinely beats the generic table by 20–30% in capital. Second, the positions are cheap relative to the power: adding charge positions at modest per-position power is usually smarter than fewer positions at heroic rates, because scheduling flexibility — which truck charges when — is worth more than raw speed in depot duty. The exception is the opportunity layer: there, speed genuinely matters, because the truck is charging in the twenty to forty minutes it was going to stand anyway, and every additional kilometre of recovered range per stop compounds across the day.</p>
+
+<p>A final observation from the procurement files: the fleets most satisfied with their charging infrastructure five years on are disproportionately the ones that bought boring — standard connectors, OCPP compliance, module-level serviceability, a supplier with local technicians — rather than the ones that bought the newest cabinet with the most impressive screen. Infrastructure rewards conformity and serviceability; novelty belongs in the pilot, not the foundation.</p>
+
+<p>One closing note on the procurement sequence itself: buy the electrical study before the chargers, and the chargers before the trucks arrive — never the reverse. The study is the cheapest document in the project and the one that prevents the expensive mistakes; the chargers need installation lead time (civil works, switchgear, utility coordination) that the trucks' voyage from China conveniently covers; and commissioning both together in a single fortnight, with acceptance tests run while our commissioning engineers are still on site for the trucks' handover, closes the loop with witnesses present. Fleets that sequence this way start earning utilisation in week one. Fleets that truck-first and infrastructure-later spend a quarter watching expensive electric trucks sit in a yard waiting for electrons — the single most common self-inflicted wound in the projects we are asked to rescue, and entirely avoidable with a calendar and a checklist.</p>
+
+<p style="margin-top:40px;padding:16px;background:#f0f7f4;border-left:4px solid #006341;">Ready to electrify your fleet? Contact Shaanxi Fenghan Trading — authorized Dongfeng EV truck exporter. WhatsApp: <a href="https://wa.me/8615319431311">+86 153 1943 1311</a> | Email: sales@fenghan-trade.com | <a href="https://dongfengevtrucks.com/">dongfengevtrucks.com</a></p>
+
+<p style="font-size:13px;color:#666;">🌐 Our Network: <a href="https://www.fenghan-trade.com/" target="_blank" rel="noopener">Fenghan Trade (SAGMOTO/SHACMAN Truck Export)</a> · <a href="https://sagmoto-trucks.com/" target="_blank" rel="noopener">heavy duty trucks export China</a></p>
+
+<p style="font-size:13px;"><a href="index.html">&larr; Back to Blog</a> | <a href="../index.html">Home</a></p>
+</body>
+</html>

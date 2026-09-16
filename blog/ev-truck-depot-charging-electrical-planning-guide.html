@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Depot Charging Design: Electrical Planning for an EV Truck Fleet</title>
+<meta name="description" content="Depot charging electrical planning for EV truck fleets: transformer sizing, load management, tariff windows, solar buffering and phased grid upgrades — an engineering guide.">
+<meta name="keywords" content="depot charging electrical design, EV truck fleet charging plan, transformer sizing chargers, load management EV fleet, smart charging depot, solar buffer truck charging, grid connection fleet">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="geo.region" content="CN"/>
+<meta name="geo.placename" content="Xi'an, Shaanxi, China"/>
+<meta property="og:title" content="Depot Charging Design: Electrical Planning for an EV Truck Fleet">
+<meta property="og:description" content="Depot charging electrical planning for EV truck fleets: transformer sizing, load management, tariff windows, solar buffering and phased grid upgrades — an engineering guide.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://dongfengevtrucks.com/blog/ev-truck-depot-charging-electrical-planning-guide.html">
+<meta property="og:image" content="https://dongfengevtrucks.com/images/models/p10_01.jpg">
+<meta property="og:site_name" content="Dongfeng EV Trucks Export">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Depot Charging Design: Electrical Planning for an EV Truck Fleet">
+<meta name="twitter:description" content="Depot charging electrical planning for EV trucks: transformer sizing, load management, tariffs, solar buffering and phased grid upgrades.">
+<meta name="twitter:image" content="https://dongfengevtrucks.com/images/models/p10_01.jpg">
+<link rel="canonical" href="https://dongfengevtrucks.com/blog/ev-truck-depot-charging-electrical-planning-guide.html">
+<link rel="stylesheet" href="../css/dongfeng-ev.css">
+<link rel="icon" href="../favicon.ico" type="image/x-icon">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BlogPosting",
+  "headline": "Depot Charging Design: Electrical Planning for an EV Truck Fleet",
+  "description": "Depot charging electrical planning for EV truck fleets: transformer sizing, load management, tariff windows, solar buffering and phased grid upgrades — an engineering guide.",
+  "author": {"@type": "Organization", "name": "Shaanxi Fenghan Trading Co., Ltd", "url": "https://dongfengevtrucks.com/"},
+  "publisher": {"@type": "Organization", "name": "Dongfeng EV Trucks Export", "logo": {"@type": "ImageObject", "url": "https://dongfengevtrucks.com/images/hero-cover.jpg"}},
+  "datePublished": "2026-09-16", "dateModified": "2026-09-16",
+  "image": "https://dongfengevtrucks.com/images/models/p10_01.jpg", "url": "https://dongfengevtrucks.com/blog/ev-truck-depot-charging-electrical-planning-guide.html",
+  "keywords": "depot charging electrical design, EV truck fleet charging plan, transformer sizing, load management EV fleet, solar buffer truck charging"}
+</script>
+</head>
+<body style="font-family:Arial,sans-serif;line-height:1.7;max-width:900px;margin:0 auto;padding:20px;color:#333;">
+<h1>Depot Charging Design: Electrical Planning for an EV Truck Fleet</h1>
+<p><img src="https://dongfengevtrucks.com/images/models/p10_01.jpg" alt="Dongfeng EV trucks charging at a depot — electrical planning for electric truck fleet charging" style="max-width:100%;height:auto;display:block;margin:20px auto;"/></p>
+
+<p>Ask any fleet that has deployed electric trucks what surprised them, and the answer is almost never the trucks — it is the depot. The electrical design of a charging depot determines what your fleet can actually do: how many trucks charge overnight, whether the 20-hour utilisation dream survives contact with the transformer, and what the energy bill looks like at month's end. Yet depot electrical planning is frequently delegated to whoever sold the chargers, designed around today's pilot fleet, and revised in crisis when the second tranche arrives. This article lays out the engineering method we apply when supporting fleet deployments: demand modelling, transformer and connection strategy, load management, tariff engineering, solar buffering, and the phasing logic that keeps you from paying twice for the same infrastructure.</p>
+
+<h2>Start With Energy, Not Power</h2>
+
+<p>The foundation is the daily energy requirement — kWh, not kW. For each truck in the plan:</p>
+
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse;width:100%;">
+<tr style="background:#006341;color:#fff;"><th>Input</th><th>Example (20-truck fleet)</th><th>Source</th></tr>
+<tr><td>Per-truck daily consumption</td><td>220 kWh (measured)</td><td>Your range-testing programme / pilot telemetry</td></tr>
+<tr><td>Charge losses</td><td>+10%</td><td>Metered wall-side vs delivered energy</td></tr>
+<tr><td>Daily site throughput</td><td>20 × 220 × 1.1 ≈ 4,840 kWh</td><td>Derived</td></tr>
+<tr><td>Target charge window</td><td>8 hours (off-peak)</td><td>Tariff structure</td></tr>
+<tr><td>Required aggregate power</td><td>~605 kW average; design to ~750 kW with diversity</td><td>Energy ÷ window, plus margin</td></tr>
+</table>
+
+<p>Two subtleties matter. First, diversity: trucks do not all charge at full rate simultaneously — state-of-charge spread, arrival stagger and load management mean the peak is softer than the arithmetic. Second, growth: run this table for the fleet you will operate in year five. The transformer you install once should serve both.</p>
+
+<h2>The Transformer and Grid Connection Decision</h2>
+
+<p>For most depots the decision tree looks like this:</p>
+<ul>
+<li><strong>Under ~400 kW aggregate:</strong> many industrial sites absorb truck charging within existing transformer capacity, especially with load management. The cheapest infrastructure is the infrastructure you already have.</li>
+<li><strong>400 kW–1.5 MW:</strong> a dedicated transformer for the charging system, specified with headroom for the phase-two fleet. Engage the utility early — in most emerging markets, connection timelines (6–18 months for significant new capacity) are the project's critical path, longer than truck delivery.</li>
+<li><strong>Above ~1.5 MW or constrained grids:</strong> buffer storage becomes structural: a stationary battery (commonly second-life LFP, chemically kin to the truck packs) that lets you draw grid power at a steady, contract-friendly rate while charging trucks at whatever rate duty demands.</li>
+</ul>
+
+<p>Specification discipline: transformer sizing with the five-year fleet in mind; switchgear and metering segregated so charging load is separately measured (essential for tariff optimisation and ESG reporting); earthing to standard; and physical layout that puts charge positions where trucks actually park under dispatcher discipline — not where cable runs happen to be short.</p>
+
+<h2>Load Management: The Software Layer That Saves Hardware</h2>
+
+<p>Dumb charging treats every truck as a firehose; managed charging treats the depot as an orchestrated system. The capabilities that matter:</p>
+<ol>
+<li><strong>Window scheduling:</strong> trucks assigned charge slots within the off-peak window by departure time and state-of-charge — the dispatcher's plan becomes the charger's plan.</li>
+<li><strong>Dynamic power sharing:</strong> the charge management system allocates available site power across active positions in real time, respecting the transformer limit without tripping it.</li>
+<li><strong>Priority charging:</strong> the truck leaving at 04:00 gets first call on the power budget; the truck leaving at noon waits.</li>
+<li><strong>Tariff-aware orchestration:</strong> charging shifts within and across windows to follow the cheapest electrons, including solar self-consumption when the array is producing.</li>
+<li><strong>Telemetry integration:</strong> the same data streams your Dongfeng EV trucks export (SoC, SoH, consumption) feed the scheduling engine — this is why we insist on open, exportable telemetry from day one.</li>
+</ol>
+
+<p>The payoff is capital avoidance: fleets routinely find that managed charging lets 20 trucks run on infrastructure sized for 14 unmanaged — the software buys the equivalent of six charging positions.</p>
+
+<h2>Tariff Engineering</h2>
+
+<p>The difference between naive and engineered charging on the same trucks routinely reaches 20–40% of the energy bill. The levers, in order of value: night-window scheduling against time-of-use tariffs (the default win); demand-charge management — keeping the site's peak demand under the tariff band ceiling by flattening the charge curve (load management above); power-factor and harmonic hygiene at the metering point (modern charger power modules handle this well, but verify at commissioning); and solar self-consumption where an array is present. In markets where commercial tariffs are rising or politicised, the buffered, solar-supported depot is also the energy-hedged depot — a resilience argument your board understands even before the cost argument.</p>
+
+<h2>Solar and Buffering: The Economics in One Table</h2>
+
+<p>For a 20-truck depot in a high-irradiance market (Lagos, Riyadh, Jakarta, Lima class):</p>
+
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse;width:100%;">
+<tr style="background:#006341;color:#fff;"><th>Component</th><th>Indicative scale</th><th>Function</th></tr>
+<tr><td>Rooftop/carport solar</td><td>400–800 kWp</td><td>Daytime opportunity charging, tariff hedge</td></tr>
+<tr><td>Stationary buffer</td><td>0.5–2 MWh (second-life LFP)</td><td>Peak shaving, outage ride-through, grid-rate smoothing</td></tr>
+<tr><td>Charge management</td><td>OCPP-based CSMS</td><td>Orchestrates trucks, solar, buffer and tariff windows</td></tr>
+</table>
+
+<p>The array covers day-shift top-ups and a share of overall demand; the buffer decouples truck demand spikes from the grid connection (permitting a smaller transformer contract) and rides through outages — in outage-prone markets this is uptime insurance, not optimisation. Full detail on off-grid architectures is in our solar-hybrid charging analysis; the planning point here is that solar and buffering decisions belong in the initial electrical design, because retrofitting conduits, canopies and interconnection later costs multiples.</p>
+
+<h2>Phasing: Buy Once, Build Twice</h2>
+
+<p>The pattern that works: install civil works, conduits, switchgear and the transformer for the full five-year plan from day one; buy the charger cabinets for the trucks you have; add cabinets as the fleet grows; and let load management absorb the growth between tranches. The pattern that fails is the reverse — minimum infrastructure for the pilot, followed by a second civil project, a second outage, a second utility negotiation and a second commissioning cycle. The cost delta of building the civil scope once is trivial against the disruption of building it twice.</p>
+
+<h2>Commissioning and the Living Design</h2>
+
+<p>Commission the depot like the trucks: acceptance tests that verify rated power sustained over thermal soak, load-management behaviour across positions, metering accuracy, and failure modes (gun fault, module fault, cloud outage — each must degrade gracefully). Then keep the design alive: quarterly reviews of kWh throughput, peak demand against the tariff band, charge-curve telemetry and SoC-at-departure statistics. Depots drift as fleets grow and duty shifts; the design document should be a maintained asset, not a filed one. Do this, and the depot becomes what it should be — the quiet, boring, bankable foundation under every exciting thing the electric trucks do.</p>
+
+<h2>The Failure Gallery: Common Design Mistakes and What They Cost</h2>
+
+<p>The same handful of errors accounts for most of the depot problems we are asked to diagnose, and each has a known price. <strong>The undersized transformer:</strong> designed for the pilot fleet with "room to grow later," the upgrade then arrives as a second outage, a second utility negotiation and a second commissioning cycle — plus the interim months of load-managed rationing that capped fleet utilisation. The phasing rule above exists precisely to avoid this; the civil-and-connection scope bought once is the cheapest money in the project. <strong>The unmanaged site:</strong> chargers installed without a charge-management layer, so every truck that plugs in at 22:00 draws full rate simultaneously, the peak trips the demand band, and the energy bill carries a penalty the trucks' savings then subsidise. Load management is a software line item that repays itself within the first tariff cycle.</p>
+
+<p><strong>The orphaned metering:</strong> charging load aggregated with site load on a single meter, making tariff optimisation impossible to verify and ESG reporting an estimate instead of a record. The segregation costs little at design time and is expensive to retrofit. <strong>The cable-run economy:</strong> charge positions squeezed wherever conduit was shortest, rather than where trucks park under dispatch discipline — the daily result is reshuffling manoeuvres, blocked positions and chargers standing idle while trucks queue for the convenient one. A depot is a choreography space; the electrical layout must serve the choreography, not the trencher. <strong>The forgotten resilience layer:</strong> in outage-prone markets, a depot with no buffer treats every grid event as a fleet grounding; the second-life LFP container that would have bridged it was value-engineered out of the budget, and its absence is rediscovered at the worst possible hour.</p>
+
+<p>None of these are exotic engineering problems; all of them are sequencing and governance problems — decisions made early by whoever held the pen, and paid for later by whoever held the keys. The common root is treating the depot as a procurement line item rather than the design task that it is. Give the electrical plan the same engineering review you would give the trucks' specification, with measured duty data on the table and the five-year fleet in the drawing, and the depot joins the trucks as the quiet half of a system that simply works.</p>
+
+<p style="margin-top:40px;padding:16px;background:#f0f7f4;border-left:4px solid #006341;">Ready to electrify your fleet? Contact Shaanxi Fenghan Trading — authorized Dongfeng EV truck exporter. WhatsApp: <a href="https://wa.me/8615319431311">+86 153 1943 1311</a> | Email: sales@fenghan-trade.com | <a href="https://dongfengevtrucks.com/">dongfengevtrucks.com</a></p>
+
+<p style="font-size:13px;color:#666;">🌐 Our Network: <a href="https://www.fenghan-trade.com/" target="_blank" rel="noopener">Fenghan Trade (SAGMOTO/SHACMAN Truck Export)</a> · <a href="https://sagmoto-trucks.com/" target="_blank" rel="noopener">heavy duty trucks export China</a></p>
+
+<p style="font-size:13px;"><a href="index.html">&larr; Back to Blog</a> | <a href="../index.html">Home</a></p>
+</body>
+</html>
