@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solar Microgrid Depots for Mining: Powering the TZ5Y EV Truck Off-Grid</title>
+<meta name="description" content="Solar microgrid depot design for the Dongfeng TZ5Y mining EV truck: array sizing, buffer storage, hybrid control and the complete off-grid charging economics for remote mines.">
+<meta name="keywords" content="solar microgrid EV truck, TZ5Y solar charging, off-grid electric mining truck, solar hybrid truck depot, Dongfeng TZ5Y, mining EV truck charging, battery buffer depot">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="geo.region" content="CN"/>
+<meta name="geo.placename" content="Xi'an, Shaanxi, China"/>
+<meta property="og:title" content="Solar Microgrid Depots for Mining: Powering the TZ5Y EV Truck Off-Grid">
+<meta property="og:description" content="Solar microgrid depot design for the Dongfeng TZ5Y mining EV truck: array sizing, buffer storage, hybrid control and the complete off-grid charging economics for remote mines.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://dongfengevtrucks.com/blog/tz5y-electric-mining-truck-solar-microgrid-depot.html">
+<meta property="og:image" content="https://dongfengevtrucks.com/images/models/p05_02.jpg">
+<meta property="og:site_name" content="Dongfeng EV Trucks Export">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Solar Microgrid Depots for Mining: Powering the TZ5Y EV Truck Off-Grid">
+<meta name="twitter:description" content="Solar microgrid depot design for the Dongfeng TZ5Y mining EV truck: array sizing, buffer storage, hybrid control and off-grid charging economics.">
+<meta name="twitter:image" content="https://dongfengevtrucks.com/images/models/p05_02.jpg">
+<link rel="canonical" href="https://dongfengevtrucks.com/blog/tz5y-electric-mining-truck-solar-microgrid-depot.html">
+<link rel="stylesheet" href="../css/dongfeng-ev.css">
+<link rel="icon" href="../favicon.ico" type="image/x-icon">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BlogPosting",
+  "headline": "Solar Microgrid Depots for Mining: Powering the TZ5Y EV Truck Off-Grid",
+  "description": "Solar microgrid depot design for the Dongfeng TZ5Y mining EV truck: array sizing, buffer storage, hybrid control and the complete off-grid charging economics for remote mines.",
+  "author": {"@type": "Organization", "name": "Shaanxi Fenghan Trading Co., Ltd", "url": "https://dongfengevtrucks.com/"},
+  "publisher": {"@type": "Organization", "name": "Dongfeng EV Trucks Export", "logo": {"@type": "ImageObject", "url": "https://dongfengevtrucks.com/images/hero-cover.jpg"}},
+  "datePublished": "2026-09-17", "dateModified": "2026-09-17",
+  "image": "https://dongfengevtrucks.com/images/models/p05_02.jpg", "url": "https://dongfengevtrucks.com/blog/tz5y-electric-mining-truck-solar-microgrid-depot.html",
+  "keywords": "solar microgrid EV truck, TZ5Y solar charging, off-grid electric mining truck, solar hybrid truck depot, Dongfeng TZ5Y"}
+</script>
+</head>
+<body style="font-family:Arial,sans-serif;line-height:1.7;max-width:900px;margin:0 auto;padding:20px;color:#333;">
+<h1>Solar Microgrid Depots for Mining: Powering the TZ5Y EV Truck Off-Grid</h1>
+<p><img src="https://dongfengevtrucks.com/images/models/p05_02.jpg" alt="Dongfeng TZ5Y 80t electric mining truck — EV truck powered by an off-grid solar microgrid depot at a remote mine" style="max-width:100%;height:auto;display:block;margin:20px auto;"/></p>
+
+<p>The standard objection to electric mining trucks used to be simple: mines are remote, and remote means diesel. That objection has inverted. Remote mines have the two things a solar microgrid needs most — land and irradiance — and the fuel they currently depend on is the most expensive energy on earth once trucked to a mine gate: delivered diesel at remote sites historically runs USD 1.30–1.80 per litre equivalent, and every litre of it arrives on a supply chain that can be interrupted by one washed-out road. A solar microgrid depot turns that dependency into infrastructure the mine owns. This article designs the system properly for the Dongfeng TZ5Y 80-tonne electric mining truck: the load, the array, the buffer, the control layer, the economics, and the phasing that de-risks the investment.</p>
+
+<h2>The Load: What a TZ5Y Fleet Actually Draws</h2>
+
+<p>Start with the demand, because everything else follows from it. The TZ5Y in pit-to-crusher duty covers 200–260 km per truck-day loaded, consuming roughly 1.3–1.8 kWh per km in heavy haul duty — call it 300–450 kWh per truck per day, plus thermal management and auxiliaries.</p>
+
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse;width:100%;">
+<tr style="background:#006341;color:#fff;"><th>Fleet size</th><th>Daily energy demand</th><th>Annual energy demand</th><th>Typical peak charge draw</th></tr>
+<tr><td>5 trucks</td><td>1.5–2.3 MWh</td><td>0.5–0.75 GWh</td><td>0.4–0.6 MW</td></tr>
+<tr><td>10 trucks</td><td>3.0–4.5 MWh</td><td>1.0–1.5 GWh</td><td>0.8–1.2 MW</td></tr>
+<tr><td>20 trucks</td><td>6.0–9.0 MWh</td><td>2.0–3.0 GWh</td><td>1.6–2.4 MW</td></tr>
+</table>
+
+<p>That annual number is the design anchor: a 10-truck TZ5Y fleet consumes energy on the scale of a small industrial plant, and the microgrid is engineered exactly the way a mine engineers any other utility — with firm capacity, redundancy and a dispatch strategy.</p>
+
+<h2>The Array: Sizing Solar for Truck Duty</h2>
+
+<p>Solar yield at remote mining latitudes is generally excellent — 1,800–2,300 kWh per kWp per year across the mining belts of Australia, Africa, the Andes and Central Asia, with high-altitude sites often exceeding coastal figures. Working the arithmetic for a 10-truck fleet at a site yielding 2,000 kWh/kWp/year:</p>
+
+<ul>
+<li><strong>Full solar coverage</strong> of 1.2 GWh annual demand needs roughly 600 kWp of array — achievable on mine land that is otherwise idle (haul-road margins, workshop roofs, spent pad areas).</li>
+<li><strong>Daylight-weighted coverage</strong> is the smarter target: mining hauls concentrate in daylight hours, so the array can serve a large share of demand directly, with the buffer bank and grid/generation covering night charging. A 400–500 kWp array plus buffer typically covers 55–70% of fleet energy at lower CAPEX than full coverage.</li>
+<li><strong>Dust is a real derate, not a footnote.</strong> Haul-road dust on arrays at remote mines can cut yield 15–30% between cleanings; the design includes an cleaning regime (and, on large arrays, robotic cleaning — cheap relative to the yield it protects).</li>
+</ul>
+
+<h2>The Buffer: Storage Sizing and Chemistry</h2>
+
+<p>The buffer bank does three jobs: it smooths charging peaks so the array and grid connection serve the fleet without oversizing either; it carries night-time charging energy; and it provides ride-through when the grid or site generation stumbles. Sizing logic:</p>
+
+<ol>
+<li><strong>Shift energy:</strong> night charging for a 10-truck fleet needs roughly 1.5–2 MWh of shifted energy — the core buffer capacity.</li>
+<li><strong>Peak shaving:</strong> if the site connection is constrained (common at remote mines), add capacity to absorb midday charge surges and discharge into evening peaks — often the difference between a grid upgrade and none.</li>
+<li><strong>Chemistry: LFP, and second-life LFP where available.</strong> The economics favour stationary LFP strongly, and second-life truck packs (retired at 70–80% SoH but with years of stationary service left) pair naturally with the fleet's own CATL chemistry — same supplier ecosystem, same recycling path, and a residual-value story for the truck packs themselves.</li>
+</ol>
+
+<p>A practical buffer for a 10-truck fleet lands at 2–4 MWh, with power conversion sized to the charge plaza's peak draw.</p>
+
+<h2>The Control Layer: Making the Microgrid Dispatch Like a Mine System</h2>
+
+<p>Mine electrical departments already run complex power systems; the microgrid's controller joins that world rather than replacing it. The dispatch logic is straightforward:</p>
+<ul>
+<li><strong>Solar first:</strong> daylight charging draws directly from the array, with the buffer absorbing surplus.</li>
+<li><strong>Off-peak grid or site generation second:</strong> night charging is scheduled into whatever the site's cheapest firm source is (off-peak grid bands, hydro allocation, or the mine's own generation trough).</li>
+<li><strong>Buffer last:</strong> the bank discharges into charging peaks and outage ride-through, recharging when the schedule allows.</li>
+</ul>
+
+<p>The fleet's charge scheduling — which truck charges when, at what rate — belongs to the same control layer, and this is where EV truck telemetry earns its keep: the dispatch system sees every pack's state of charge and the haul plan, and sequences charging against energy availability. A haul fleet that finishes its shift with staggered SoCs charges in staggered order; the microgrid never sees a wall of simultaneous demand it didn't schedule.</p>
+
+<h2>The Economics: Diesel at Mine-Gate Prices versus Owned Energy</h2>
+
+<p>Modelling a 10-truck TZ5Y fleet on a 250 km/day duty, delivered diesel at USD 1.45/L, microgrid energy at a blended USD 0.05–0.09/kWh (solar-heavy with off-peak firm top-up):</p>
+
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse;width:100%;">
+<tr style="background:#006341;color:#fff;"><th>Annual energy cost, 10 trucks</th><th>Diesel fleet</th><th>TZ5Y on microgrid</th></tr>
+<tr><td>Fuel / energy</td><td>USD 470,000–620,000</td><td>USD 90,000–170,000</td></tr>
+<tr><td>Diesel logistics (convoy, storage, losses)</td><td>USD 60,000–120,000</td><td>Eliminated</td></tr>
+<tr><td>Annual energy-side saving</td><td>—</td><td>USD 420,000–650,000</td></tr>
+<tr><td>Microgrid CAPEX (400–600 kWp + 2–4 MWh buffer + plaza)</td><td>—</td><td>USD 900,000–1.8 million</td></tr>
+<tr><td>Energy-side payback</td><td>—</td><td>~2–4 years</td></tr>
+</table>
+
+<p>Add the maintenance-side savings of electrification (USD 6,500–10,000 per truck-year on a fleet this size) and the total programme payback typically lands inside three years — before pricing the supply-security value of not depending on a fuel convoy, which mine managers at remote sites price very highly indeed after their first interruption.</p>
+
+<h2>Phasing: The De-Risked Path</h2>
+
+<ul>
+<li><strong>Phase 1:</strong> two or three TZ5Y units on the highest-frequency circuit, charged from the mine's existing supply with dual-gun DC chargers. Instrument everything — energy per km, availability, dust effects — and baseline the diesel comparison honestly.</li>
+<li><strong>Phase 2:</strong> the array and buffer, sized from Phase 1's real data rather than assumptions. Solar plus buffer now carries the majority share of fleet energy.</li>
+<li><strong>Phase 3:</strong> fleet scale-up, and — where continuous haul is required — a pit-rim swap station fed by the microgrid, converting surplus daylight solar into mid-shift availability.</li>
+</ul>
+
+<p>The phasing matters less for the money than for the organisation: mines electrify successfully when the electrical department owns the microgrid from the pilot onward, because it is power engineering, and mine electrical departments are very good at power engineering.</p>
+
+<h2>Case Profile: A Remote Copper Operation's Energy Pivot</h2>
+
+<p>A composite drawn from deployments we support: a copper operation three hours of washboard road from the regional fuel depot spent a material share of its haul budget on delivered diesel, and every wet season brought at least one fuel-supply scare. Its TZ5Y programme started as a cost play — three trucks on existing grid power — but the energy pivot came in Phase 2: a 500 kWp array on the workshop apron and a 2 MWh second-life buffer bank. Within a year the haul fleet's energy cost had halved again, the fuel convoy's weekly trips had dropped to a trickle serving remaining diesel plant, and the mine's risk register quietly deleted its worst supply line. The mine manager's summary, relayed to us after commissioning, is the cleanest statement of the value we know: "The sun was already hitting the ground here. Now it moves the ore."</p>
+
+<h2>Dust, Water and the Environmental Permit Layer</h2>
+
+<p>The microgrid's second dividend is regulatory. Remote mines live under environmental permits — dust deposition limits, water-use licensing for haul-road suppression, noise boundaries near communities — and an electric haul fleet with a solar depot improves the operator's position on all three. Dust falls because regenerative braking and sealed electric drivetrains remove the brake and exhaust particulate streams that diesel haul fleets generate; haul-road water use falls because the traffic composing the dust source shrinks as the electric share grows; and noise drops to the point where night-haul restrictions near communities (a binding constraint on more mines than managers admit) become negotiable. Several mining jurisdictions now formalise these advantages — zero-emission equipment credits in permit reviews, community-agreement clauses that favour quiet operations, and emerging ESG-linked financing terms where measured fleet emissions feed the interest rate. The engineering summary: the solar microgrid powers the trucks, and the electric trucks power the permit position.</p>
+
+<p>A final engineering note on the charge plaza itself: mine-depot charging hardware lives a harder life than its city cousins — dust, washdown, blast vibration and temperature swings — so the specification should follow mining practice rather than automotive practice: IP-rated and dust-sealed dispensers, covered charge bays sited away from haul-road dust plumes, cable management rated for equipment traffic, and service access designed for gloved maintenance at shift change. The premium for mining-grade installation is modest and repays itself in availability; the failure mode it prevents — a charger down in the dry season with a three-week parts lead time — is the kind of event that turns an energy programme's critics into prophets.</p>
+
+<h2>Why Fenghan</h2>
+
+<p>Shaanxi Fenghan Trading is an authorised Dongfeng EV truck exporter. We supply the TZ5Y with complete battery documentation, and we support solar-microgrid depot programmes with load modelling against your haul data, charger and buffer coordination, commissioning and HV spares support — working alongside your mine's electrical engineering team, who own the system, as they should.</p>
+
+<p style="margin-top:40px;padding:16px;background:#f0f7f4;border-left:4px solid #006341;">Ready to electrify your fleet? Contact Shaanxi Fenghan Trading — authorized Dongfeng EV truck exporter. WhatsApp: <a href="https://wa.me/8615319431311">+86 153 1943 1311</a> | Email: sales@fenghan-trade.com | <a href="https://dongfengevtrucks.com/">dongfengevtrucks.com</a></p>
+
+<p style="font-size:13px;color:#666;">🌐 Our Network: <a href="https://www.fenghan-trade.com/" target="_blank" rel="noopener">Fenghan Trade (SAGMOTO/SHACMAN Truck Export)</a> · <a href="https://sagmoto-trucks.com/zxc.html" target="_blank" rel="noopener">heavy duty mining dump truck 6x4 8x4</a></p>
+
+<p style="font-size:13px;"><a href="index.html">&larr; Back to Blog</a> | <a href="../index.html">Home</a></p>
+</body>
+</html>
