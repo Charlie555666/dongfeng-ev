@@ -1,0 +1,76 @@
+# Automation 79e429c1 Execution Log — dongfengevtrucks.com Blog (20 articles/run)
+
+## 2026-09-18 (Run 8)
+- Published 20 new English articles (body text 1,450–1,666 words each after a write-then-expand pass). Total blog articles now 152; sitemap now 161 URLs.
+- Followed Run 7 recommendation: KT1D (electric garbage compactor) and KT3E (electric road sweeper) deep dives — first appearance of both sanitation models in the blog — plus a KT1D-vs-KT3E fleet-pairing comparison.
+- City fleet profiles (5): Dar es Salaam port/SGR (TE46/TE8M), Accra construction (TZ5E/KTA1), Karachi port+urban (TE46/KT5M), Manila port-to-doorstep integrated (TE46/KT5J/KT5M), Medellín Andes gradients (TZ5E/TE8P).
+- Competitor/TCO (3): TZ5Y vs XCMG hybrid-electric mining truck (honest hybrid-vs-pure-EV architecture comparison), KTH3 vs Foton Auman EST cargo comparison, KTA1 quarry three-way TCO (electric vs hybrid vs diesel with sensitivity table).
+- Second-round tech (4): thermal management field data analysis (SoH trajectories, derate curves, depot protocols), ADAS/GSR2 safety stack explainer, OTA software update management (UN R156), driver behaviour analytics.
+- Finance/policy (6): fleet insurance & claims walkthrough, charging infrastructure CAPEX financing (4 structures), Egypt EV incentives/SCZone, Indonesia subsidy programme/TKDN, US EPA Phase 3 GHG + ACT global supply-chain effects.
+- Coverage: 13 models × 7 angles — meets ≥10 models / ≥5 angles.
+- QA script verified all 20: keyword in title/first para, geo meta, canonical/og:url match, og:image exists, Our Network line, JSON-LD parses, date 2026-09-18, ≥1 table + ≥1 ul. Fixed during QA: duplicate og:site_name in Karachi article, two `border:1.0` CSS typos, mismatched twitter:title in EPA article, word-count top-ups to 5 articles via appended sections.
+- Blog index.html updated (20 cards prepended, JSON-LD dateModified → 2026-09-18); sitemap.xml +20 URLs, XML validity re-verified.
+- Git: commit 7cd81a6 pushed to main directly (no proxy needed). IndexNow: 20 URLs POSTed, HTTP 200.
+- Topic space note for Run 9: KT1D/KT3E now used (deep dive + comparison). Remaining fresh material — city profiles (Dhaka, Abidjan, Addis Ababa, Casablanca, Santiago, Lima, Hanoi, Riyadh), more KT1D/KT3E second angles (market/TCO per city), competitor pairings (KT5M vs Foton Ouhang/EST light, TZ3Z vs SANY tipper, TE9L vs DAF XF Electric), tech third-rounds (battery pack fire suppression systems, HV connector/coolant service regimes, charging OCPP backend selection, weigh-in-motion telemetry), finance/policy third-rounds (leasing vs buy decision trees, carbon credit issuance walkthrough update, Turkey EV policy, Saudi charging network build-out, Chile/Lima zero-emission zones), and KT-series body-integration guides (tipper body spec, mixer drum spec, refrigerated body for KT5M).
+
+## 2026-09-17 (Run 7)
+- Published 20 new English articles (body text 1,505–1,618 words each, verified by script after a write-then-expand pass). Total blog articles now 132; sitemap now 141 URLs.
+- Fifth-round subtopics per Run 6 recommendation. City fleet profiles (3): Nairobi KT5M+KT5J, Ho Chi Minh City KT5J, Istanbul TE8M port drayage. New markets (2): DRC Copperbelt TZ5Y, Southern Africa import guide TZ3V (South Africa NRCS/Zambia/Botswana).
+- Competitor comparisons (2): TZ8J vs SANY electric mixer, TE46 vs BYD Q3 port shuttle — each with decision framework/pilot playbook.
+- Deep dives (2): KTA1 dump truck, KT5L cargo truck (new model from the product line, first appearance in the blog). Model-applied tech (2): KT9X battery-swap strategy (availability math + station sizing), TZ5Y solar microgrid depot design.
+- New angles (7 generics): TE9L European corridor line-haul (AFIR analysis), LvKong drive/inverter tech explainer, CATL cell-to-pack explainer, V2G fleet revenue, electricity tariff/demand-charge billing guide, used EV truck export market & residuals, EU HDV CO2 2030/2040 standards policy piece.
+- Coverage: 10 of the 18 listed models (KT5M/KT5J/TE8M/TZ5Y/TZ8J/TE46/TZ3V/KTA1/KT9X/TE9L) + KT5L across 8 angles — meets ≥10 models / ≥5 angles.
+- QA script verified all 20: keyword in title/first para, geo meta, canonical/og:url match filename, og:image files exist, Our Network line present, JSON-LD parses, date 2026-09-17, no known typos. Fixed during QA: Kongtian→Dongfeng typo, "aftertaintenance" typo, stray <li> tag, missing "Why Fenghan" section in Istanbul article.
+- Blog index.html updated (20 cards prepended, dated 2026-09-17 descriptions, JSON-LD dateModified updated); sitemap.xml +20 URLs, XML validity re-verified.
+- Git: commit 765b4ba; direct push failed (github.com:443 connect timeout), proxy push via 127.0.0.1:10090 succeeded. IndexNow: 20 URLs POSTed, HTTP 200.
+- Topic space note for Run 8: remaining fresh material — city profiles (Dar es Salaam, Accra, Karachi, Dhaka, Manila, Medellín), more competitor pairings (TZ5Y vs XCMG hybrid-electric rigs, KTA1 vs diesel-vs-hybrid quarry TCO, KTH3 vs Foton EST Auman), tech second-rounds (thermal management deep data, ADAS/GSR2 safety stack, OTA change management, driver behaviour analytics), finance/policy second-rounds (insurance claim process walkthrough, charging-CAPEX financing structures, Gulf/Egypt/Indonesia subsidy programmes, US EPA HDV rules), and KT1D/KT3E/TZ2E specials deep dives (not yet used). Recommend starting KT1D/KT3E/TZ2E specials next run to widen model coverage.
+
+## 2026-09-16 (Run 6)
+- Published 20 new English articles (1,486–1,740 words each after a two-pass write+expand process). Total blog articles now 112; sitemap now 121 URLs.
+- Fourth-round subtopics per Run 5 recommendation. Markets (8): Lagos/Nigeria KT5M+KT5J, Jakarta KT5J, Cairo TE8M, Thailand EEC TE8M, Kazakhstan KTH3, Colombia/Bogotá TZ5E, GCC small states (Oman/Qatar/Kuwait) TE9L, India PM E-DRIVE policy (TE8L-class reference).
+- Competitor comparisons (3): KT5J vs BYD T5, TE8L vs BYD 8TT, KTH1 vs Foton Auman EST — each with decision framework / three-scenario structure.
+- Technical explainers (5): P95 real-world range testing methodology, driver training curriculum + league tables, winter readiness checklist, charging hardware procurement checklist (OCPP etc.), depot charging electrical planning.
+- Industry applications (4): TZ8J metro/tunnel underground concrete, KT9X Saudi giga-projects, KTA1 aggregates & recycling circular construction, TE46 rail intermodal terminal shuttles.
+- Coverage: 12 models × 6 angles — meets ≥10 models / ≥5 angles requirement.
+- First drafts ran 1,138–1,391 words (below 1,500 spec); added a 300–500-word case-profile/extension section to every article — final range 1,486–1,740 (two laggards topped up with a second small patch).
+- Blog index.html updated (20 cards prepended, dated 2026-09-16, JSON-LD dateModified updated); sitemap.xml +20 URLs; XML validity re-verified.
+- Fixed one placeholder og:url in the TE8L-vs-BYD article before commit. Typo/element checks clean.
+- Git: initial push rejected (remote had concurrent SEO-meta commits e191087/0522656 from another task); `git pull --rebase` then push succeeded — final commit 1362ebe on main. IndexNow: 20 URLs POSTed, HTTP 200.
+- Topic space note for Run 7: remaining fresh angles — city fleet profiles (Nairobi, Ho Chi Minh, Istanbul), charging/swap station build-out operations pieces, used-EV-truck & residual value market, battery passport implementation updates, deep dives on untouched models (TE9B/TE9Y, KT5L, KTH2, KT1D/KT3E/TZ2E specials), and second rounds of the technical explainers with new data angles.
+
+## 2026-09-15 (Run 5)
+- Published 20 new English articles (1,477–1,817 words each). Total blog articles now 92; sitemap now 101 URLs.
+- Third-round subtopics per Run 4 recommendation. New markets (8): TE8L Pakistan/CPEC, TE46 Egypt/Suez SCZone, KT5J Philippines/EVIDA, TZ3Z Vietnam infrastructure boom, KTH3 Bangladesh RMG corridor, TZ5Y Mexico mining+swap, KT5M Brazil São Paulo/Santos, TZ5E Algeria construction.
+- Competitor comparisons (3): TE9L vs Tesla Semi, TZ3V vs XCMG/SANY, KT9X vs Volvo FM Electric. Industry applications (5): TE8M cement plant logistics, TE8P wind farm blade transport, TZ8J hydropower dam concrete, KT7A desert highway dust control, KT3F mining haul-road dust suppression.
+- Tech (2): MCS megawatt charging standard explained, LFP battery thermal management. Finance/strategy (1): 12-month fleet transition roadmap. Policy (1): Africa country-by-country EV import policy guide.
+- Coverage: 16 models × 6 angles — meets the ≥10 models / ≥5 angles requirement.
+- First drafts ran 930–1,280 words (below 1,500 spec); expanded every article with an additional 300–500-word section before commit — final range 1,477–1,817.
+- Blog index.html updated (20 cards prepended, dated 2026-09-15, JSON-LD dateModified updated); sitemap.xml +20 URLs.
+- Git: commit cc6d955 pushed to main directly (no proxy needed). IndexNow: 20 URLs POSTed, HTTP 200 confirmed.
+- Topic space note for Run 6: major model×angle combos and second/third-round markets now largely consumed (144 base combos + ~60 subtopic pieces used). Next runs should rotate to: fourth-round subtopics (city case studies — Lagos/Jakarta/Cairo fleet profiles; competitor vs BYD/Shacman per-model; charging hardware procurement checklists; BaaS/second-life project finance detail), remaining markets (Nigeria/Kenya city deep dives, Thailand, Kazakhstan, Colombia/Chile follow-ups, GCC country splits), and how-to/technical explainers (range testing methodology, driver training curricula, insurance claims processes, winterisation checklists).
+
+## 2026-09-14 (Run 4)
+- Published 20 new English articles (1,520–1,876 words each). Total blog articles now 72; sitemap now 102 URLs.
+- Coverage: 16 models × 7 angles. Markets: TE9L Morocco/NorthAfrica, TE8M Turkey, TE46 EastAfrica RHD corridor, TZ5E WestAfrica construction, KTH1 Uzbekistan/CIS, KT5M GCC city logistics. Comparisons: TE8L-vs-TE8M, TZ5E-vs-TZ5Y, TZ3Z-vs-KTA1, KT7A-vs-KT3F. Deep dives: KT9X (drum drive engineering), KT5J (multi-stop duty). Industry: TE8P Mongolia mining heavy haul, TZ5Y Indonesia nickel + swap, TZ3V underground/tunnel ventilation. Tech: telemetry/fleet data. TCO/Finance: BaaS economics, battery warranty/residual/insurance. Policy: EU battery passport, Saudi/UAE EV policy.
+- Blog index.html updated (20 cards prepended, dated 2026-09-14); sitemap.xml +20 URLs.
+- Quality pass: fixed Dota→Doha, customsduties, Dongfong, padding:848 ×4 files, duplicated twitter:title in EU-passport article, tz3v favicon path (../../ → ../).
+- Git: commit 0db611c-family (0db6114) pushed to main directly (no proxy needed).
+- IndexNow: 20 URLs POSTed, HTTP 200 confirmed.
+- Remaining fresh topic space is thin: model×angle round-1/2 largely consumed. Next runs should rotate to: third-round subtopics (specific city/project case studies, competitor model-by-model, charging hardware deep dives, second-life/BaaS project finance), remaining markets (Egypt/Algeria, Pakistan/Bangladesh, Philippines/Vietnam country deep dives, Brazil/Mexico), and cross-brand fleet-mix pieces.
+
+## 2026-09-10 (Run 2)
+- Published 20 new English articles (1,500+ words each) to blog/. Total blog articles now 32.
+- Coverage: 17 models (TE8P/TE9L/TE8L/TE46/TE8M/TZ3Z/TZ5Y/TZ3V/KTA1/KT5M/KT5J/KTH1/KTH3/TZ8J/KT9X/KT3F/KT7A), all 8 angles (deep dive, market GCC/SEA/EastAfrica/LatAm, comparisons, import guides SEA/CentralAsia, industry app port/urban/mixer/sprinkler, TCO last-mile, policy LatAm).
+- Blog index.html updated (20 cards prepended, dates set 2026-09-10); sitemap.xml +20 URLs (now 62 URLs).
+- Quality pass: fixed typos (evtucks→evtrucks in 3 files, DRCZ→DRC, Dongfong→Dongfeng, broken </p> heading tag, awkward TZ8J sentence).
+- Git: commit eb6530c "blog: 20 new EV truck articles..." pushed to main (no proxy needed).
+- IndexNow: 20 URLs POSTed, HTTP 200 confirmed.
+- Topics used so far recorded; next run should check `ls blog/*.html` for de-dup. Remaining fresh combos include: TZ5E/TZ4Y market angles, TE9B/TE9Y RHD, KT5L, KTH2, KT1D/KT3E/TZ2E specials, mid-angle policies (EU zero-emission zones, battery passport), finance (leasing/carbon), plus round-2 subtopics.
+
+## 2026-09-11 (Run 3)
+- Published 20 new English articles (1,500+ words each) to blog/. Total blog articles now 52; sitemap now 82 URLs.
+- Coverage: all 18 models + all 8 angles in one run. Topics: TE46 swap-vs-depot-charging, TE8L Central Asia winter, TE9L vs TE8L comparison, TE8M financing/leasing, TE8P LatAm mining, TZ3Z city redevelopment, TZ3V Africa import guide, TZ5Y deep dive, TZ5E SEA market, KTA1 swap quarry, KT5M airport/cold chain, KT5J e-commerce, KTH1 GCC import, KTH1 vs KTH3 comparison, TZ8J TCO per m³, KT9X EU zero-emission zones, KT3F solar-hybrid, KT7A municipal policy, Dongfeng vs BYD/Foton/SANY competitors, generic import/payment masterclass.
+- Blog index.html updated (20 cards prepended); sitemap.xml +20 URLs.
+- Git: commit 961453c pushed to main directly (no proxy needed).
+- IndexNow: 20 URLs POSTed, HTTP 200 confirmed.
+- Round-2 subtopics now largely consumed for model deep dives/comparisons/import guides; next run should shift to: remaining second-round market angles (East Africa RHD country splits, Morocco/North Africa, Turkey, CIS detail), policy deep dives (EU battery passport, GSR2 safety, NRMM), tech (telemetry/fleet software, second-life BaaS economics), and case-study-style application pieces (specific corridor/project profiles).
