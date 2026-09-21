@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Size an EV Truck Battery: Matching kWh Capacity to Your Fleet's Duty Cycle</title>
+<meta name="description" content="EV truck battery sizing methodology: duty-cycle analysis for KTH3-class fleets, kWh/km consumption by mission, reserve margins, charging-in-lieu-of-capacity economics and the cost of over-specifying.">
+<meta name="keywords" content="EV truck battery sizing, electric truck kWh capacity, duty cycle analysis, KTH3 electric cargo truck, battery capacity vs charging, fleet electrification planning, electric truck range calculation, kWh per km truck">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="geo.region" content="CN"/>
+<meta name="geo.placename" content="Xi'an, Shaanxi, China"/>
+<meta property="og:title" content="How to Size an EV Truck Battery: Matching kWh Capacity to Your Fleet's Duty Cycle">
+<meta property="og:description" content="EV truck battery sizing methodology: duty-cycle analysis for KTH3-class fleets, kWh/km consumption by mission, reserve margins, charging-in-lieu-of-capacity economics and the cost of over-specifying.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://dongfengevtrucks.com/blog/ev-truck-battery-capacity-sizing-duty-cycle.html">
+<meta property="og:image" content="https://dongfengevtrucks.com/images/models/p03_05.jpg">
+<meta property="og:site_name" content="Dongfeng EV Trucks Export">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to Size an EV Truck Battery: Matching kWh Capacity to Your Fleet's Duty Cycle">
+<meta name="twitter:description" content="EV truck battery sizing methodology: duty-cycle analysis for KTH3-class fleets, kWh/km consumption by mission, reserve margins, charging-in-lieu-of-capacity economics and the cost of over-specifying.">
+<meta name="twitter:image" content="https://dongfengevtrucks.com/images/models/p03_05.jpg">
+<link rel="canonical" href="https://dongfengevtrucks.com/blog/ev-truck-battery-capacity-sizing-duty-cycle.html">
+<link rel="stylesheet" href="../css/dongfeng-ev.css">
+<link rel="icon" href="../favicon.ico" type="image/x-icon">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BlogPosting",
+  "headline": "How to Size an EV Truck Battery: Matching kWh Capacity to Your Fleet's Duty Cycle",
+  "description": "EV truck battery sizing methodology: duty-cycle analysis for KTH3-class fleets, kWh/km consumption by mission, reserve margins, charging-in-lieu-of-capacity economics and the cost of over-specifying.",
+  "author": {"@type": "Organization", "name": "Shaanxi Fenghan Trading Co., Ltd", "url": "https://dongfengevtrucks.com/"},
+  "publisher": {"@type": "Organization", "name": "Dongfeng EV Trucks Export", "logo": {"@type": "ImageObject", "url": "https://dongfengevtrucks.com/images/hero-cover.jpg"}},
+  "datePublished": "2026-09-21", "dateModified": "2026-09-21",
+  "image": "https://dongfengevtrucks.com/images/models/p03_05.jpg", "url": "https://dongfengevtrucks.com/blog/ev-truck-battery-capacity-sizing-duty-cycle.html",
+  "keywords": "EV truck battery sizing, electric truck kWh capacity, duty cycle analysis, KTH3 electric cargo truck, fleet electrification planning"}
+</script>
+</head>
+<body style="font-family:Arial,sans-serif;line-height:1.7;max-width:900px;margin:0 auto;padding:20px;color:#333;">
+<h1>How to Size an EV Truck Battery: Matching kWh Capacity to Your Fleet's Duty Cycle</h1>
+<p><img src="https://dongfengevtrucks.com/images/models/p03_05.jpg" alt="KTH3 electric cargo truck, an EV truck whose battery sizing follows duty-cycle analysis" style="max-width:100%;height:auto;display:block;margin:20px auto;"/></p>
+
+<p>The most expensive mistake in fleet electrification is buying battery capacity you do not need. Every unnecessary kWh costs capital up front, adds tare mass that steals payload every single day, and — because LFP packs prefer moderate cycling — a truck bought with double its required range is not "safer", it is simply carrying its own redundancy as dead weight. The opposite mistake is worse: a truck that cannot finish its route strands drivers and customers. Battery sizing is therefore the central engineering decision of any EV truck order, and it is a solvable calculation, not a guess. This article lays out the methodology we run with fleet clients, using the <a href="https://dongfengevtrucks.com/products/models/kth3-electric-cargo-truck.html">KTH3 electric cargo truck</a> as the worked example, with a case drawn from our <a href="https://dongfengevtrucks.com/markets/nigeria.html">Nigeria electric truck market guide</a> territory.</p>
+
+<h2>Step One: The Duty-Cycle Audit</h2>
+<p>Everything starts with what the trucks actually do, measured over representative weeks — not what the route plan says:</p>
+<ul>
+<li><strong>Daily distance distribution:</strong> the histogram, not the average. A fleet whose average day is 180 km but whose worst days run 260 km must be sized to the worst recurring day, with a defined exception policy (route reassignment) for the true outliers</li>
+<li><strong>Consumption rate:</strong> kWh/km depends on mass, speed profile, terrain and temperature. Working figures: 0.55–0.75 kWh/km for light urban delivery; 0.9–1.3 kWh/km for an 18–25 t rigid; 1.3–1.7 kWh/km for a 49 t tractor on mixed terrain; 2.0–2.8 kWh/km for heavy laden dump duty</li>
+<li><strong>Dwell windows:</strong> when the vehicle stands still — lunch, loading, depot turnaround, overnight. Every dwell window above 40 minutes near a power connection is capacity you do not need to buy</li>
+<li><strong>Climate adjustment:</strong> +10–18% consumption in deep winter (heating) or extreme heat (cooling); HVAC for the cab is real energy</li>
+<li><strong>De-rating for ageing:</strong> size for end-of-life, not day one — a pack warranted to 70–80% SOH at year 8 should still complete the route in year 7, which usually means designing the day-one cycle at 75–85% depth of discharge</li>
+</ul>
+
+<h2>Step Two: The Sizing Equation</h2>
+<p>Required capacity = (worst recurring daily kWh × climate factor × ageing factor) ÷ usable depth of discharge window. Worked for a Lagos-area distribution fleet:</p>
+<table style="width:100%;border-collapse:collapse;margin:20px 0;">
+<tr style="background:#006341;color:#fff;"><th style="padding:10px;border:1px solid #ccc;">Input</th><th style="padding:10px;border:1px solid #ccc;">Value</th><th style="padding:10px;border:1px solid #ccc;">Basis</th></tr>
+<tr><td style="padding:8px;border:1px solid #ddd;">Worst recurring day</td><td style="padding:8px;border:1px solid #ddd;">230 km</td><td style="padding:8px;border:1px solid #ddd;">90th-percentile day from telematics audit</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd;">Consumption (laden rigid, urban mix)</td><td style="padding:8px;border:1px solid #ddd;">1.1 kWh/km</td><td style="padding:8px;border:1px solid #ddd;">32 °C HVAC included</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd;">Daily energy</td><td style="padding:8px;border:1px solid #ddd;">253 kWh</td><td style="padding:8px;border:1px solid #ddd;">—</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd;">Ageing factor (year-7 SOH)</td><td style="padding:8px;border:1px solid #ddd;">1.25</td><td style="padding:8px;border:1px solid #ddd;">80% SOH design floor</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd;">Depth-of-discharge design window</td><td style="padding:8px;border:1px solid #ddd;">90%</td><td style="padding:8px;border:1px solid #ddd;">LFP tolerates deep daily cycling</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd;"><strong>Required nominal capacity</strong></td><td style="padding:8px;border:1px solid #ddd;"><strong>~350 kWh</strong></td><td style="padding:8px;border:1px solid #ddd;">Before dwell-charging credit</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd;">Lunch + midday dwell at depot with 120 kW charger</td><td style="padding:8px;border:1px solid #ddd;">−60 kWh</td><td style="padding:8px;border:1px solid #ddd;">45 minutes × 120 kW × 0.85 efficiency</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd;"><strong>Net requirement</strong></td><td style="padding:8px;border:1px solid #ddd;"><strong>~290 kWh</strong></td><td style="padding:8px;border:1px solid #ddd;">KTH3's 264–350 kWh class covers it with the right option</td></tr>
+</table>
+<p>That last line is the whole discipline: with a modest midday charging window, the fleet's requirement drops a full battery class — which is either USD 25,000–40,000 per truck saved, or 500–700 kg of payload recovered, or both.</p>
+
+<h2>The Cost of Over-Specification, Quantified</h2>
+<p>Battery mass runs roughly 6–7 kg per kWh. Adding 100 kWh of unnecessary capacity:</p>
+<ul>
+<li><strong>Capital:</strong> USD 25,000–40,000 per truck at current export pricing — on a 20-truck order, the difference between one charger row and a small charging hall</li>
+<li><strong>Payload:</strong> 600–700 kg permanently surrendered — on a rigid fleet at weight-limited duty, that is 3–5% of daily payload</li>
+<li><strong>Consumption:</strong> hauling the extra mass costs 2–4% more energy every kilometre, forever</li>
+<li><strong>Warranty exposure:</strong> unnecessary depth of headroom is fine; unnecessary cycles are not — but fleets that over-size "for safety" often then run opportunity charging to full daily, adding avoidable cycle count</li>
+</ul>
+
+<h2>When Bigger Actually Is Right</h2>
+<p>Honesty cuts both ways. Buy the bigger pack when: the fleet runs two shifts with no charging overlap; the routes have no depot anchor (public-infrastructure-only duty — rare in our markets, common in Europe); the operation cannot tolerate midday charging downtime under any scenario; or the local grid is unreliable enough that stored energy is also operational resilience. Mining and heavy-haul duty also justifies capacity headroom — pack life on 600 kWh hauling at 2.5 kWh/km is protected by depth, not range anxiety. This is why our TE8P heavy tractor carries 600 kWh while the KTH3 distribution rigid runs 264–350 kWh: the duty cycles, not marketing tiers, set the numbers.</p>
+
+<h2>How We Run This With Clients</h2>
+<p>Every fleet quotation we issue includes the sizing worksheet behind the recommendation: route audit inputs, consumption assumptions with their sources, the ageing and DOD factors, and the charging-credit math — so the client's engineers can challenge any line. Where a client has existing telematics on diesel trucks, the distance and dwell data transfers directly; where they have nothing, a 30-day GPS logger on the current fleet supplies the histogram the whole decision rests on. Fleets that do this once internalise the logic permanently — and their second and third electric orders size themselves.</p>
+
+<h2>Worked Variations: How the Same Truck Sizes Differently</h2>
+<p>The sizing methodology earns trust through its variations, and three worked contrasts show how differently the same worksheet answers under different duty data. First, the two-shift port shuttle: 300 km daily, no dwell windows at all (the truck works 20 hours and parks for four), hot climate, heavy GCW. The equation lands at the top of the 400 kWh class with no charging credit, and the dispatch design compensates with rotation charging — the four-hour parking window charges the fleet in relays, which is a scheduling solution to a battery problem and cheaper by the cost of a battery class. Second, the single-shift urban distributor: 140 km daily, 90-minute lunch dwell at a depot with a 120 kW position, moderate climate. The arithmetic lands comfortably in the 262–264 kWh class — the smallest pack in our heavy catalogue — because the midday credit does real work; the same fleet without the charging window would be specified one class up, paying USD 25,000+ per truck for capacity a charger provides at a tenth of the price. Third, the mountain mining rigid: 180 km daily but with 900 m of net descent on the return leg and deep-cycle ageing on the outbound climb. The sizing applies the regeneration credit conservatively (half the descent energy, not the theoretical maximum), sizes the pack for depth-of-discharge protection on the climb, and lands one class above what the flat-mileage arithmetic would suggest — the difference between a pack that lives ten years and one that lives six.</p>
+<p>Three duties, three different right answers, one method. That is the entire argument for sizing by data rather than by class: the right battery is not the biggest one the budget allows, it is the one the duty cycle — honestly audited, correctly derated, fully credited — actually asks for.</p>
+
+<p style="margin-top:40px;padding:16px;background:#f0f7f4;border-left:4px solid #006341;">Want a sizing study for your fleet? Contact Shaanxi Fenghan Trading — authorized Dongfeng EV truck exporter. WhatsApp: <a href="https://wa.me/8615319431311">+86 153 1943 1311</a> | Email: sales@fenghan-trade.com | <a href="https://dongfengevtrucks.com/">dongfengevtrucks.com</a></p>
+
+<p style="font-size:13px;color:#666;">🌐 Our Network: <a href="https://www.fenghan-trade.com/" target="_blank" rel="noopener">Fenghan Trade (SAGMOTO/SHACMAN Truck Export)</a> · <a href="https://sagmoto-trucks.com/zhc.html" target="_blank" rel="noopener">SAGMOTO cargo truck flatbed box stake</a></p>
+
+<p style="font-size:13px;"><a href="index.html">&larr; Back to Blog</a> | <a href="../index.html">Home</a></p>
+</body>
+</html>

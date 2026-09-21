@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Charging Load Management: Running 20+ EV Trucks on a Depot Connection Without Upgrading the Grid</title>
+<meta name="description" content="Depot smart charging for EV truck fleets: load balancing algorithms, time-of-use tariff optimisation, connection capacity math for KT5M-class fleets and phased charger deployment without grid upgrades.">
+<meta name="keywords" content="EV truck smart charging, depot load management, fleet charging load balancing, time of use charging, KT5M electric box truck, depot grid connection, OCPP load management, EV truck charging software">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="geo.region" content="CN"/>
+<meta name="geo.placename" content="Xi'an, Shaanxi, China"/>
+<meta property="og:title" content="Smart Charging Load Management: Running 20+ EV Trucks on a Depot Connection Without Upgrading the Grid">
+<meta property="og:description" content="Depot smart charging for EV truck fleets: load balancing algorithms, time-of-use tariff optimisation, connection capacity math for KT5M-class fleets and phased charger deployment without grid upgrades.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://dongfengevtrucks.com/blog/ev-truck-smart-charging-load-management.html">
+<meta property="og:image" content="https://dongfengevtrucks.com/images/models/p04_09.jpg">
+<meta property="og:site_name" content="Dongfeng EV Trucks Export">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Smart Charging Load Management: Running 20+ EV Trucks on a Depot Connection Without Upgrading the Grid">
+<meta name="twitter:description" content="Depot smart charging for EV truck fleets: load balancing algorithms, time-of-use tariff optimisation, connection capacity math for KT5M-class fleets and phased charger deployment without grid upgrades.">
+<meta name="twitter:image" content="https://dongfengevtrucks.com/images/models/p04_09.jpg">
+<link rel="canonical" href="https://dongfengevtrucks.com/blog/ev-truck-smart-charging-load-management.html">
+<link rel="stylesheet" href="../css/dongfeng-ev.css">
+<link rel="icon" href="../favicon.ico" type="image/x-icon">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BlogPosting",
+  "headline": "Smart Charging Load Management: Running 20+ EV Trucks on a Depot Connection Without Upgrading the Grid",
+  "description": "Depot smart charging for EV truck fleets: load balancing algorithms, time-of-use tariff optimisation, connection capacity math for KT5M-class fleets and phased charger deployment without grid upgrades.",
+  "author": {"@type": "Organization", "name": "Shaanxi Fenghan Trading Co., Ltd", "url": "https://dongfengevtrucks.com/"},
+  "publisher": {"@type": "Organization", "name": "Dongfeng EV Trucks Export", "logo": {"@type": "ImageObject", "url": "https://dongfengevtrucks.com/images/hero-cover.jpg"}},
+  "datePublished": "2026-09-21", "dateModified": "2026-09-21",
+  "image": "https://dongfengevtrucks.com/images/models/p04_09.jpg", "url": "https://dongfengevtrucks.com/blog/ev-truck-smart-charging-load-management.html",
+  "keywords": "EV truck smart charging, depot load management, fleet charging load balancing, time of use charging, depot grid connection"}
+</script>
+</head>
+<body style="font-family:Arial,sans-serif;line-height:1.7;max-width:900px;margin:0 auto;padding:20px;color:#333;">
+<h1>Smart Charging Load Management: Running 20+ EV Trucks on a Depot Connection Without Upgrading the Grid</h1>
+<p><img src="https://dongfengevtrucks.com/images/models/p04_09.jpg" alt="Electric box trucks charging at a depot, EV truck fleet load management" style="max-width:100%;height:auto;display:block;margin:20px auto;"/></p>
+
+<p>The first question a fleet engineer asks about electrification is rarely the trucks — it is the wire. Twenty electric trucks plugging in at a depot represent a theoretical load of two to five megawatts, and the site's existing connection is nowhere near that. In most of our export markets, the quote for a new connection at that capacity arrives with a lead time measured in years and a price that rewrites the business case. Here is the fact that changes the calculation: fleets almost never need the theoretical peak, because trucks do not all need maximum power simultaneously — and smart charging management is the discipline of proving it, in advance, with numbers. This article explains how we design depot charging around the connection the client already has, using fleets of the <a href="https://dongfengevtrucks.com/products/models/kt5m-electric-cargo-truck.html">KT5M electric box truck</a> as the working example, with market context from our <a href="https://dongfengevtrucks.com/markets/indonesia.html">Indonesia electric truck market guide</a>.</p>
+
+<h2>The Connection Math, Worked</h2>
+<p>Start with what the fleet actually needs, not what it could draw:</p>
+<table style="width:100%;border-collapse:collapse;margin:20px 0;">
+<tr style="background:#006341;color:#fff;"><th style="padding:10px;border:1px solid #ccc;">Parameter (20 × KT5M, 262 kWh avg)</th><th style="padding:10px;border:1px solid #ccc;">Value</th><th style="padding:10px;border:1px solid #ccc;">Note</th></tr>
+<tr><td style="padding:8px;border:1px solid #ddd;">Daily fleet energy</td><td style="padding:8px;border:1px solid #ddd;">~3,400 kWh (20 × 170)</td><td style="padding:8px;border:1px solid #ddd;">From duty-cycle audit, not nameplate</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd;">Theoretical simultaneous peak</td><td style="padding:8px;border:1px solid #ddd;">4,800 kW (20 × 240 kW)</td><td style="padding:8px;border:1px solid #ddd;">The number that scares utilities — never actually required</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd;">Required overnight energy</td><td style="padding:8px;border:1px solid #ddd;">~3,400 kWh in 10 h</td><td style="padding:8px;border:1px solid #ddd;">= 340 kW average — a fraction of the peak</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd;">With staggered departures</td><td style="padding:8px;border:1px solid #ddd;">420 kW average over 8.5 h</td><td style="padding:8px;border:1px solid #ddd;">Deepest-need trucks finish first, disconnect, free capacity</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd;"><strong>Connection actually required</strong></td><td style="padding:8px;border:1px solid #ddd;"><strong>~500–600 kVA with management</strong></td><td style="padding:8px;border:1px solid #ddd;">A depot connection most industrial sites already hold</td></tr>
+</table>
+<p>The gap between 4,800 kW of theoretical peak and 500–600 kVA of managed reality is the entire commercial argument for load management — the difference between a grid upgrade project and a software configuration.</p>
+
+<h2>The Four Functions That Do the Work</h2>
+<ul>
+<li><strong>Connection-based load balancing:</strong> a site controller allocates the connection's available capacity across chargers in real time — plug in everything; each truck receives what the wire can give, prioritised by its departure time and remaining need</li>
+<li><strong>Charge scheduling against tariffs:</strong> charging shifts into the depot's cheapest windows (overnight troughs, midday solar peak on sites with PV) — on time-of-use tariffs the difference between naive and scheduled charging runs 25–40% of the energy bill</li>
+<li><strong>SoC-targeted charging:</strong> trucks are charged to their route requirement, not to 100% by default — every kWh the schedule does not need is capacity freed for the truck that does, and gentler cycling that the battery warranty appreciates</li>
+<li><strong>Peak shaving with buffer storage:</strong> where the connection is truly tight or the tariff punishes peaks hard, a modest stationary battery absorbs the morning surge and recharges off-peak — smoothing the site's demand profile below its contractual limit</li>
+</ul>
+
+<h2>Why the Software Layer Also Buys Uptime</h2>
+<p>Load management is usually sold on cost; its reliability function is equally valuable. A managed depot never trips its own main breaker when twenty drivers plug in simultaneously at 23:10 — the single most common charging outage in unmanaged new depots. The same controller that balances load watches every charging session's power curve, flagging degradation in a charger's delivery weeks before it becomes a failure. And when the site's connection is lost, managed charging ramps back intelligently on restoration instead of dumping full demand onto recovering equipment. Our charging uptime guide covers the redundancy layer; this is the intelligence layer that makes the hardware behave like a fleet instead of twenty independent appliances.</p>
+
+<h2>OCPP and the Open Standards Question</h2>
+<p>Load management only works if the chargers and the trucks speak to a system the fleet controls. Our recommendation, borne out across deployments: insist on OCPP-compliant charging hardware with the load-management profiles enabled, and a management platform that reads (rather than owns) the vehicle-side data through the fleet's telematics. Proprietary stacks that lock charging data behind a vendor's portal are a commercial dependency fleets regret at renewal. The truck side needs nothing special — the BMS negotiates its charge rate with whatever the dispenser offers, which is exactly how a KT5M and a 60 kW AC position or a 240 kW DC position reach a managed agreement under the site controller's arbitration.</p>
+
+<h2>Implementation Sequence for a First Depot</h2>
+<ol style="line-height:1.9;">
+<li><strong>Duty-cycle audit:</strong> the same route data that sizes the batteries feeds the charging model — arrival SoC, departure times, dwell windows</li>
+<li><strong>Load study against the existing connection:</strong> one week of site meter data plus the charging model yields the honest answer on whether the current connection suffices (it usually does, with management, at fleet sizes up to the connection's ~1 truck per 25–30 kVA rule of thumb)</li>
+<li><strong>Phased hardware:</strong> install the chargers the first tranche needs with the site controller from day one — adding trucks then becomes a scheduling change, not an electrical project</li>
+<li><strong>One quarter of tuning:</strong> schedules refined against actual behaviour; driver compliance engineered out with automatic plug-and-charge authorisation (plugging in is the only instruction)</li>
+<li><strong>Scale:</strong> each subsequent truck tranche is absorbed by the same managed connection until the load study says otherwise — and it says so with data, years in advance</li>
+</ol>
+
+<h2>Common Questions From Depot Planners</h2>
+<p>The load-management conversation with fleet and depot planners tends to circle the same five questions, and the answers deserve recording. <em>Do we need a new grid connection for twenty trucks?</em> Usually not — the arithmetic in this article's worked example generalises: managed charging typically supports roughly one heavy electric truck per 25–30 kVA of existing industrial connection, and most depots hold far more than their first tranche needs; the load study confirms the specific number in two weeks. <em>What if our tariff has no time-of-use structure?</em> The scheduling value shrinks, but the connection-capacity value remains — load balancing is what lets the fleet grow into the wire it already has, TOU or not. <em>Does smart charging slow the trucks' readiness?</em> Managed correctly, no: the scheduler works backwards from departure times and route priorities, and trucks that must be full are full; the trucks that pay the flexibility margin are the ones the schedule knows have slack. <em>What happens when the system fails?</em> The fallback is by design — chargers default to standalone operation at their own rated power, and the site's protection coordination is engineered for that mode too; the failure mode of management is a slightly dumb depot, not a stopped one. <em>Can we add solar later?</em> Yes, and the controller's metered data is what sizes the array honestly: a year of charging-session logs tells the PV designer the load profile the panels must serve, converting the solar decision from a guess into a calculation.</p>
+<p>The summary observation from deployments: load management is the least visible component of an electric fleet and the one with the highest ratio of value to cost. The trucks arrive to cameras; the controller quietly halves the infrastructure bill — and keeps it halved through every fleet expansion that follows.</p>
+
+<p style="margin-top:40px;padding:16px;background:#f0f7f4;border-left:4px solid #006341;">Designing depot charging for your fleet? Contact Shaanxi Fenghan Trading — authorized Dongfeng EV truck exporter. WhatsApp: <a href="https://wa.me/8615319431311">+86 153 1943 1311</a> | Email: sales@fenghan-trade.com | <a href="https://dongfengevtrucks.com/">dongfengevtrucks.com</a></p>
+
+<p style="font-size:13px;color:#666;">🌐 Our Network: <a href="https://www.fenghan-trade.com/" target="_blank" rel="noopener">Fenghan Trade (SAGMOTO/SHACMAN Truck Export)</a> · <a href="https://sagmoto-trucks.com/zhc.html" target="_blank" rel="noopener">SAGMOTO cargo truck flatbed box stake</a></p>
+
+<p style="font-size:13px;"><a href="index.html">&larr; Back to Blog</a> | <a href="../index.html">Home</a></p>
+</body>
+</html>
