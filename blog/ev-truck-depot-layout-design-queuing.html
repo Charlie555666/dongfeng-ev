@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Designing the EV Truck Depot: Layout, Drive-Through Lanes and Charging Queuing for Electric Fleets</title>
+<meta name="description" content="How to design an EV truck depot: drive-through lane layout, charger placement, queuing math and expansion zoning for electric truck fleets, with a worked 20-truck KT5M example.">
+<meta name="keywords" content="EV truck depot design, electric truck charging layout, KT5M electric box truck, charging queuing math, depot drive-through lanes, electric fleet infrastructure planning">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="geo.region" content="CN"/>
+<meta name="geo.placename" content="Xi'an, Shaanxi, China"/>
+<meta property="og:title" content="Designing the EV Truck Depot: Layout, Drive-Through Lanes and Charging Queuing for Electric Fleets">
+<meta property="og:description" content="How to design an EV truck depot: drive-through lane layout, charger placement, queuing math and expansion zoning for electric truck fleets, with a worked 20-truck KT5M example.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://dongfengevtrucks.com/blog/ev-truck-depot-layout-design-queuing.html">
+<meta property="og:image" content="https://dongfengevtrucks.com/images/hero-cargo.jpg">
+<meta property="og:site_name" content="Dongfeng EV Trucks Export">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Designing the EV Truck Depot: Layout, Drive-Through Lanes and Charging Queuing for Electric Fleets">
+<meta name="twitter:description" content="How to design an EV truck depot: drive-through lane layout, charger placement, queuing math and expansion zoning for electric truck fleets, with a worked 20-truck KT5M example.">
+<meta name="twitter:image" content="https://dongfengevtrucks.com/images/hero-cargo.jpg">
+<link rel="canonical" href="https://dongfengevtrucks.com/blog/ev-truck-depot-layout-design-queuing.html">
+<link rel="stylesheet" href="../css/dongfeng-ev.css">
+<link rel="icon" href="../favicon.ico" type="image/x-icon">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BlogPosting",
+  "headline": "Designing the EV Truck Depot: Layout, Drive-Through Lanes and Charging Queuing for Electric Fleets",
+  "description": "How to design an EV truck depot: drive-through lane layout, charger placement, queuing math and expansion zoning for electric truck fleets, with a worked 20-truck KT5M example.",
+  "author": {"@type": "Organization", "name": "Shaanxi Fenghan Trading Co., Ltd", "url": "https://dongfengevtrucks.com/"},
+  "publisher": {"@type": "Organization", "name": "Dongfeng EV Trucks Export", "logo": {"@type": "ImageObject", "url": "https://dongfengevtrucks.com/images/hero-cover.jpg"}},
+  "datePublished": "2026-09-22", "dateModified": "2026-09-22",
+  "image": "https://dongfengevtrucks.com/images/hero-cargo.jpg", "url": "https://dongfengevtrucks.com/blog/ev-truck-depot-layout-design-queuing.html",
+  "keywords": "EV truck depot design, electric truck charging layout, KT5M electric box truck, charging queuing math, depot drive-through lanes"}
+</script>
+</head>
+<body style="font-family:Arial,sans-serif;line-height:1.7;max-width:900px;margin:0 auto;padding:20px;color:#333;">
+<h1>Designing the EV Truck Depot: Layout, Drive-Through Lanes and Charging Queuing for Electric Fleets</h1>
+<p><img src="https://dongfengevtrucks.com/images/hero-cargo.jpg" alt="KT5M electric box truck EV truck fleet at a designed charging depot" style="max-width:100%;height:auto;display:block;margin:20px auto;"/></p>
+
+<p>Most electric truck depots are designed like diesel depots with chargers bolted on — and the results show: trucks reversing over cable runs at shift change, chargers dead-ended in corners nobody can reach, and fleets that outgrow their electrical room in eighteen months. The depot is the machine that runs the fleet, and it deserves engineering. This piece covers the layout discipline: lanes, charger placement, the queuing mathematics that size a charging bank, and the expansion zoning that keeps a depot alive for a decade. The worked example is a 20-truck fleet of <a href="../products/models/kt5m-electric-cargo-truck.html">KT5M electric box trucks</a> on urban distribution duty — the configuration we most often plan for <a href="../markets/indonesia.html">Indonesian</a> and Southeast Asian operators, though the principles travel everywhere.</p>
+
+<h2>Principle 1: Drive-Through, Never Dead-End</h2>
+<p>A diesel depot parks trucks nose-in because morning departure order does not matter. An electric depot charges trucks in a sequence and releases them in a sequence — so it must flow. The base layout is a one-way loop: entry gate, pre-shift inspection bay, drive-through charging lanes, staging lanes in departure order, exit. Rules that follow from the loop:</p>
+<ul>
+<li><strong>Charge points on the driver's side, mid-lane,</strong> so the cable reaches without crossing a walkway; two trucks per DC dispenser with short, managed cable runs.</li>
+<li><strong>No reversing across active charging lanes</strong> — every movement is forward, guided by lane marking and mirror checks built into the site induction.</li>
+<li><strong>Departure order = staging order:</strong> the first routes out park closest to the exit, which means the charging schedule must release and re-stage trucks overnight — the job of the smart-charging backend, not the night shift driver.</li>
+<li><strong>Turning geometry for an 18-t rigid:</strong> design lanes for the KT5M's wheelbase and body overhang — 30 m straight-lane spacing with 12–15 m corner radii as the working minimum.</li>
+</ul>
+
+<h2>Principle 2: Size the Charging Bank With Queuing Math, Not Optimism</h2>
+<p>The question every operator asks — how many chargers for how many trucks? — is answered by three numbers: energy per truck per night, the charging window, and the acceptable probability of waiting. The worked example:</p>
+<table style="width:100%;border-collapse:collapse;margin:20px 0;">
+<tr style="background:#006341;color:#fff;"><th style="padding:8px;border:1px solid #ccc;">Input (20-truck KT5M fleet)</th><th style="padding:8px;border:1px solid #ccc;">Value</th></tr>
+<tr><td style="padding:8px;border:1px solid #ccc;">Energy per truck per day</td><td style="padding:8px;border:1px solid #ccc;">~90 kWh (140 km distribution day at ~0.65 kWh/km)</td></tr>
+<tr><td style="padding:8px;border:1px solid #ccc;">Fleet nightly energy</td><td style="padding:8px;border:1px solid #ccc;">~1,800 kWh</td></tr>
+<tr><td style="padding:8px;border:1px solid #ccc;">Charging window</td><td style="padding:8px;border:1px solid #ccc;">10 hours (19:30–05:30)</td></tr>
+<tr><td style="padding:8px;border:1px solid #ccc;">Average charge time per truck at 120 kW</td><td style="padding:8px;border:1px solid #ccc;">~45–50 minutes</td></tr>
+<tr><td style="padding:8px;border:1px solid #ccc;">Naive requirement</td><td style="padding:8px;border:1px solid #ccc;">20 trucks × 0.8 h = 16 charger-hours ÷ 10 h window = 2 chargers</td></tr>
+<tr><td style="padding:8px;border:1px solid #ccc;">Designed requirement</td><td style="padding:8px;border:1px solid #ccc;">4 chargers + stagger tolerance</td></tr>
+</table>
+<p>Why four when the arithmetic says two? Because trucks do not arrive in a tidy queue: late runs bunch, a charger goes down for maintenance, and Monday's energy debt is higher than Wednesday's. A depot sized at exactly 100% utilisation fails its first bad night. Our design rule: size the overnight bank at 65–70% target utilisation, which absorbs the nightly variance without doubling the hardware bill. Four 120 kW dispensers serving twenty trucks on a managed overnight schedule is the configuration that survives real operations.</p>
+
+<h2>Principle 3: Zone the Site for the Decade</h2>
+<p>The depot you open with is not the depot you run in year five. Zone the site on day one:</p>
+<ol>
+<li><strong>Electrical room and switchgear:</strong> located centrally with spare bays sized for 2× the initial charging load — the cheapest capacity you will ever buy is the space you reserve now.</li>
+<li><strong>Phase 2 charging pad:</strong> a poured, ducted, and powered-adjacent pad for the fast-charger bank the fleet adds when it doubles — unused until needed, invaluable after.</li>
+<li><strong>Solar canopy zones:</strong> roof and canopy areas earmarked for PV, aligned with the electrical room's DC-side planning; canopy solar over charging lanes also shades the trucks, which measurably reduces thermal-management load in hot markets.</li>
+<li><strong>Service and wash bay</strong> positioned on the loop before the charging lanes — trucks enter the charge cycle clean and inspected, which protects both cable connectors and the nightly pre-charge check.</li>
+<li><strong>Battery staging and quarantine area:</strong> a marked, fire-separated zone where any pack flagged by diagnostics waits for assessment — a regulatory requirement in a growing number of markets and good practice everywhere.</li>
+</ol>
+
+<h2>Principle 4: Design for the Failure Modes</h2>
+<p>Depots fail in predictable ways; design against them. Charger outage: the N+1 rule means four dispensers for a three-dispenser workload — the worked example already carries it. Grid outage: the transfer switch arrangement and the genset-bridge philosophy from our uptime engineering piece apply — size backup power to one charger, not the depot. Cable management: suspended cable systems on the charging lanes, never floor runs; connector inspection as a nightly bay duty. Water: chargers on elevated plinths with the site drainage run away from the electrical room — in monsoon markets this is the difference between a wet night and a dead depot. And lighting: charging lanes are night workplaces; 100+ lux on the connector face is the standard we specify.</p>
+
+<h2>The Layout That Pays for Itself</h2>
+<p>What does disciplined layout buy in money terms? Against a poorly planned depot, the drive-through design with a correctly sized bank and expansion zoning typically saves: 15–20% on civil works (no re-work), the avoided transformer upgrade that reactive demand control makes unnecessary (USD 50,000–150,000 in most markets), and — the quiet one — 20–40 minutes per truck per day of shunting and waiting time that bad layouts tax every shift. On a twenty-truck fleet that recovered time is worth more than the entire charging infrastructure, every year.</p>
+
+<p>The depot is the fleet's factory. Lay it out in a loop, size it with queuing math, zone it for growth — and the electric fleet that runs through it every night will do so at the cost the business case promised.</p>
+
+<p style="margin-top:40px;padding:16px;background:#f0f7f4;border-left:4px solid #006341;">Ready to electrify your fleet? Contact Shaanxi Fenghan Trading — authorized Dongfeng EV truck exporter. WhatsApp: <a href="https://wa.me/8615319431311">+86 153 1943 1311</a> | Email: sales@fenghan-trade.com | <a href="https://dongfengevtrucks.com/">dongfengevtrucks.com</a></p>
+
+<p style="font-size:13px;color:#666;">🌐 Our Network: <a href="https://www.fenghan-trade.com/" target="_blank" rel="noopener">Fenghan Trade (SAGMOTO/SHACMAN Truck Export)</a> · <a href="https://sagmoto-trucks.com/zhc.html" target="_blank" rel="noopener">SAGMOTO cargo truck flatbed box stake</a></p>
+
+<p style="font-size:13px;"><a href="index.html">&larr; Back to Blog</a> | <a href="../index.html">Home</a></p>
+</body>
+</html>
