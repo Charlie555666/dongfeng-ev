@@ -19,6 +19,17 @@
 - West Africa port logistics with electric trucks (Lome, Tema, Abidjan)
 - Carbon credits and EU Battery Regulation 2026 compliance for EV truck export
 
+## Buyer Guides
+
+- [EV Truck TCO vs Diesel: 8x4 Dump Truck Breakdown](https://dongfengevtrucks.com/blog/dongfeng-electric-truck-tco-total-cost-ownership-vs-diesel-8x4-dump.html): total cost of ownership comparison with energy, maintenance and residual value
+- [CATL LFP Battery Safety and Cycle Life](https://dongfengevtrucks.com/blog/catl-lfp-battery-dongfeng-electric-trucks-safety-cycle-life.html): 4500-cycle warranty, thermal management and safety testing explained
+- [EV Truck Charging Guide: 120kW / 240kW / 360kW and Solar Hybrid](https://dongfengevtrucks.com/blog/dongfeng-electric-truck-charging-120kw-240kw-360kw-solar-hybrid.html): depot charging power options and off-grid setups for Africa and remote sites
+- [Battery Swap for Export Fleets: CAS Swap Station](https://dongfengevtrucks.com/blog/dongfeng-ev-truck-battery-swap-cas-swap-station-export.html): 5-6 minute swap operations and infrastructure requirements
+- [Africa EV Truck Import Tariff and Incentive Policy Guide](https://dongfengevtrucks.com/blog/africa-ev-truck-import-tariff-incentive-policy-guide.html): country-by-country duty and incentive overview for African markets
+- [Dongfeng EV vs BYD and Foton: Competitor Comparison](https://dongfengevtrucks.com/blog/dongfeng-ev-truck-vs-byd-foton-competitor-comparison.html): spec-by-spec comparison for fleet buyers
+- [Aftermarket Parts Supply for Export Fleets](https://dongfengevtrucks.com/blog/dongfeng-ev-truck-aftermarket-parts-supply-export-fleet-support.html): spare parts channels, stocking strategy and fleet support
+- [Dominican Republic Electric Truck Import Guide](https://dongfengevtrucks.com/blog/dominican-republic-electric-truck-import-guide.html): Latin America import process, documents and market notes
+
 ## Contact
 
 - Company: Shaanxi Fenghan Trading Co., Ltd (Xi'an, Shaanxi, China)
