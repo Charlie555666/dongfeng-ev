@@ -100,6 +100,16 @@
 <h2>Specification Summary</h2>
 <p>Specify the TE8P by cumulative ascent, not by distance. Provide the route's total climb, worst sustained gradient, ambient temperature range and payload, and the pack decision becomes straightforward: 600 kWh for anything involving mountain work or cumulative ascent above roughly 200 m, 400 kWh for flat heavy haul under 150 km. FOB pricing typically falls in the USD 150,000–180,000 band, with the CATL pack warranted 8 years / 4,500 cycles to 80% state of health.</p>
 
+<h2>What to Measure Before the Second Order</h2>
+<p>Heavy haul electrification is usually proven on one route before it scales, and the pilot should be instrumented to answer four specific questions.</p>
+<ol>
+<li><strong>Energy per move against the model.</strong> Log kWh for the full route, split by segment, and compare with the pre-move estimate. The gap tells you whether the gradient and surface assumptions were right.</li>
+<li><strong>Arrival state of charge against the reserve policy.</strong> If moves consistently arrive below the intended reserve, the pack or the route plan needs revision before the next route is added.</li>
+<li><strong>Regenerative recovery on descents.</strong> Compare the descent recovery actually achieved with the modelled figure. Where recovery is lower than expected, the cause is usually a full pack at departure or a BMS thermal limit — both fixable operationally.</li>
+<li><strong>Derating events.</strong> Record every instance where output was reduced for thermal reasons, with ambient temperature and gradient. This is the data that decides whether a larger thermal package is needed on the next order.</li>
+</ol>
+<p>Telemetry makes all four automatic, and the dataset is what turns the second order from a gamble into a specification. See <a href="dongfeng-ev-truck-telemetry-fleet-management.html">fleet telemetry</a> and <a href="ev-truck-real-world-range-testing-methodology.html">real-world range testing methodology</a>.</p>
+
 <p style="margin-top:40px;padding:16px;background:#f0f7f4;border-left:4px solid #006341;">Ready to electrify your fleet? Contact Shaanxi Fenghan Trading — authorized Dongfeng EV truck exporter. WhatsApp: <a href="https://wa.me/8615319431311">+86 153 1943 1311</a> | Email: sales@fenghan-trade.com | <a href="https://dongfengevtrucks.com/">dongfengevtrucks.com</a></p>
 
 <p style="font-size:13px;color:#666;">🌐 Our Network: <a href="https://www.fenghan-trade.com/" target="_blank" rel="noopener">Fenghan Trade (SAGMOTO/SHACMAN Truck Export)</a> · <a href="https://sagmoto-trucks.com/qyc.html" target="_blank" rel="noopener">4x2 6x4 tractor truck prime mover</a></p>
