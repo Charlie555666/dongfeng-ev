@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KT1D Electric Sweeper Charging and Energy Planning for Municipal Depots | EV Truck Guide</title>
+<meta name="description" content="Charging and energy planning for KT1D EV sweeper fleets: 232/266 kWh pack, night-shift duty, depot power sizing, solar pairing, redundancy and cost per shift.">
+<meta name="keywords" content="KT1D electric sweeper, EV truck depot charging, municipal fleet charging, 232 kWh sweeper, electric sweeper energy planning, night shift charging">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="geo.region" content="CN"/>
+<meta name="geo.placename" content="Xi'an, Shaanxi, China"/>
+<meta property="og:title" content="KT1D Electric Sweeper Charging and Energy Planning for Municipal Depots">
+<meta property="og:description" content="Charging and energy planning for KT1D EV sweeper fleets: 232/266 kWh pack, night-shift duty, depot power sizing and solar pairing.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://dongfengevtrucks.com/blog/kt1d-electric-sweeper-truck-municipal-depot-charging.html">
+<meta property="og:image" content="https://dongfengevtrucks.com/images/models/p01_00.jpg">
+<meta property="og:site_name" content="Dongfeng EV Trucks Export">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="KT1D Electric Sweeper Charging and Depot Energy Planning">
+<meta name="twitter:description" content="Depot power sizing, night-shift charging windows, solar pairing and redundancy for electric sweeper fleets.">
+<meta name="twitter:image" content="https://dongfengevtrucks.com/images/models/p01_00.jpg">
+<link rel="canonical" href="https://dongfengevtrucks.com/blog/kt1d-electric-sweeper-truck-municipal-depot-charging.html">
+<link rel="stylesheet" href="../css/dongfeng-ev.css">
+<link rel="icon" href="../favicon.ico" type="image/x-icon">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BlogPosting",
+  "headline": "KT1D Electric Sweeper Charging and Energy Planning for Municipal Depots",
+  "description": "Charging and energy planning for KT1D EV sweeper fleets: 232/266 kWh pack, night-shift duty, depot power sizing, solar pairing and redundancy.",
+  "author": {"@type": "Organization", "name": "Shaanxi Fenghan Trading Co., Ltd", "url": "https://dongfengevtrucks.com/"},
+  "publisher": {"@type": "Organization", "name": "Dongfeng EV Trucks Export", "logo": {"@type": "ImageObject", "url": "https://dongfengevtrucks.com/images/hero-cover.jpg"}},
+  "datePublished": "2026-09-23", "dateModified": "2026-09-23",
+  "image": "https://dongfengevtrucks.com/images/models/p01_00.jpg", "url": "https://dongfengevtrucks.com/blog/kt1d-electric-sweeper-truck-municipal-depot-charging.html",
+  "keywords": "KT1D electric sweeper, EV truck depot charging, municipal fleet charging, electric sweeper energy planning"}
+</script>
+</head>
+<body style="font-family:Arial,sans-serif;line-height:1.7;max-width:900px;margin:0 auto;padding:20px;color:#333;">
+<h1>KT1D Electric Sweeper Charging and Energy Planning for Municipal Depots</h1>
+<p><img src="https://dongfengevtrucks.com/images/models/p01_00.jpg" alt="Dongfeng KT1D electric sweeper truck charging at a municipal depot — EV truck energy planning guide" style="max-width:100%;height:auto;display:block;margin:20px auto;"/></p>
+
+<p>Municipal depots are, in principle, the easiest charging environments in road transport: vehicles return to the same place every night, routes are known, and duty is predictable. In practice, sweeper fleets break that pattern in one important way — they work at night, which means they charge during the day, when tariffs are higher and ambient temperature is at its peak. The <a href="../products/models/kt1d-electric-sweeper-truck.html">Dongfeng KT1D electric sweeper truck</a> — CATL 232/266 kWh LFP, LvKong 128 kW rated / 260 kW peak direct drive with EBS — is designed around that inverted schedule, and this article sets out how to plan depot energy for it properly.</p>
+
+<h2>Understanding the Sweeper Duty Pattern</h2>
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse;width:100%;">
+<tr style="background:#006341;color:#fff;"><th>Parameter</th><th>Typical municipal sweeper duty</th><th>Charging implication</th></tr>
+<tr><td>Shift start</td><td>03:00–05:00 (pre-dawn)</td><td>Charging must complete before ~03:00</td></tr>
+<tr><td>Shift length</td><td>7–9 hours</td><td>Determines daily energy</td></tr>
+<tr><td>Shift end / return</td><td>10:00–13:00</td><td>Charging window opens late morning</td></tr>
+<tr><td>Available charge window</td><td>13:00–03:00, roughly 14 hours</td><td>Generous — power can be low</td></tr>
+<tr><td>Average speed</td><td>5–15 km/h while sweeping</td><td>Low traction energy; brush and suction dominate</td></tr>
+<tr><td>Daily distance</td><td>60–120 km</td><td>Modest</td></tr>
+</table>
+<p>The key insight: because the window is long, charger power per vehicle can be low. A sweeper returning at 25% SOC on a 232 kWh pack needs roughly 175 kWh replaced. Over a 10-hour window that is an average of 17.5 kW — well inside a standard 22 kW AC connection.</p>
+
+<h2>Energy Budget: Brush and Suction Dominate</h2>
+<p>Sweeper energy is not a distance problem:</p>
+<ul>
+<li><strong>Traction:</strong> 0.65–0.90 kWh/km in slow sweeping duty, so 60–120 km uses 40–105 kWh.</li>
+<li><strong>Brush motors:</strong> typically 6–14 kW combined while sweeping, running continuously — 45–115 kWh over an eight-hour shift.</li>
+<li><strong>Suction fan:</strong> the largest single auxiliary load, typically 10–22 kW — 80–170 kWh over the shift if run continuously.</li>
+<li><strong>Cab HVAC and lighting:</strong> 2–5 kW — 15–40 kWh.</li>
+<li><strong>Typical shift total:</strong> 180–330 kWh depending on pack option and duty intensity.</li>
+</ul>
+<p>Read against the pack options: 232 kWh covers standard single-shift municipal routes; 266 kWh covers intensive routes, continuous suction duty, or operations in hot climates where cab cooling is a significant load.</p>
+
+<h2>Depot Power Sizing</h2>
+<p>Work the calculation in four steps:</p>
+<ol>
+<li><strong>Per-vehicle daily energy</strong> from measured or modelled duty — say 240 kWh.</li>
+<li><strong>Fleet total:</strong> 10 sweepers × 240 kWh = 2,400 kWh per day.</li>
+<li><strong>Window:</strong> 13:00–03:00 = 14 hours, minus a safety margin → 12 usable hours. Required average site load = 200 kW.</li>
+<li><strong>Configuration:</strong> ten 22 kW AC sockets (220 kW) with load management, or two 120 kW DC units with staggered scheduling plus redundancy.</li>
+</ol>
+<p>AC sockets at every parking bay are usually the better answer for sweeper fleets: cheaper, no scheduling discipline required, and better for pack life because charge rates are low. DC is justified only where a second shift or an unexpected mid-day redeployment is likely.</p>
+
+<h2>Daytime Charging in Hot Climates</h2>
+<p>This is the specific risk of the sweeper pattern. Charging between 13:00 and 18:00 in a hot climate puts the pack at its thermal worst while it is also accepting charge:</p>
+<ul>
+<li><strong>Provide shade or covered bays.</strong> A simple canopy reduces pack cooling load measurably and costs very little.</li>
+<li><strong>Where the tariff permits, shift charging to the cooler overnight hours</strong> — the window allows it, and the pack prefers it.</li>
+<li><strong>Specify the high-ambient thermal package</strong> on every order for markets above 35 °C.</li>
+<li><strong>Consider solar canopies over the parking area.</strong> The duty pattern is close to ideal: vehicles are parked during peak solar production hours. See <a href="dongfeng-electric-truck-charging-120kw-240kw-360kw-solar-hybrid.html">solar-hybrid charging</a> and <a href="kt3f-electric-sprinkler-solar-hybrid-charging.html">solar charging for municipal water trucks</a>.</li>
+</ul>
+
+<h2>Redundancy and Uptime</h2>
+<p>Sweeping is a public-facing service with visible consequences when it fails. Two rules:</p>
+<ul>
+<li><strong>Specify one spare charge point per bank of 6–10</strong> so a single failure does not strand vehicles.</li>
+<li><strong>Make plug-in at handover a written procedure.</strong> The most common cause of a sweeper not being ready is not a charger fault — it is a driver who parked without connecting. Telematics that report connection status make this enforceable.</li>
+</ul>
+<p>See <a href="ev-truck-charging-uptime-redundancy-design.html">charging uptime redundancy design</a> and <a href="ev-truck-depot-layout-design-queuing.html">depot layout and queuing design</a>.</p>
+
+<h2>Tariff and Demand Charges</h2>
+<p>Municipal depots are frequently billed on tariffs with demand charges, and a fleet of sweepers charging simultaneously after the morning shift can create a sharp peak:</p>
+<ul>
+<li><strong>Stagger start times</strong> by 15–30 minutes per vehicle, or install a load-management controller that does it automatically.</li>
+<li><strong>Check for time-of-use windows</strong> — a depot that can shift most charging to off-peak hours will materially reduce cost per shift.</li>
+<li><strong>Measure and review monthly.</strong> Demand charges are often the largest avoidable line in a depot electricity bill.</li>
+</ul>
+<p>Detail in <a href="electricity-tariff-demand-charges-ev-truck-depot-billing.html">demand charges and depot billing</a> and <a href="ev-truck-smart-charging-load-management.html">smart charging load management</a>.</p>
+
+<h2>Cost Per Shift</h2>
+<p>Representative figures for a single KT1D on a standard municipal route:</p>
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse;width:100%;">
+<tr style="background:#006341;color:#fff;"><th>Line</th><th>Diesel sweeper</th><th>KT1D electric sweeper</th></tr>
+<tr><td>Energy per shift</td><td>32 L</td><td>240 kWh</td></tr>
+<tr><td>Energy cost per shift</td><td>USD 34</td><td>USD 26 (USD 0.11/kWh)</td></tr>
+<tr><td>Annual energy cost (300 shifts)</td><td>USD 10,200</td><td>USD 7,800</td></tr>
+<tr><td>With solar or off-peak tariff</td><td>USD 10,200</td><td>USD 4,300–6,000</td></tr>
+<tr><td>Annual maintenance</td><td>USD 7,500</td><td>USD 3,000</td></tr>
+</table>
+<p>Note that the energy saving is smaller than for high-mileage applications because sweeper duty is energy-intensive per kilometre; the maintenance saving and the noise-driven working-window benefit carry the case.</p>
+
+<h2>West African Municipal Deployment</h2>
+<p>West African cities combine high dust loads, growing municipal service expectations and strong solar resource — the conditions under which an electric sweeper fleet with solar-paired depot charging performs best. Our <a href="../markets/ghana.html">Ghana market page</a> covers deployment, import and support for Ghanaian municipal operators. Related: <a href="kt1d-lagos-solid-waste-electric-sweeper.html">Lagos solid waste operations</a>, <a href="accra-ghana-electric-truck-construction-market.html">Accra market analysis</a> and <a href="kt1d-electric-garbage-truck-tco-per-tonne.html">cost-per-tonne analysis</a>.</p>
+<p>KT1D FOB pricing typically falls in the USD 58,000–88,000 band depending on hopper, brush and pack specification, with the CATL pack warranted 8 years / 4,500 cycles to 80% state of health.</p>
+
+<p style="margin-top:40px;padding:16px;background:#f0f7f4;border-left:4px solid #006341;">Ready to electrify your fleet? Contact Shaanxi Fenghan Trading — authorized Dongfeng EV truck exporter. WhatsApp: <a href="https://wa.me/8615319431311">+86 153 1943 1311</a> | Email: sales@fenghan-trade.com | <a href="https://dongfengevtrucks.com/">dongfengevtrucks.com</a></p>
+
+<p style="font-size:13px;color:#666;">🌐 Our Network: <a href="https://www.fenghan-trade.com/" target="_blank" rel="noopener">Fenghan Trade (SAGMOTO/SHACMAN Truck Export)</a> · <a href="https://sagmoto-trucks.com/" target="_blank" rel="noopener">SAGMOTO heavy duty diesel trucks</a></p>
+
+<p style="font-size:13px;"><a href="index.html">&larr; Back to Blog</a> | <a href="../index.html">Home</a></p>
+</body>
+</html>

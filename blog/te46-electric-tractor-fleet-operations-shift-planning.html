@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TE46 Electric Tractor Fleet Operations: Shift Planning, Driver Rosters and 24/7 Port Shuttle Uptime</title>
+<meta name="description" content="How to run a TE46 EV truck fleet round the clock: shift planning, driver rosters, charging windows, charger-to-truck ratios and uptime targets for port shuttle duty.">
+<meta name="keywords" content="TE46 electric tractor, EV truck fleet operations, electric truck shift planning, port shuttle tractor, EV truck uptime, Dongfeng TE46 fleet">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="geo.region" content="CN"/>
+<meta name="geo.placename" content="Xi'an, Shaanxi, China"/>
+<meta property="og:title" content="TE46 Electric Tractor Fleet Operations: Shift Planning, Driver Rosters and 24/7 Port Shuttle Uptime">
+<meta property="og:description" content="How to run a TE46 EV truck fleet round the clock: shift planning, driver rosters, charging windows, charger-to-truck ratios and uptime targets.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://dongfengevtrucks.com/blog/te46-electric-tractor-fleet-operations-shift-planning.html">
+<meta property="og:image" content="https://dongfengevtrucks.com/images/models/p03_01.jpg">
+<meta property="og:site_name" content="Dongfeng EV Trucks Export">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TE46 Electric Tractor Fleet Operations: Shift Planning and Port Shuttle Uptime">
+<meta name="twitter:description" content="Run a TE46 electric tractor fleet 24/7: shift design, charger ratios, driver rosters and uptime targets.">
+<meta name="twitter:image" content="https://dongfengevtrucks.com/images/models/p03_01.jpg">
+<link rel="canonical" href="https://dongfengevtrucks.com/blog/te46-electric-tractor-fleet-operations-shift-planning.html">
+<link rel="stylesheet" href="../css/dongfeng-ev.css">
+<link rel="icon" href="../favicon.ico" type="image/x-icon">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BlogPosting",
+  "headline": "TE46 Electric Tractor Fleet Operations: Shift Planning, Driver Rosters and 24/7 Port Shuttle Uptime",
+  "description": "How to run a TE46 EV truck fleet round the clock: shift planning, driver rosters, charging windows, charger-to-truck ratios and uptime targets.",
+  "author": {"@type": "Organization", "name": "Shaanxi Fenghan Trading Co., Ltd", "url": "https://dongfengevtrucks.com/"},
+  "publisher": {"@type": "Organization", "name": "Dongfeng EV Trucks Export", "logo": {"@type": "ImageObject", "url": "https://dongfengevtrucks.com/images/hero-cover.jpg"}},
+  "datePublished": "2026-09-23", "dateModified": "2026-09-23",
+  "image": "https://dongfengevtrucks.com/images/models/p03_01.jpg", "url": "https://dongfengevtrucks.com/blog/te46-electric-tractor-fleet-operations-shift-planning.html",
+  "keywords": "TE46 electric tractor, EV truck fleet operations, electric truck shift planning, port shuttle tractor, EV truck uptime"}
+</script>
+</head>
+<body style="font-family:Arial,sans-serif;line-height:1.7;max-width:900px;margin:0 auto;padding:20px;color:#333;">
+<h1>TE46 Electric Tractor Fleet Operations: Shift Planning, Driver Rosters and 24/7 Port Shuttle Uptime</h1>
+<p><img src="https://dongfengevtrucks.com/images/models/p03_01.jpg" alt="Dongfeng TE46 electric tractor shuttling containers — an EV truck built for continuous terminal duty" style="max-width:100%;height:auto;display:block;margin:20px auto;"/></p>
+
+<p>Buying an electric truck is a procurement decision; running one 22 hours a day is an operations discipline. The <a href="../products/models/te46-electric-tractor.html">Dongfeng TE46 electric tractor</a> — 4x2 terminal configuration, CATL 400 kWh LFP, LvKong 315/510 kW through a 4-speed AMT — is the unit most of our customers deploy on port shuttle and intermodal yard work, and the fleets that get 95%+ availability from it are the ones that redesign their shift pattern rather than simply swapping diesel units for electric ones. This guide sets out how to plan shifts, rosters, charging windows and charger capacity for continuous EV truck operation.</p>
+
+<h2>Start From the Duty Cycle, Not the Truck</h2>
+<p>Before writing a roster, quantify what the TE46 will actually do in a shift. Terminal and shuttle work is unusually favourable for electrification because it is short, repetitive and heavily loaded with idle time:</p>
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse;width:100%;">
+<tr style="background:#006341;color:#fff;"><th>Parameter</th><th>Typical terminal shuttle value</th><th>Why it matters for the EV truck</th></tr>
+<tr><td>Distance per shift</td><td>120–220 km</td><td>Well inside 250–300 km usable range on 400 kWh</td></tr>
+<tr><td>Average speed</td><td>18–30 km/h</td><td>Low aerodynamic and rolling losses</td></tr>
+<tr><td>Stop frequency</td><td>40–90 per shift</td><td>Regenerative braking recovers 12–20% of energy</td></tr>
+<tr><td>Idle share</td><td>25–40% of shift time</td><td>Zero fuel burn while waiting; HVAC is the only draw</td></tr>
+<tr><td>Payload profile</td><td>Loaded one way, empty return</td><td>Net consumption roughly 1.05–1.25 kWh/km</td></tr>
+<tr><td>Daily energy</td><td>150–260 kWh</td><td>One full overnight charge covers a shift with margin</td></tr>
+</table>
+
+<h2>Designing the Shift Pattern Around Charging</h2>
+<p>A diesel terminal tractor refuels in ten minutes at the start of a shift. An electric tractor does not need to — it should arrive at the depot plugged in and depart full. Three patterns work in practice:</p>
+<ul>
+<li><strong>Single shift + overnight charge (simplest).</strong> One 9–10 hour shift, 150–220 km, return to depot, AC or moderate DC charge overnight on a 7 kW–60 kW connection. Charger-to-truck ratio 1:1 on AC sockets, or 1:4 on a shared 120 kW DC unit with staggered starts. This is the right starting point for a first electrification pilot.</li>
+<li><strong>Two shift + opportunity charge (highest utilisation).</strong> Day and night shifts with a 30–45 minute top-up at the shift changeover. A dual-gun GB/T charge at up to 600 A takes 20–80% in roughly 40 minutes, which fits a driver break. Ratio: one 120–180 kW DC charger per 3–4 tractors.</li>
+<li><strong>Continuous shuttle + battery swap (maximum uptime).</strong> Where the yard runs 24 hours with no natural break, swap the pack in 5–6 minutes and keep the tractor moving. This removes charger waiting entirely but requires swap-station capex and a spare-pack inventory — the economics are worked through in <a href="dongfeng-ev-truck-battery-swap-cas-swap-station-export.html">our battery swap station guide</a>.</li>
+</ul>
+
+<h2>Charger-to-Truck Ratios That Actually Hold Up</h2>
+<p>The most common planning error is specifying one charger per truck "to be safe". That doubles capex for no uptime benefit. A workable method:</p>
+<ol>
+<li>Calculate daily energy per truck: distance × kWh/km, plus 10% for charging losses and HVAC.</li>
+<li>Calculate the overnight window available: typically 8–10 hours between shifts.</li>
+<li>Divide total fleet energy by window hours to get required depot power, then round up to standard charger sizes (120 kW, 180 kW, 240 kW, 360 kW).</li>
+<li>Add N+1 redundancy: one spare charger per bank of 4–6, so maintenance never removes capacity. Our <a href="ev-truck-charging-uptime-redundancy-design.html">charging uptime redundancy guide</a> covers the failure-mode maths.</li>
+<li>Apply smart load management so the site peak kW stays under the tariff demand threshold — the saving on demand charges is often larger than the cost of the control system.</li>
+</ol>
+<p>For a ten-truck TE46 fleet on single-shift duty: 10 × 200 kWh = 2,000 kWh/night, plus 10% = 2,200 kWh. Over a 9-hour window that is 245 kW average site load — comfortably served by two 180 kW DC units with staggered scheduling, or by distributed 22–44 kW AC sockets at each parking bay. The latter is cheaper and better for battery life; the former is more flexible if you later add a second shift.</p>
+
+<h2>Driver Rosters: What Changes for an EV Truck</h2>
+<p>Three adjustments make drivers productive rather than frustrated:</p>
+<ul>
+<li><strong>Break alignment.</strong> Where opportunity charging is used, align the mandated rest break with the charging window so the 40-minute charge is "free" time. Do not ask drivers to wait for a charge at the end of a shift.</li>
+<li><strong>Regen training.</strong> The TE46's 510 kW peak motor recovers significant energy under regenerative braking, but only if drivers anticipate stops instead of braking late. Two days of coaching typically moves fleet consumption by 5–8%. Our <a href="electric-truck-driver-training-program-fleet.html">driver training programme</a> sets out the curriculum.</li>
+<li><strong>Shift handover discipline.</strong> Plug in at handover, every time. The single largest cause of "the truck wasn't ready" incidents in our customer fleet is a driver who parked without connecting.</li>
+</ul>
+
+<h2>Uptime: Setting and Measuring the Target</h2>
+<p>Diesel terminal fleets typically achieve 92–95% availability. A well-run electric fleet should beat that, because the drivetrain has far fewer wear items:</p>
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse;width:100%;">
+<tr style="background:#006341;color:#fff;"><th>Availability loss category</th><th>Diesel tractor</th><th>TE46 EV truck</th></tr>
+<tr><td>Scheduled service downtime</td><td>4–6 days/year</td><td>1.5–2.5 days/year</td></tr>
+<tr><td>Drivetrain unscheduled repairs</td><td>3–5 events/year</td><td>0.5–1.5 events/year</td></tr>
+<tr><td>Fuel/system logistics</td><td>Refuelling trips, fuel quality issues</td><td>None (depot charging)</td></tr>
+<tr><td>Emissions-related derating</td><td>DPF/EGR/DEF faults common</td><td>Not applicable</td></tr>
+<tr><td>Charging-related downtime</td><td>Not applicable</td><td>0.5–2% (mitigated by N+1 design)</td></tr>
+</table>
+<p>Track availability as a single weekly number: (planned operating hours − downtime hours) ÷ planned operating hours. Instrument it from day one — telematics makes this automatic, as described in <a href="dongfeng-ev-truck-telemetry-fleet-management.html">our fleet telemetry guide</a>.</p>
+
+<h2>Vietnam and Similar Port Markets</h2>
+<p>For operators building this playbook in Southeast Asia, the <a href="../markets/vietnam.html">Vietnam market page</a> covers depot connection lead times, port-side electrical capacity and the practicalities of running electric tractors through monsoon conditions. The same shift-planning logic applies; what changes is the charger enclosure specification and the drainage design around the charging bays, both of which we supply to IP-rated standard on all ASEAN shipments.</p>
+
+<h2>A Realistic 90-Day Commissioning Sequence</h2>
+<ol>
+<li><strong>Weeks 1–2:</strong> charger energised and load-tested before trucks arrive. Never the reverse.</li>
+<li><strong>Weeks 2–3:</strong> two-day driver and technician training; set the telematics baseline.</li>
+<li><strong>Weeks 3–8:</strong> run a defined route with logging; compare kWh/km and cycle time against the diesel units still in the fleet.</li>
+<li><strong>Weeks 8–12:</strong> adjust shift windows and charger scheduling using real data; then commit to the next order tranche.</li>
+</ol>
+<p>The TE46 arrives with an 8-year / 4,500-cycle CATL LFP warranty and FOB pricing typically in the USD 95,000–125,000 band depending on configuration, which makes it the lowest-capex entry point into heavy electric tractor operation for most port fleets.</p>
+
+<p style="margin-top:40px;padding:16px;background:#f0f7f4;border-left:4px solid #006341;">Ready to electrify your fleet? Contact Shaanxi Fenghan Trading — authorized Dongfeng EV truck exporter. WhatsApp: <a href="https://wa.me/8615319431311">+86 153 1943 1311</a> | Email: sales@fenghan-trade.com | <a href="https://dongfengevtrucks.com/">dongfengevtrucks.com</a></p>
+
+<p style="font-size:13px;color:#666;">🌐 Our Network: <a href="https://www.fenghan-trade.com/" target="_blank" rel="noopener">Fenghan Trade (SAGMOTO/SHACMAN Truck Export)</a> · <a href="https://sagmoto-trucks.com/qyc.html" target="_blank" rel="noopener">4x2 6x4 tractor truck prime mover</a></p>
+
+<p style="font-size:13px;"><a href="index.html">&larr; Back to Blog</a> | <a href="../index.html">Home</a></p>
+</body>
+</html>

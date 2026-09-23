@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scaling From Ten to a Hundred EV Trucks: The Operations Playbook for Multi-Stage Fleet Growth</title>
+<meta name="description" content="Scaling an EV truck fleet from 10 to 100 trucks: charger economics, technician ratios, spares strategy, dispatch software and the stage-by-stage playbook from our deployment experience.">
+<meta name="keywords" content="scaling EV truck fleet, fleet expansion electric trucks, EV truck charging capacity planning, electric fleet operations, EV truck maintenance staffing, fleet electrification stages">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="geo.region" content="CN"/>
+<meta name="geo.placename" content="Xi'an, Shaanxi, China"/>
+<meta property="og:title" content="Scaling From Ten to a Hundred EV Trucks: The Operations Playbook for Multi-Stage Fleet Growth">
+<meta property="og:description" content="Scaling an EV truck fleet from 10 to 100 trucks: charger economics, technician ratios, spares strategy, dispatch software and the stage-by-stage playbook from deployment experience.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://dongfengevtrucks.com/blog/scaling-electric-truck-fleet-10-to-100.html">
+<meta property="og:image" content="https://dongfengevtrucks.com/images/models/p07_05.jpg">
+<meta property="og:site_name" content="Dongfeng EV Trucks Export">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Scaling From Ten to a Hundred EV Trucks: The Operations Playbook for Multi-Stage Growth">
+<meta name="twitter:description" content="Scaling an EV truck fleet from 10 to 100 trucks: charger economics, technician ratios, spares strategy, dispatch software and the stage-by-stage playbook from deployment experience.">
+<meta name="twitter:image" content="https://dongfengevtrucks.com/images/models/p07_05.jpg">
+<link rel="canonical" href="https://dongfengevtrucks.com/blog/scaling-electric-truck-fleet-10-to-100.html">
+<link rel="stylesheet" href="../css/dongfeng-ev.css">
+<link rel="icon" href="../favicon.ico" type="image/x-icon">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BlogPosting",
+  "headline": "Scaling From Ten to a Hundred EV Trucks: The Operations Playbook for Multi-Stage Fleet Growth",
+  "description": "Scaling an EV truck fleet from 10 to 100 trucks: charger economics, technician ratios, spares strategy, dispatch software and the stage-by-stage playbook.",
+  "author": {"@type": "Organization", "name": "Shaanxi Fenghan Trading Co., Ltd", "url": "https://dongfengevtrucks.com/"},
+  "publisher": {"@type": "Organization", "name": "Dongfeng EV Trucks Export", "logo": {"@type": "ImageObject", "url": "https://dongfengevtrucks.com/images/hero-cover.jpg"}},
+  "datePublished": "2026-09-23", "dateModified": "2026-09-23",
+  "image": "https://dongfengevtrucks.com/images/models/p07_05.jpg", "url": "https://dongfengevtrucks.com/blog/scaling-electric-truck-fleet-10-to-100.html",
+  "keywords": "scaling EV truck fleet, fleet expansion electric trucks, EV truck charging capacity planning, electric fleet operations"}
+</script>
+</head>
+<body style="font-family:Arial,sans-serif;line-height:1.7;max-width:900px;margin:0 auto;padding:20px;color:#333;">
+<h1>Scaling From Ten to a Hundred EV Trucks: The Operations Playbook for Multi-Stage Fleet Growth</h1>
+<p><img src="https://dongfengevtrucks.com/images/models/p07_05.jpg" alt="Large EV truck fleet charging depot for scaled electric truck operations" style="max-width:100%;height:auto;display:block;margin:20px auto;"/></p>
+
+<p>The ten-truck pilot is a hardware project; the hundred-truck fleet is an operations company. Almost everything that made the pilot succeed — the hand-managed charge schedule, the two trusted technicians, the spares in a cabinet — breaks somewhere between truck thirty and truck sixty if it is not deliberately rebuilt as a system. Yet the scale-up phase is also where electric fleets bank their real returns: the depot infrastructure is already paid, the training cohort exists, and every incremental truck improves the fixed-cost absorption. This article is the scaling playbook we build with clients moving from pilot to programme — the stage-by-stage decisions on charging capacity, staffing, spares, software and procurement, drawn from deployments at each stage of this curve with <a href="../products/models/kt5m-electric-cargo-truck.html">KT5M-class</a> box fleets, <a href="../products/models/te8m-electric-tractor.html">TE8M-class</a> tractor operations and dump-truck quarries.</p>
+
+<h2>Stage One: 10 to 25 Trucks — Instrument Everything</h2>
+<p>The pilot's most important output is not savings data; it is calibration data — real kWh/km by route, real charge durations, real failure modes. The stage-one mandate is to formalise what the pilot learned into engineered baselines: route-level consumption models, charger utilisation logs, driver league tables, and a maintenance ledger separated into scheduled (predictable, budgetable) and unscheduled (each one a lesson). Organisationally, this is when the "fleet electrification champion" inside the client's team gets a real title and the depot gets a formal charge schedule managed through the OCPP backend rather than a whiteboard. The procurement discipline that matters at this stage: standardise ruthlessly on one model per mission class. Mixed fleets at this scale split the spares pool, split the training and split the software configuration for no operational benefit — variety is a luxury for diesel, where the service ecosystem absorbs it; in electric fleets the operator holds the expertise, so variety is a tax.</p>
+
+<h2>Stage Two: 25 to 60 Trucks — Build the Systems That Replace Memory</h2>
+<table style="width:100%;border-collapse:collapse;margin:20px 0;">
+<tr style="background:#006341;color:#fff;"><th style="padding:8px;border:1px solid #ccc;text-align:left;">System</th><th style="padding:8px;border:1px solid #ccc;text-align:left;">Pilot-era form (10 trucks)</th><th style="padding:8px;border:1px solid #ccc;text-align:left;">Scale form (60 trucks)</th></tr>
+<tr><td style="padding:8px;border:1px solid #ccc;">Charging</td><td style="padding:8px;border:1px solid #ccc;">2-3 chargers, night schedule, manual priority</td><td style="padding:8px;border:1px solid #ccc;">6-10 chargers, OCPP smart-load-managed, staggered shift charging, N+1 redundancy</td></tr>
+<tr><td style="padding:8px;border:1px solid #ccc;">Maintenance</td><td style="padding:8px;border:1px solid #ccc;">2 generalists + remote support</td><td style="padding:8px;border:1px solid #ccc;">1 HV-certified lead per 25 trucks; scheduled-service book; HV work separated from general work</td></tr>
+<tr><td style="padding:8px;border:1px solid #ccc;">Spares</td><td style="padding:8px;border:1px solid #ccc;">Opening order in a cabinet</td><td style="padding:8px;border:1px solid #ccc;">Min-max inventory per SKU, consumption-driven reorders, bonded fast movers (brakes, filters, connectors)</td></tr>
+<tr><td style="padding:8px;border:1px solid #ccc;">Dispatch &amp; energy</td><td style="padding:8px;border:1px solid #ccc;">Duty roster in spreadsheets</td><td style="padding:8px;border:1px solid #ccc;">Range-aware dispatch — assignments checked against route model + current SoC before commitment</td></tr>
+<tr><td style="padding:8px;border:1px solid #ccc;">Procurement</td><td style="padding:8px;border:1px solid #ccc;">Per-batch orders</td><td style="padding:8px;border:1px solid #ccc;">Frame agreement with staged deliveries, price-locked, spares and training included</td></tr>
+</table>
+<p>Two failures recur at this stage and both are planning failures. Charging: operators size chargers linearly with truck count and hit a grid ceiling — the correct math is energy-based (fleet daily kWh × 1.15, divided by the off-peak window) plus smart load management, which typically reduces hardware needs 30-40% versus naive one-charger-per-three-trucks sizing. Technicians: the pilot's two heroes become bottlenecks — the fix is not hiring more generalists but building the two-tier structure (HV-certified leads plus trained generalists) with our train-the-trainer programme so the knowledge is held by the organisation rather than two individuals whose retention is now a company risk.</p>
+
+<h2>Stage Three: 60 to 100+ Trucks — Fleet as an Energy Business</h2>
+<p>A hundred-truck electric fleet consumes 20-35 MWh daily — a meaningful grid customer with negotiating power. At this stage the energy function professionalises: time-of-use tariff optimisation becomes a managed discipline worth hundreds of thousands per year, the second-life battery stream (covered in our repurposing article) becomes a plannable asset rotation rather than a disposal problem, and larger fleets begin splitting depot energy across sites or adding swap infrastructure on the highest-cycle routes. Structurally, this is when finance takes over the narrative: residual values are now modelled on real SOH curves, the maintenance cost curve is empirically established, and the second and third fleet orders are financed against the first fleet's audited performance — the green-finance structures described in our development-bank article price this stage particularly well. The operations KPI set that distinguishes mature programmes: energy cost per tonne-km, charger uptime percentage, schedule adherence at departure SoC = 100%, and technician hours per truck-month — tracked monthly against the stage-one baselines.</p>
+
+<h2>The Procurement Discipline Across All Stages</h2>
+<p>Three procurement rules survive every stage of the scaling curve. First, buy the same thing: model standardisation compounds in spares, training, software and resale. Second, buy the charging with the trucks, not after them — infrastructure lead times (grid connections especially) exceed truck lead times in most markets, so the charger order belongs in the same contract as the truck order; our quotations bundle both by default. Third, buy the data rights: ensure the contract specifies that telematics exports, SOH certificates and diagnostic access belong to the buyer — the fleet's operational data is the scaling playbook's raw material, and it must be owned by the operator, not leased back. Fleets that follow the staged playbook typically find that truck fifty is cheaper to integrate than truck five was — the systems are built, the crews are trained, and the marginal truck simply joins the machine. That is what scaling electrification is supposed to feel like.</p>
+
+
+<h2>The Scale-Up Self-Assessment</h2>
+<p>Operators between stages can audit their readiness with six questions — the same review we run with fleets scaling <a href="../products/models/kta1-electric-dump-truck.html">KTA1-class quarry operations</a> and distribution fleets from the Gulf to the corridors covered on our <a href="../markets/indonesia.html">Indonesia market page</a>:</p>
+<ul>
+<li><strong>Are the baselines written down?</strong> Route-level kWh, charge durations, failure modes — if it lives in one manager's head, it is not yet a system.</li>
+<li><strong>Is the charger plan energy-based or truck-count-based?</strong> Daily fleet kWh × 1.15 over the off-peak window, not a socket ratio — the error that breaks fleets at truck forty.</li>
+<li><strong>Does HV knowledge live in more than two people?</strong> The two-tier technician structure and train-the-trainer layer are the fix before the heroes become bottlenecks.</li>
+<li><strong>Is the spares pool min-max managed?</strong> Consumption-driven reorders, bonded fast movers — the difference between maintenance and scavenging.</li>
+<li><strong>Does dispatch see SoC before committing trucks?</strong> Range-aware assignment is the software habit that prevents the stranded-truck day.</li>
+<li><strong>Who owns the energy bill?</strong> At a hundred trucks, the tariff negotiation and the second-life battery stream are a named person's job, not a finance footnote.</li>
+</ul>
+<p>Scale is where electric fleets earn their keep: the depot is paid, the crews are trained, and every new truck improves the machine. The self-assessment above is how operators make sure the machine is actually built before they feed it.</p>
+
+<p style="margin-top:40px;padding:16px;background:#f0f7f4;border-left:4px solid #006341;">Ready to electrify your fleet? Contact Shaanxi Fenghan Trading — authorized Dongfeng EV truck exporter. WhatsApp: <a href="https://wa.me/8615319431311">+86 153 1943 1311</a> | Email: sales@fenghan-trade.com | <a href="https://dongfengevtrucks.com/">dongfengevtrucks.com</a></p>
+
+<p style="font-size:13px;color:#666;">🌐 Our Network: <a href="https://www.fenghan-trade.com/" target="_blank" rel="noopener">Fenghan Trade (SAGMOTO/SHACMAN Truck Export)</a> · <a href="https://sagmoto-trucks.com/" target="_blank" rel="noopener">heavy duty trucks export China</a></p>
+
+<p style="font-size:13px;"><a href="index.html">&larr; Back to Blog</a> | <a href="../index.html">Home</a></p>
+</body>
+</html>
