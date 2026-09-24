@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Charge While You Sleep: Shift Scheduling and Charging Optimisation for Electric Truck Fleets</title>
+<meta name="description" content="Charging optimisation is the hidden discipline of EV truck fleet ops — shift scheduling, off-peak windows and charger math that keeps trucks earning.">
+<meta name="keywords" content="EV truck charging schedule, electric fleet shift planning, off-peak charging trucks, TE46 charging strategy, electric port tractor shift, fleet charging optimisation">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="geo.region" content="CN"/>
+<meta name="geo.placename" content="Xi'an, Shaanxi, China"/>
+<meta property="og:title" content="Charge While You Sleep: Shift Scheduling and Charging Optimisation for Electric Truck Fleets">
+<meta property="og:description" content="Charging optimisation is the hidden discipline of EV truck fleet ops — shift scheduling, off-peak windows and charger math that keeps trucks earning.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://dongfengevtrucks.com/blog/ev-truck-fleet-charging-shift-scheduling.html">
+<meta property="og:image" content="https://dongfengevtrucks.com/images/models/p07_00.jpg">
+<meta property="og:site_name" content="Dongfeng EV Trucks Export">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Charge While You Sleep: Shift Scheduling and Charging Optimisation for Electric Truck Fleets">
+<meta name="twitter:description" content="Charging optimisation is the hidden discipline of EV truck fleet ops — shift scheduling, off-peak windows and charger math that keeps trucks earning.">
+<meta name="twitter:image" content="https://dongfengevtrucks.com/images/models/p07_00.jpg">
+<link rel="canonical" href="https://dongfengevtrucks.com/blog/ev-truck-fleet-charging-shift-scheduling.html">
+<link rel="stylesheet" href="../css/dongfeng-ev.css">
+<link rel="icon" href="../favicon.ico" type="image/x-icon">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BlogPosting",
+  "headline": "Charge While You Sleep: Shift Scheduling and Charging Optimisation for Electric Truck Fleets",
+  "description": "Charging optimisation is the hidden discipline of EV truck fleet ops — shift scheduling, off-peak windows and charger math that keeps trucks earning.",
+  "author": {"@type": "Organization", "name": "Shaanxi Fenghan Trading Co., Ltd", "url": "https://dongfengevtrucks.com"},
+  "publisher": {"@type": "Organization", "name": "Dongfeng EV Trucks Export", "logo": {"@type": "ImageObject", "url": "https://dongfengevtrucks.com/images/hero-cover.jpg"}},
+  "datePublished": "2026-09-24", "dateModified": "2026-09-24",
+  "image": "https://dongfengevtrucks.com/images/models/p07_00.jpg", "url": "https://dongfengevtrucks.com/blog/ev-truck-fleet-charging-shift-scheduling.html",
+  "keywords": "EV truck charging schedule, electric fleet shift planning, off-peak charging trucks, fleet charging optimisation"}
+</script>
+</head>
+<body style="font-family:Arial,sans-serif;line-height:1.7;max-width:900px;margin:0 auto;padding:20px;color:#333;">
+<h1>Charge While You Sleep: Shift Scheduling and Charging Optimisation for Electric Truck Fleets</h1>
+<p><img src="https://dongfengevtrucks.com/images/models/p07_00.jpg" alt="Electric tractor charging overnight between shifts — EV truck fleet charging optimisation" style="max-width:100%;height:auto;display:block;margin:20px auto;"/></p>
+
+<p>Diesel fleets refuel as an afterthought — a driver, a pump, ten minutes. Electric fleets earn or burn their economics in the hours the trucks are parked. Getting charging wrong shows up as trucks waiting for stalls, demand charges spiking the electricity bill, or dispatch scrambling because tomorrow's longest route starts at 60%. Getting it right is mostly a scheduling discipline: matching the energy each truck used today to the hours it will sleep tonight, at the cheapest power, through the smallest charger count that still leaves margin. This article lays out that discipline — the shift mathematics, the tariff games, and the fleet patterns we see working everywhere from <a href="../markets/egypt.html">Egypt</a>'s Suez corridor to Gulf ports — with the <a href="../products/models/te46-electric-tractor.html">TE46 electric tractor</a> on two-shift terminal duty as the running example.</p>
+
+<h2>The Core Equation: Energy Balance Per Truck Per Day</h2>
+<p>Every electric fleet operation reduces to one balance: energy consumed per shift versus energy deliverable during dwell. A TE46 on port shuttle duty uses 250–400 kWh per shift. On a 120 kW AC/DC stall, that is 2–3.5 hours of charging per shift's consumption. The night window between shifts is 6–8 hours. Immediately the geometry appears: one stall per truck is comfortable at these rates; one stall per two trucks works if arrival times stagger; and the fleet's stall count, not its truck count, is the binding constraint to manage. The planning table for a typical two-shift terminal operation:</p>
+<table style="border-collapse:collapse;width:100%;">
+<tr style="background:#006341;color:#fff;"><th style="padding:8px;border:1px solid #ccc;">Configuration</th><th style="padding:8px;border:1px solid #ccc;">Stalls</th><th style="padding:8px;border:1px solid #ccc;">Night window use</th><th style="padding:8px;border:1px solid #ccc;">Constraint</th></tr>
+<tr><td style="padding:8px;border:1px solid #ccc;">1 stall per truck</td><td style="padding:8px;border:1px solid #ccc;">10</td><td style="padding:8px;border:1px solid #ccc;">~40% (2.5–3.5 h each)</td><td style="padding:8px;border:1px solid #ccc;">Cost; comfortable margin</td></tr>
+<tr><td style="padding:8px;border:1px solid #ccc;">1 stall per 1.5 trucks, staggered</td><td style="padding:8px;border:1px solid #ccc;">7</td><td style="padding:8px;border:1px solid #ccc;">~70%</td><td style="padding:8px;border:1px solid #ccc;">Arrival discipline required</td></tr>
+<tr><td style="padding:8px;border:1px solid #ccc;">2× 240 kW DC + sequencing</td><td style="padding:8px;border:1px solid #ccc;">2</td><td style="padding:8px;border:1px solid #ccc;">~85%</td><td style="padding:8px;border:1px solid #ccc;">Peak-power tariff exposure</td></tr>
+<tr><td style="padding:8px;border:1px solid #ccc;">Swap station (fleet &gt;15)</td><td style="padding:8px;border:1px solid #ccc;">1 station</td><td style="padding:8px;border:1px solid #ccc;">Continuous</td><td style="padding:8px;border:1px solid #ccc;">Capital threshold</td></tr>
+</table>
+<p>Note what the table quietly says: for most two-shift fleets, <em>charging capacity is not the bottleneck — scheduling is</em>. The failure mode is not stalls that are too small; it is trucks queuing because they all returned at 23:00 and dispatch wants them out at 06:00.</p>
+
+<h2>The Scheduling Rules That Make It Run</h2>
+<ul>
+<li><strong>Sequence by morning need, not arrival order.</strong> The truck on tomorrow's longest route charges first; the short-route truck charges at 03:00. This one rule eliminates most morning "60% surprises."</li>
+<li><strong>Charge to tomorrow's route, not to 100%.</strong> Charging to 85–90% on normal nights both extends battery life and leaves headroom for regen on morning descents; reserve full charges for the days that need them.</li>
+<li><strong>Stagger shift returns by 20–30 minutes.</strong> Dispatch builds the stagger into the last route leg; drivers learn it as "the new normal" within a week.</li>
+<li><strong>Hold one stall in reserve.</strong> A fleet that runs every stall at 100% utilisation has no absorption for a late truck, a stalled charger, or an emergency top-up — the same logic that keeps a spare truck.</li>
+<li><strong>Log everything for a month before optimising.</strong> The telematics data (kWh per truck per day, arrival times, stall dwell) turns the schedule from folklore into arithmetic within one billing cycle.</li>
+</ul>
+
+<h2>The Tariff Game: Where the Real Money Hides</h2>
+<p>In most emerging-market industrial tariffs, two variables dominate: time-of-use pricing (where it exists) and demand charges (where peak draw is billed). A ten-truck fleet charging simultaneously at 120 kW pulls 1.2 MW — a demand level that can double a monthly bill in demand-charge regimes even if the energy itself is cheap. The counter-moves are unglamorous and effective: spread charging across the full night window (six trucks at 60 kW for six hours beats ten trucks at 120 kW for three, energy-equivalent but half the peak); file the depot's load profile with the utility and negotiate the tariff class rather than accepting the default; and where solar is available, shift what charging you can into daylight hours — a TE46 doing a mid-shift 40-minute top-up under a 300 kWp canopy is charging at near-zero marginal cost. Fleets that run this playbook routinely cut their electricity cost per truck-kilometre by 15–30% without touching a single vehicle.</p>
+
+<h2>Duty Cycles and Their Charging Signatures</h2>
+<p>Not all fleets charge the same, and the schedule should follow the duty. Port and terminal operations (like the TE46 example) live on overnight balance plus opportunistic mid-shift top-ups during vessel-change lulls. Construction dump fleets charge strictly overnight — the day is one long shift — so stall count and sequencing matter most. Urban delivery fleets come home mid-afternoon with time to spare before a 05:00 start, the easiest geometry of all. Corridor tractor fleets depend on charge-stop planning at fixed waypoints more than depot scheduling. Municipal sanitation fleets run the odd pattern of very early starts and mid-day rest, which pairs beautifully with solar: home by 11:00, charge on the afternoon sun, out again clean for the 04:00 shift. The general principle survives every variant: <em>the schedule is built from the duty cycle's natural dwell, and the cheapest electrons are the ones that wait for the right window.</em></p>
+
+<h2>The Software Layer</h2>
+<p>At fleet scale, the sequencing math crosses over from clipboard to software: smart-charging platforms take tomorrow's route plan (or its energy demand), the tariff structure, and the stall map, and produce a per-truck charge plan executed automatically — balancing state-of-charge targets against demand-charge caps in real time. Dongfeng fleet telematics feed these systems directly, and our commissioning team configures the charge-management settings with the customer's tariff sheet on the table. The point worth emphasising to operators weighing the investment: the software's cost is repaid by the demand-charge savings alone in most tariff regimes, with the schedule discipline arriving as a free byproduct.</p>
+
+<p>For fleets planning the transition, we build the whole picture before purchase — stall counts, charger sizes, tariff-optimised schedules, and the solar offset case — from your shift patterns and route distances. Charging is not the obstacle to fleet electrification; unmanaged charging is.</p>
+
+<h2>The Morning Meeting: A Five-Minute Ritual That Saves a Stall</h2>
+<p>Every discipline in this article converges on the same five minutes: the morning charging review, run by dispatch before the first truck rolls. The ritual is deliberately small. The duty board shows tonight's stall assignments, sequenced by tomorrow's route energy — the long-corridor trucks into the early stalls, the short-route trucks into the 03:00 positions, one stall held open. Each driver confirms their return time, which is the data point the whole schedule floats on. Any anomaly from the overnight session — a truck that finished late, a stall that faulted, a pack that ran warmer than usual — gets one sentence and one decision: which stall assignment changes. Five minutes, one board, no software required to start (though the software earns its fee at fleet scale).</p>
+<p>The ritual's value compounds because it closes the loop the data opens. Telematics shows what happened; the morning meeting decides what happens next. Fleets that run it report the same trajectory: week one, the meeting takes fifteen minutes and feels bureaucratic; month one, it takes five and has quietly eliminated the morning surprises that used to start days with a scramble; quarter one, the meeting's history — stall logs, return-time adherence, consumption per route — becomes the dataset that justifies the next charger or the next truck, because it is operational reality rather than a consultant's estimate. The schedule that began as discipline ends as the fleet's planning system, and the five minutes that saved a stall in week one are the same five minutes that size the depot expansion in year two.</p>
+<p>The same loop, at battery scale, is what preserves the warranty and the pack: the meeting is where the BMS flags are noticed — the truck that fast-charged hot three nights running, the pack whose temperature spread widened — and where the response is decided before the trend becomes a fault. A fleet that holds its morning ritual holds its state-of-health curve, and the five minutes repay themselves in the only currency batteries understand: cycles.</p>
+
+<p style="margin-top:40px;padding:16px;background:#f0f7f4;border-left:4px solid #006341;">Ready to electrify your fleet? Contact Shaanxi Fenghan Trading — authorized Dongfeng EV truck exporter. WhatsApp: <a href="https://wa.me/8615319431311">+86 153 1943 1311</a> | Email: sales@fenghan-trade.com | <a href="https://dongfengevtrucks.com/">dongfengevtrucks.com</a></p>
+
+<p style="font-size:13px;color:#666;">🌐 Our Network: <a href="https://www.fenghan-trade.com/" target="_blank" rel="noopener">Fenghan Trade (SAGMOTO/SHACMAN Truck Export)</a> · <a href="https://sagmoto-trucks.com/qyc.html" target="_blank" rel="noopener">4x2 6x4 tractor truck prime mover</a></p>
+
+<p style="font-size:13px;"><a href="index.html">&larr; Back to Blog</a> | <a href="../index.html">Home</a></p>
+</body>
+</html>
