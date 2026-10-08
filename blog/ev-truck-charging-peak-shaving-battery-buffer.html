@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Peak Shaving for EV Truck Depots: Battery-Buffered Charging Cuts Demand Charges 40%</title>
+<meta name="description" content="Peak shaving for EV truck depots: battery-buffered charging cuts demand charges 40%. Architecture, sizing math and an Eskom tariff worked example.">
+<meta name="keywords" content="EV truck depot peak shaving, battery buffered charging, electric truck demand charges, managed charging architecture, Dongfeng electric truck, EV truck South Africa, depot charging cost">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="geo.region" content="CN"/>
+<meta name="geo.placename" content="Xi'an, Shaanxi, China"/>
+<meta property="og:title" content="Peak Shaving for EV Truck Depots: Battery-Buffered Charging Cuts Demand Charges 40%">
+<meta property="og:description" content="Peak shaving for EV truck depots: battery-buffered charging cuts demand charges 40%. Architecture, sizing math and an Eskom tariff worked example.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://dongfengevtrucks.com/blog/ev-truck-charging-peak-shaving-battery-buffer.html">
+<meta property="og:image" content="https://dongfengevtrucks.com/images/models/p07_04.jpg">
+<meta property="og:site_name" content="Dongfeng EV Trucks Export">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Peak Shaving for EV Truck Depots: Battery-Buffered Charging Cuts Demand Charges 40%">
+<meta name="twitter:description" content="Peak shaving for EV truck depots: battery-buffered charging cuts demand charges 40%. Architecture, sizing math and an Eskom tariff worked example.">
+<meta name="twitter:image" content="https://dongfengevtrucks.com/images/models/p07_04.jpg">
+<link rel="canonical" href="https://dongfengevtrucks.com/blog/ev-truck-charging-peak-shaving-battery-buffer.html">
+<link rel="stylesheet" href="../css/dongfeng-ev.css">
+<link rel="icon" href="../favicon.ico" type="image/x-icon">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Peak Shaving for EV Truck Depots: Battery-Buffered Charging Cuts Demand Charges 40%", "description": "Peak shaving for EV truck depots: battery-buffered charging cuts demand charges 40%. Architecture, sizing math and an Eskom tariff worked example.", "author": {"@type": "Organization", "name": "Shaanxi Fenghan Trading Co., Ltd", "url": "https://dongfengevtrucks.com/"}, "publisher": {"@type": "Organization", "name": "Dongfeng EV Trucks Export", "logo": {"@type": "ImageObject", "url": "https://dongfengevtrucks.com/images/hero-cover.jpg"}}, "datePublished": "2026-10-08", "dateModified": "2026-10-08", "image": "https://dongfengevtrucks.com/images/models/p07_04.jpg", "url": "https://dongfengevtrucks.com/blog/ev-truck-charging-peak-shaving-battery-buffer.html", "keywords": "EV truck depot peak shaving, battery buffered charging, electric truck demand charges, managed charging architecture, Dongfeng electric truck, EV truck South Africa, depot charging cost"}
+</script>
+</head>
+<body style="font-family:Arial,sans-serif;line-height:1.7;max-width:900px;margin:0 auto;padding:20px;color:#333;">
+<h1>Peak Shaving for EV Truck Depots: Battery-Buffered Charging Cuts Demand Charges 40%</h1>
+<p><img src="../images/models/p07_04.jpg" alt="Dongfeng KT5M electric cargo truck charging at a buffered depot with battery storage, EV truck for South Africa fleets" style="max-width:100%;height:auto;display:block;margin:20px auto;"/></p>
+
+
+<p>The surprise cost of electrifying a truck fleet is rarely the energy &mdash; it is the demand charge. Utilities bill commercial depots not just on kilowatt-hours consumed but on the peak kilowatts drawn in any 15- or 30-minute window of the month, and a row of DC fast chargers hitting a fleet at 5 a.m. can spike that peak to a level that dominates the electricity bill. The fix is peak shaving: a buffer battery and managed charging that flatten the site&rsquo;s draw so the grid never sees the charger&rsquo;s true peak. This article explains the architecture, the sizing math, and a South Africa Eskom tariff worked example where battery-buffered charging cuts demand charges by around 40% on a <a href="../products/models/kt5m-electric-cargo-truck.html">Dongfeng KT5M electric cargo truck</a> depot. For fleet operators, this is the difference between an EV truck business case that works and one that quietly leaks margin at the meter.</p>
+
+<h2>What a Demand Charge Actually Is</h2>
+<p>A demand charge is a separate line on a commercial bill, priced in US$/kW of the highest 15-minute average draw in the billing period. A depot with a 350 kW charger that runs flat-out for 20 minutes sets a 350 kW demand even if the rest of the month averages 40 kW. On an Eskom-type tariff the demand component can be US$15-30 per kW per month, so that one spike costs US$5,000-10,000 monthly &mdash; often more than the energy itself for a small fleet. The trap: unmanaged charging means every truck plugging in at shift start stacks its draw on top of the building load, and the peak is the sum of all of them. Peak shaving exists to break that sum.</p>
+<p>The honest framing: you cannot avoid energy cost, but you can absolutely avoid demand-cost pain with the right architecture. The two levers are (1) a buffer battery that absorbs the charger&rsquo;s peak and recharges slowly off-peak, and (2) managed charging that sequences truck sessions so the site never exceeds a set ceiling. Used together they cap the grid draw at a planned value.</p>
+
+<h2>The Battery-Buffered Architecture</h2>
+<p>The simplest workable design puts a buffer battery between the grid connection and the chargers. Chargers draw from the buffer at full power when trucks arrive; the buffer recharges from the grid at a steady, capped rate overnight and during solar-rich midday. The grid only ever sees the capped recharge rate plus base building load &mdash; never the instantaneous charger peak. The buffer can be a dedicated storage unit or, elegantly, the trucks themselves: a fleet of KT5Ms arriving at 20-40% state of charge is itself a mobile buffer that the depot can charge in sequence rather than in parallel.</p>
+<ul>
+<li><strong>Grid connection:</strong> sized to capped recharge rate, not to charger peak</li>
+<li><strong>Buffer battery:</strong> absorbs 20-80% charge bursts; recharges off-peak</li>
+<li><strong>Managed charging:</strong> sequences sessions by departure time and required SOC</li>
+<li><strong>Solar pairing:</strong> midday PV feeds the buffer at near-zero cost, lowering recharge draw</li>
+</ul>
+
+<h2>Sizing Math for a KT5M Depot</h2>
+<p>Take a depot with 10 KT5M trucks (140-180 kWh packs) on a two-shift urban duty cycle, needing roughly 4,000 kWh delivered overnight plus daytime top-ups. Without buffering, a 360 kW charger bank could draw 360 kW at peak. With a 200 kWh buffer and managed charging capped at 150 kW grid input, the site draws a steady 150 kW to refill the buffer, and the buffer supplies the 240 kW instantaneous gap to the chargers. The demand charge is set by 150 kW plus base load &mdash; not 360 kW. The buffer needs to be large enough to cover the largest consecutive charge burst between slow-recharge intervals; for a 10-truck fleet a 150-250 kWh buffer plus sequencing covers it.</p>
+<table style="width:100%;border-collapse:collapse;margin:20px 0;" border="1" cellpadding="8">
+<tr style="background:#006341;color:#fff;"><th style="padding:8px;text-align:left;">Design element</th><th style="padding:8px;text-align:left;">Unmanaged</th><th style="padding:8px;text-align:left;">Buffered + managed</th></tr>
+<tr><td style="padding:8px;">Peak grid draw</td><td style="padding:8px;">360 kW</td><td style="padding:8px;">150 kW</td></tr>
+<tr><td style="padding:8px;">Grid connection class</td><td style="padding:8px;">400-500 kVA (expensive)</td><td style="padding:8px;">180-220 kVA (standard)</td></tr>
+<tr><td style="padding:8px;">Monthly demand charge</td><td style="padding:8px;">US$5,400-10,800</td><td style="padding:8px;">US$3,200-6,500</td></tr>
+<tr><td style="padding:8px;">Buffer investment</td><td style="padding:8px;">none</td><td style="padding:8px;">US$40,000-70,000 (1-2 yr payback)</td></tr>
+</table>
+<p>The grid-connection saving is the second dividend. A 500 kVA service with transformer upgrade can cost US$80,000-150,000 more than a 200 kVA connection; buffering lets you stay on the smaller service and spend a fraction of that on storage instead. For many depots the avoided substation work alone pays for the buffer battery inside two years, before counting the demand-charge saving.</p>
+
+<h2>South Africa Eskom Worked Example</h2>
+<p>On Eskom&rsquo;s large-power commercial tariff, energy runs roughly US$0.08-0.12/kWh and the demand charge component sits around US$12-20 per kW per month depending on the time-of-use block. Model a 10-truck KT5M depot drawing 4,000 kWh daily. Unmanaged, the 360 kW charger peak sets a US$4,300-7,200 monthly demand charge. Buffered and capped at 150 kW, the demand charge falls to US$1,800-3,000 &mdash; a 40-55% cut. The buffer and managed controller cost roughly US$50,000-70,000 installed; at US$3,000-4,000 monthly saved on demand alone, payback is 14-22 months, after which the saving is pure margin for the rest of the asset life. South African operations also benefit from load curtailment: during Eskom peak blocks the buffer discharges and the site imports near-zero, dodging the most expensive tariff window entirely.</p>
+<ul>
+<li><strong>Demand cut:</strong> ~40% on a 10-truck KT5M depot under Eskom tariff</li>
+<li><strong>Energy cost:</strong> unchanged &mdash; you pay for every kWh regardless</li>
+<li><strong>Connection saving:</strong> stay on 200 kVA vs 500 kVA service</li>
+<li><strong>Payback:</strong> 14-22 months on demand savings alone</li>
+</ul>
+
+<h2>Why the KT5M Fits This Pattern</h2>
+<p>The KT5M&rsquo;s 140-180 kWh pack and depot-based nightly return make it the ideal managed-charging candidate: every truck is predictable, every session is schedulable, and the fleet&rsquo;s own batteries are a distributed buffer the controller can treat as storage. Fleets running the KT5M across South Africa should review the <a href="../markets/south-africa.html">South Africa market page</a>, which covers the Johannesburg and Durban depot corridors and the municipal tariff structures where peak shaving pays fastest. Solar canopies &mdash; strong across the Highveld at 5.0+ peak sun hours &mdash; feed the buffer at near-zero cost and push the demand saving higher still.</p>
+
+<h2>Buffer Sizing Rules of Thumb</h2>
+<p>A few practical rules keep the buffer right-sized. Size it to the largest consecutive charge burst between slow-recharge intervals, not to total daily energy &mdash; a 10-truck KT5M fleet rarely needs more than 150-250 kWh of buffer because sessions are sequenced, not parallel. Size the grid connection to the capped recharge rate plus base building load, never to the charger nameplate; that single decision is usually the difference between a standard 200 kVA service and an expensive 500 kVA substation upgrade. Add solar only after the buffer is set, because PV feeds the buffer at near-zero cost and improves the demand saving further. And specify the managed-charging software with the truck order so sessions sequence from day one &mdash; retrofitting sequencing later costs more and delays the saving by a quarter.</p>
+
+<h2>Deployment Checklist</h2>
+<p>Specify the buffer and controller before the chargers, not after. Order the managed-charging software with the truck fleet so sessions sequence from day one; retrofit sequencing later is possible but costs more. Size the buffer to the largest consecutive charge burst between slow-recharge intervals, and size the grid connection to the capped recharge rate plus base load &mdash; not to the charger nameplate. File the utility application on purchase order; in South Africa the connection lead time is the critical path and routinely exceeds vessel transit. With the architecture right, an EV truck depot&rsquo;s electricity bill is dominated by cheap energy and a planned, small demand &mdash; exactly the cost profile that makes the fleet case bulletproof.</p>
+
+<p style="margin-top:40px;padding:16px;background:#f0f7f4;border-left:4px solid #006341;">Ready to electrify your fleet? Contact Shaanxi Fenghan Trading &mdash; authorized Dongfeng EV truck exporter. WhatsApp: <a href="https://wa.me/8615319431311">+86 153 1943 1311</a> | Email: sales@fenghan-trade.com | <a href="https://dongfengevtrucks.com/">dongfengevtrucks.com</a></p>
+
+<p style="font-size:13px;color:#666;">&#127760; Our Network: <a href="https://www.fenghan-trade.com/" target="_blank" rel="noopener">Fenghan Trade (SAGMOTO/SHACMAN Truck Export)</a> &middot; <a href="https://sagmoto-trucks.com/" target="_blank" rel="noopener">SAGMOTO heavy duty diesel trucks</a></p>
+
+<p style="font-size:13px;"><a href="index.html">&larr; Back to Blog</a> | <a href="../index.html">Home</a></p>
+</body>
+</html>
