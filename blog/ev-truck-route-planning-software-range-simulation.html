@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EV Truck Route Planning and Range Simulation: Building a Route-Energy Matrix Before You Buy</title>
+<meta name="description" content="How electric truck fleets model duty-cycle energy, elevation, weather and payload into a route-energy matrix, then schedule depot chargers before purchase.">
+<meta name="keywords" content="EV truck route planning software, electric truck range simulation, duty cycle energy model, depot charger scheduling, route energy matrix, Dongfeng TE8L Kazakhstan">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="geo.region" content="CN"/>
+<meta name="geo.placename" content="Xi'an, Shaanxi, China"/>
+<meta property="og:title" content="EV Truck Route Planning and Range Simulation: Building a Route-Energy Matrix Before You Buy">
+<meta property="og:description" content="How electric truck fleets model duty-cycle energy, elevation, weather and payload into a route-energy matrix, then schedule depot chargers before purchase.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://dongfengevtrucks.com/blog/ev-truck-route-planning-software-range-simulation.html">
+<meta property="og:image" content="https://dongfengevtrucks.com/images/models/p04_00.jpg">
+<meta property="og:site_name" content="Dongfeng EV Trucks Export">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="EV Truck Route Planning and Range Simulation: Building a Route-Energy Matrix Before You Buy">
+<meta name="twitter:description" content="How electric truck fleets model duty-cycle energy, elevation, weather and payload into a route-energy matrix, then schedule depot chargers before purchase.">
+<meta name="twitter:image" content="https://dongfengevtrucks.com/images/models/p04_00.jpg">
+<link rel="canonical" href="https://dongfengevtrucks.com/blog/ev-truck-route-planning-software-range-simulation.html">
+<link rel="stylesheet" href="../css/dongfeng-ev.css">
+<link rel="icon" href="../favicon.ico" type="image/x-icon">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "EV Truck Route Planning and Range Simulation: Building a Route-Energy Matrix Before You Buy", "description": "How electric truck fleets model duty-cycle energy, elevation, weather and payload into a route-energy matrix, then schedule depot chargers before purchase.", "author": {"@type": "Organization", "name": "Shaanxi Fenghan Trading Co., Ltd", "url": "https://dongfengevtrucks.com/"}, "publisher": {"@type": "Organization", "name": "Dongfeng EV Trucks Export", "logo": {"@type": "ImageObject", "url": "https://dongfengevtrucks.com/images/hero-cover.jpg"}}, "datePublished": "2026-10-09", "dateModified": "2026-10-09", "image": "https://dongfengevtrucks.com/images/models/p04_00.jpg", "url": "https://dongfengevtrucks.com/blog/ev-truck-route-planning-software-range-simulation.html", "keywords": "EV truck route planning software, electric truck range simulation, duty cycle energy model, depot charger scheduling, route energy matrix, Dongfeng TE8L Kazakhstan"}
+</script>
+</head>
+<body style="font-family:Arial,sans-serif;line-height:1.7;max-width:900px;margin:0 auto;padding:20px;color:#333;">
+<h1>EV Truck Route Planning and Range Simulation: Building a Route-Energy Matrix Before You Buy</h1>
+<p><img src="../images/models/p04_00.jpg" alt="Dongfeng TE8L electric tractor &mdash; EV truck route planning range simulation depot" style="max-width:100%;height:auto;display:block;margin:20px auto;"/></p>
+
+
+<p>Buy the truck first and discover the range problem later, and you have wasted capital. The disciplined way to electrify a fleet is to simulate the routes before the purchase order &mdash; turn every recurring trip into a row in a route-energy matrix, then let that matrix size the battery, the chargers and the trucks. This article covers the duty-cycle energy model, the elevation/weather/payload factors that move the number, depot charger scheduling, the tools and APIs available, and how to build the matrix for a tractor like the <a href="../products/models/te8l-electric-tractor.html">Dongfeng TE8L</a> (350&ndash;420 kWh).</p>
+
+<h2>Start With the Duty Cycle, Not the Brochure</h2>
+<p>The brochure range is a laboratory figure. Real range is the duty cycle: the loaded mass, the road gradient profile, the stop frequency, the ambient temperature, and the speed. For a regional tractor the single most useful input is energy per tonne-km, because it scales cleanly with payload. The TE8L with a 350&ndash;420 kWh CATL LFP pack and LvKong motor 280&ndash;350 kW typically runs 1.1&ndash;1.5 kWh per tonne-km in mixed regional duty, which on a 40t combination yields 280&ndash;340 km of usable range to the 20% reserve. Simulation replaces the guess with a per-route number, and that number is what protects the purchase from the classic failure of under-specifying the pack by trusting a showroom figure.</p>
+
+<h2>The Factors That Move the Energy Number</h2>
+<table style="width:100%;border-collapse:collapse;margin:20px 0;" border="1" cellpadding="8">
+<tr style="background:#006341;color:#fff;"><th style="padding:8px;border:1px solid #ccc;">Factor</th><th style="padding:8px;border:1px solid #ccc;">Typical effect</th><th style="padding:8px;border:1px solid #ccc;">How to capture it</th></tr>
+<tr><td style="padding:8px;border:1px solid #ccc;">Payload</td><td style="padding:8px;border:1px solid #ccc;">+0.02&ndash;0.03 kWh/t-km per +1t</td><td style="padding:8px;border:1px solid #ccc;">Weigh tickets / WMS records</td></tr>
+<tr><td style="padding:8px;border:1px solid #ccc;">Elevation gain</td><td style="padding:8px;border:1px solid #ccc;">+0.5&ndash;1.5 kWh per 100 m climb</td><td style="padding:8px;border:1px solid #ccc;">GPS route profile / DEM</td></tr>
+<tr><td style="padding:8px;border:1px solid #ccc;">Weather</td><td style="padding:8px;border:1px solid #ccc;">+5&ndash;15% hot/cold extremes</td><td style="padding:8px;border:1px solid #ccc;">Climate normals + A/C load</td></tr>
+<tr><td style="padding:8px;border:1px solid #ccc;">Speed / stops</td><td style="padding:8px;border:1px solid #ccc;">Regen recovers 10&ndash;25% in city</td><td style="padding:8px;border:1px solid #ccc;">Telematics stop density</td></tr>
+</table>
+<p>Each factor is independently measurable, which is the whole point: a route-energy matrix is just the duty cycle with these multipliers applied per segment. Once built, it answers the only question that matters &mdash; does this truck finish this route with margin, every day, in the worst month? The margin is the safety buffer that turns an anxiety-prone rollout into a routine one, and it is free to compute.</p>
+
+<h2>Building the Route-Energy Matrix</h2>
+<p>For each recurring route, lay the segments end to end and compute segment energy = distance &times; tonnes &times; base kWh/t-km &times; factor multipliers, then sum and add a reserve. Repeat for the worst-case month (heat or cold) and the heaviest load. You now have three numbers per route: nominal, seasonal-worst, peak-load. If the TE8L&rsquo;s 350 kWh minimum clears seasonal-worst on every route with 15%+ margin, you can specify the smaller pack and save capex; if not, step to 420 kWh or add a midday charge. That is the purchase decision, made on data. A spreadsheet of even twenty routes takes a day to build and pays for itself the first time it stops a buyer from ordering 100 kWh more pack than the duty needs, or from ordering too little and discovering it on a January pass.</p>
+
+<h2>Depot Charger Scheduling</h2>
+<ul>
+<li><strong>Power vs time</strong> &mdash; the TE8L takes 35&ndash;60 min for 20&ndash;80%; size chargers so the fleet clears overnight within the depot&rsquo;s grid window.</li>
+<li><strong>Staggered start</strong> &mdash; offset charge start times to flatten the site peak and avoid a costly demand charge spike.</li>
+<li><strong>Reserve management</strong> &mdash; arrive home at 20%, depart at 90&ndash;100%; the matrix tells you how many charge points you need, not the vendor.</li>
+<li><strong>Swap option</strong> &mdash; where turnaround beats plug time, battery swap (5&ndash;6 min) replaces a charge point with a swap bay.</li>
+</ul>
+<p>The demand-charge point is where most fleets lose money: a site that charges all trucks at once can trip a peak that costs more per month than the energy itself. The matrix, by spreading starts, keeps that peak bounded, and that discipline is worth more than the charger hardware in the first year.</p>
+
+<h2>Tools and APIs</h2>
+<p>You do not need to build the simulator from scratch. Telematics platforms export per-trip energy logs; routing APIs return elevation profiles; fleet-modelling spreadsheets apply the factor table above; and several commercial EV route planners ingest vehicle specs to produce charging stops automatically. The cheapest robust setup for a 20&ndash;50 truck fleet is a spreadsheet matrix fed by telematics export and a routing API for elevation &mdash; build it before the pilot, validate it against the first 90 days of real data, then refine. The TE8L&rsquo;s 8-year / 4,500-cycle battery warranty to 70% SOH means the matrix stays valid across the ownership period. After the pilot, the real data usually tightens the base kWh/t-km figure by a point or two, which only improves confidence for the next order.</p>
+
+<h2>From Matrix to Purchase Order</h2>
+<p>Once the route-energy matrix exists, the purchase decision writes itself. Each route carries three numbers &mdash; nominal, seasonal-worst, peak-load &mdash; and the truck is specified to clear seasonal-worst with margin on every route it serves. Where a route sits outside the TE8L&rsquo;s 350 kWh envelope, the answer is not a bigger truck but a midday charge or a route revision, because the matrix shows exactly where the gap is. This is the discipline that separates a fleet that electrifies confidently from one that fights range anxiety for a year: the anxiety was designed out before the truck arrived. The same matrix also sizes the depot, because the number of charge points equals the number of trucks that arrive low in the same window, not the vendor&rsquo;s default recommendation. A fleet that buys on its own matrix, not the brochure, is the fleet that never explains a stranded tractor to its customer.</p>
+
+<h2>Why Kazakhstan Fleets Are a Good Test Case</h2>
+<p><a href="../markets/kazakhstan.html">Kazakhstan</a> combines long intercity legs, real elevation change across the steppe and passes, and continental temperature swings that stress both range and the matrix&rsquo;s seasonal band. A fleet there that simulates winter duty honestly &mdash; not the brochure &mdash; sizes the TE8L correctly the first time and avoids the classic mistake of under-specifying the pack for January. The discipline transfers to any market with climate or terrain variance: simulate the worst month, buy once. For a country where a stranded tractor on a winter pass is a serious event, the route-energy matrix is not a nice-to-have, it is the difference between a fleet that runs and a fleet that waits for spring.</p>
+
+<h2>Common Range-Planning Errors to Avoid</h2>
+<p>Three mistakes sink electric-truck rollouts. First, sizing the pack on brochure range instead of the seasonal-worst route-energy number, which strands trucks on the coldest or hottest month. Second, ignoring elevation: a 1,000 m pass can cost more energy than 30 km of flat road, and the matrix catches it only if the routing API includes a profile. Third, forgetting the depot peak &mdash; a fleet that charges everything at once pays a demand charge that erodes the whole saving. The TE8L makes none of these fatal, because its 350&ndash;420 kWh pack and swap option give margin, but discipline still decides whether the rollout is smooth. Fleets in Kazakhstan and similar terrain markets that plan on the worst month, not the brochure, are the ones that never explain a stranded tractor to a customer and never lose a contract over a missed delivery window.</p>
+
+<p>Route planning and range simulation are not software purchases, they are the pre-purchase engineering that protects the capital. Build the route-energy matrix first, let it size the <a href="../products/models/te8l-electric-tractor.html">TE8L</a> and the chargers, and the electric truck arrives already proven on your own roads.</p>
+
+<p style="margin-top:40px;padding:16px;background:#f0f7f4;border-left:4px solid #006341;">Ready to electrify your fleet? Contact Shaanxi Fenghan Trading &mdash; authorized Dongfeng EV truck exporter. WhatsApp: <a href="https://wa.me/8615319431311">+86 153 1943 1311</a> | Email: sales@fenghan-trade.com | <a href="https://dongfengevtrucks.com/">dongfengevtrucks.com</a></p>
+
+<p style="font-size:13px;color:#666;">&#127760; Our Network: <a href="https://www.fenghan-trade.com/" target="_blank" rel="noopener">Fenghan Trade (SAGMOTO/SHACMAN Truck Export)</a> &middot; <a href="https://sagmoto-trucks.com/qyc.html" target="_blank" rel="noopener">4x2 6x4 tractor truck prime mover</a></p>
+
+<p style="font-size:13px;"><a href="index.html">&larr; Back to Blog</a> | <a href="../index.html">Home</a></p>
+</body>
+</html>
