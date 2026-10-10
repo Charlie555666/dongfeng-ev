@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transformer Sizing and Grid Connection for Electric Truck Depots</title>
+<meta name="description" content="Electric truck depot transformer sizing and grid connection guide: how to size HV supply, kVa, chargers and load management for EV truck fleets, KT7A specs.">
+<meta name="keywords" content="EV truck, electric truck, EV truck depot transformer sizing, depot grid connection, KT7A electric washing truck, charging infrastructure, kVa load calculation, UAE fleet">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="geo.region" content="CN"/>
+<meta name="geo.placename" content="Xi'an, Shaanxi, China"/>
+<meta property="og:title" content="Transformer Sizing and Grid Connection for Electric Truck Depots">
+<meta property="og:description" content="Electric truck depot transformer sizing and grid connection guide: how to size HV supply, kVa, chargers and load management for EV truck fleets, KT7A specs.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://dongfengevtrucks.com/blog/ev-truck-depot-transformer-sizing-grid-connection.html">
+<meta property="og:image" content="https://dongfengevtrucks.com/images/models/p07_02.jpg">
+<meta property="og:site_name" content="Dongfeng EV Trucks Export">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Transformer Sizing and Grid Connection for Electric Truck Depots">
+<meta name="twitter:description" content="Electric truck depot transformer sizing and grid connection guide: how to size HV supply, kVa, chargers and load management for EV truck fleets, KT7A specs.">
+<meta name="twitter:image" content="https://dongfengevtrucks.com/images/models/p07_02.jpg">
+<link rel="canonical" href="https://dongfengevtrucks.com/blog/ev-truck-depot-transformer-sizing-grid-connection.html">
+<link rel="stylesheet" href="../css/dongfeng-ev.css">
+<link rel="icon" href="../favicon.ico" type="image/x-icon">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Transformer Sizing and Grid Connection for Electric Truck Depots", "description": "Electric truck depot transformer sizing and grid connection guide: how to size HV supply, kVa, chargers and load management for EV truck fleets, KT7A specs.", "author": {"@type": "Organization", "name": "Shaanxi Fenghan Trading Co., Ltd", "url": "https://dongfengevtrucks.com/"}, "publisher": {"@type": "Organization", "name": "Dongfeng EV Trucks Export", "logo": {"@type": "ImageObject", "url": "https://dongfengevtrucks.com/images/hero-cover.jpg"}}, "datePublished": "2026-10-10", "dateModified": "2026-10-10", "image": "https://dongfengevtrucks.com/images/models/p07_02.jpg", "url": "https://dongfengevtrucks.com/blog/ev-truck-depot-transformer-sizing-grid-connection.html", "keywords": "EV truck, electric truck, EV truck depot transformer sizing, depot grid connection, KT7A electric washing truck, charging infrastructure, kVa load calculation, UAE fleet"}
+</script>
+</head>
+<body style="font-family:Arial,sans-serif;line-height:1.7;max-width:900px;margin:0 auto;padding:20px;color:#333;">
+<h1>Transformer Sizing and Grid Connection for Electric Truck Depots</h1>
+<p><img src="../images/models/p07_02.jpg" alt="Dongfeng KT7A electric washing truck, an EV truck charged at a depot with correctly sized transformer and grid connection" style="max-width:100%;height:auto;display:block;margin:20px auto;"/></p>
+
+
+<p>The hardest part of standing up an <strong>electric truck</strong> depot is not buying chargers &mdash; it is sizing the transformer and securing the grid connection that feeds them. Undersize the supply and your trucks queue; oversize it and you pay a standing charge for capacity you never use. This guide explains transformer sizing and grid connection for electric truck depots using the Dongfeng KT7A electric washing truck as the worked example, with a load model a UAE or Gulf fleet operator can hand to its utility.</p>
+
+<h2>Why the Transformer Is the Gating Item</h2>
+<p>A depot charger bank draws from the medium-voltage grid through a transformer that steps down to the charger AC input. The transformer must cover the sum of simultaneous charger loads plus the site base load, with headroom for future expansion and for the inrush and imbalance chargers create. Utilities in the Gulf size the connection in kVa and often quote a multi-month lead time for a new HV service, so the transformer decision precedes the vehicle order, not follows it. The operator who procures trucks first and power second is the one whose fleet sits idle waiting for a connection.</p>
+<p>The good news is that depot charging is predictable: trucks arrive, plug in during known idle windows, and draw on a schedule the operator controls. That predictability lets you right-size the transformer with a load-management plan instead of brute-force capacity, which cuts both capex and the standing charge.</p>
+
+<h2>KT7A Electric Washing Truck: The Depot-Dwell Fleet</h2>
+<p>The <a href="../products/models/kt7a-electric-washing-truck.html">KT7A electric washing truck</a> is a 262&ndash;350 kWh platform used for municipal street washing, dust control and tanker duties across Gulf cities. It returns to the depot nightly, making it the ideal candidate for a scheduled depot charge rather than opportunistic public charging.</p>
+<table style="width:100%;border-collapse:collapse;margin:20px 0;" border="1" cellpadding="8">
+<tr style="background:#006341;color:#fff;"><th>Parameter</th><th>KT7A Specification</th></tr>
+<tr><td>GVW (payload class)</td><td>18 &ndash; 25 t</td></tr>
+<tr><td>Battery</td><td>CATL LFP, 262 &ndash; 350 kWh</td></tr>
+<tr><td>Drive motor</td><td>LvKong permanent-magnet, 200 &ndash; 280 kW</td></tr>
+<tr><td>Real-world range</td><td>200 &ndash; 280 km (loaded)</td></tr>
+<tr><td>DC fast charge (20&ndash;80%)</td><td>45 &ndash; 90 min</td></tr>
+<tr><td>Battery warranty</td><td>8 years / 4,500 cycles to 70% SOH</td></tr>
+<tr><td>FOB price (China)</td><td>US$78,000 &ndash; 105,000</td></tr>
+</table>
+<p>The 262&ndash;350 kWh LFP pack is deliberately large for a washing truck because the high-pressure pump and the drive share the pack, and Gulf heat raises the cooling load. The sealed enclosure and sealed connectors survive the humidity and salt of coastal UAE depots.</p>
+
+<h2>Sizing the Transformer: A Worked Model</h2>
+<p>The transformer must supply the charger AC input, not the DC output, but the two are linked by charger efficiency (~0.92&ndash;0.95). For a depot of 10 KT7A units each needing a 120 kW DC post, the raw DC demand is 1,200 kW; at 0.93 efficiency that is ~1,290 kW AC, plus ~50 kW site base load, ~1,340 kW. After applying a 0.6 simultaneous-charge factor (not all 10 plug in at once) the useful load is ~800 kW, and a 1,000 kVa transformer with headroom covers it. The table shows how fleet size scales the supply.</p>
+<table style="width:100%;border-collapse:collapse;margin:20px 0;" border="1" cellpadding="8">
+<tr style="background:#006341;color:#fff;"><th>Fleet size</th><th>DC charger total</th><th>AC load (eff 0.93)</th><th>Recommended transformer</th></tr>
+<tr><td>5 trucks</td><td>600 kW</td><td>~700 kW</td><td>800 kVa</td></tr>
+<tr><td>10 trucks</td><td>1,200 kW</td><td>~1,340 kW</td><td>1,000 kVa (load-managed)</td></tr>
+<tr><td>20 trucks</td><td>2,400 kW</td><td>~2,640 kW</td><td>2,500 kVa</td></tr>
+<tr><td>30 trucks</td><td>3,600 kW</td><td>~3,920 kW</td><td>4,000 kVa</td></tr>
+</table>
+
+<h2>Load Management Beats Oversizing</h2>
+<p>Rather than sizing the transformer for every charger at full power simultaneously, a smart load-management system caps total draw and sequences charging across the fleet&rsquo;s natural idle windows. For the KT7A night-return pattern, the trucks plug in after the evening shift and the system spreads the 20&ndash;80% fills across the low-tariff window, never exceeding the transformer rating. This single technique is what lets a 10-truck depot use a 1,000 kVa unit instead of a 1,600 kVa one.</p>
+<ul>
+<li><strong>Simultaneous-factor.</strong> Apply 0.5&ndash;0.7, not 1.0, to charger total.</li>
+<li><strong>Off-peak spread.</strong> Sequence fills through the night tariff window.</li>
+<li><strong>Dynamic cap.</strong> The controller holds total draw under the transformer rating.</li>
+<li><strong>Expansion headroom.</strong> Size 20% above the managed load for fleet growth.</li>
+<li><strong>Cooling.</strong> Specify the transformer rating for Gulf ambient, not temperate.</li>
+</ul>
+
+<h2>Grid Connection and Utility Process</h2>
+<p>In the UAE and Gulf, the new HV connection request goes to the emirate utility with a single-line diagram, the load study above, and the charger schedule. Lead times for a new substation feed run months, so file early. Where the existing service is adequate, a private substation and transformer inside the depot may be cheaper than upgrading the utility feed. Either way, the connection agreement sets a monthly capacity charge, so right-sizing the transformer directly lowers the fixed bill.</p>
+
+<h2>TCO and the Standing-Charge Lever</h2>
+<p>The transformer decision shows up in the fixed cost, not just capex. A KT7A at ~1.2 kWh/km over 30,000 km/year draws 36,000 kWh; at a Gulf industrial tariff of US$0.08/kWh that is US$2,880 versus ~US$9,900 for a diesel at US$1.10/l plus ~US$1,500 maintenance. The ~US$8,520 annual advantage is real, but a wrongly sized transformer can add a four-figure monthly standing charge that erodes it. The right-sized, load-managed supply protects the saving.</p>
+
+<h2>Market Context &amp; Next Steps</h2>
+<p>The <a href="../markets/uae.html">UAE electric truck market guide</a> covers DEWA / ADDC connection process, tariff tiers, and recommended depot charger layouts. For Gulf fleet operators, the transformer is the first procurement decision, not the last. The KT7A is the right first EV truck for a depot-dwell fleet: predictable return, large LFP pack, and a charge pattern that a load-managed transformer handles efficiently.</p>
+<p>Shaanxi Fenghan Trading supplies the KT7A with export documentation and can provide the load study and single-line diagram your utility will request. Ask for a depot transformer-sizing model sized to your fleet and shift pattern.</p>
+
+<h2>Common Sizing Mistakes to Avoid</h2>
+<p>Three mistakes dominate. First, sizing for all chargers at once with a 1.0 simultaneous factor inflates the transformer and the standing charge by 30&ndash;50%; a managed 0.6 factor is realistic for depot-dwell fleets. Second, forgetting Gulf ambient: a transformer rated for a European summer derates in UAE summer, so specify the rating at 50&deg;C ambient or accept a real-world penalty. Third, treating the grid connection as someone else&rsquo;s job: the utility lead time is the true critical path, and a depot with trucks but no signed connection agreement is a stranded asset. Operators who file the connection request with the vehicle PO, specify the transformer for local ambient, and load-manage the chargers report the lowest total cost of depot electrification and the shortest time from order to first charge.</p>
+
+<h2>Future-Proofing the Depot Supply</h2>
+<p>A depot built for today&rsquo;s fleet is often stranded by tomorrow&rsquo;s growth, so the transformer and connection should be sized with a clear expansion headroom rather than to the exact current load. The cheapest time to add capacity is during the initial utility engagement, when the connection agreement and substation feed are being set; a later upgrade means a new application, a new lead time, and downtime. A practical rule is to size the transformer 20&ndash;30% above the managed current load and to reserve physical space and a spare feeder for a second transformer as the fleet doubles.</p>
+<p>The load-management system is what makes that headroom affordable. By sequencing charges through the off-peak window and capping total draw, the operator avoids paying for a transformer sized to every charger at full power, and the same system gracefully absorbs the next wave of trucks without a supply upgrade. Pair a right-sized transformer with disciplined load management and the depot scales from five trucks to thirty on the same utility connection &mdash; the outcome every Gulf fleet operator should design for from day one rather than retrofit under pressure.</p>
+
+<p style="margin-top:40px;padding:16px;background:#f0f7f4;border-left:4px solid #006341;">Ready to electrify your fleet? Contact Shaanxi Fenghan Trading &mdash; authorized Dongfeng EV truck exporter. WhatsApp: <a href="https://wa.me/8615319431311">+86 153 1943 1311</a> | Email: sales@fenghan-trade.com | <a href="https://dongfengevtrucks.com/">dongfengevtrucks.com</a></p>
+
+<p style="font-size:13px;color:#666;">&#127760; Our Network: <a href="https://www.fenghan-trade.com/" target="_blank" rel="noopener">Fenghan Trade (SAGMOTO/SHACMAN Truck Export)</a> &middot; <a href="https://sagmoto-trucks.com/" target="_blank" rel="noopener">SAGMOTO heavy duty diesel trucks</a></p>
+
+<p style="font-size:13px;"><a href="index.html">&larr; Back to Blog</a> | <a href="../index.html">Home</a></p>
+</body>
+</html>
