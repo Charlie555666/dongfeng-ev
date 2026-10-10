@@ -351,3 +351,7 @@ a { color: var(--primary); text-decoration:none; }
   .slider-arrow { display: none; }
   .row-b .cat-card { height: 170px; }
 }
+
+/* Language switcher (ES pilot) */
+.lang-switch a { font-weight: 800; color: var(--primary); }
+.main-nav li.on > a { color: var(--primary); }
