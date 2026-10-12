@@ -3,3 +3,9 @@ _research/
 *.log
 .DS_Store
 Thumbs.db
+
+# Automation temp scripts / payloads (never part of the public site)
+_*.py
+_*.json
+_*.txt
+_indexnow_*

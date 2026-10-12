@@ -50,3 +50,60 @@
 ## 2026-09-23
 - 11:15轮次：sitemap增至330条（较9-22的290条增加40条），全量330条推送成功（HTTP 200，首次即成功，用 indexnow_push_4hao.py）
 - 已写入主日志 20260605101515/.workbuddy/memory/2026-09-23.md
+
+## 2026-09-24
+- 11:15轮次：sitemap增至410条（较9-23的330条增加80条），全量410条推送成功（HTTP 200，首次即成功，用 indexnow_push_4hao.py）
+- 已写入主日志 20260605101515/.workbuddy/memory/2026-09-24.md
+
+## 2026-09-25
+- 15:15轮次：sitemap增至450条（较9-24的410条增加40条），全量450条推送成功（HTTP 200，首次即成功，用 indexnow_push_4hao.py）
+- 已写入主日志 20260605101515/.workbuddy/memory/2026-09-25.md
+
+## 2026-09-28
+- 11:15轮次：sitemap增至490条（较9-25的450条增加40条），全量490条推送成功（HTTP 200，首次即成功，用 indexnow_push_4hao.py）
+- 已写入主日志 20260605101515/.workbuddy/memory/2026-09-28.md
+
+## 2026-09-29
+- 11:15轮次：sitemap维持490条（无新增），全量490条推送成功（HTTP 200，首次即成功，用 indexnow_push_4hao.py）
+- 已写入主日志 20260605101515/.workbuddy/memory/2026-09-29.md
+
+## 2026-09-30
+- 11:15轮次：sitemap维持490条（无新增），全量490条推送成功（HTTP 200，首次即成功，用 indexnow_push_4hao.py）
+- 已写入主日志 20260605101515/.workbuddy/memory/2026-09-30.md
+
+## 2026-10-01
+- 13:23轮次：sitemap维持490条（无新增），全量490条推送成功（HTTP 200，首次即成功，用 indexnow_push_4hao.py）
+- 已写入主日志 20260605101515/.workbuddy/memory/2026-10-01.md
+
+## 2026-10-05
+- 13:10轮次：sitemap维持490条（无新增），全量490条推送成功（HTTP 200，首次即成功，用 indexnow_push_4hao.py）
+- 已写入主日志 20260605101515/.workbuddy/memory/2026-10-05.md
+
+## 2026-10-06
+- 13:39轮次：sitemap维持490条（无新增），全量490条推送成功（HTTP 200，首次即成功，用 indexnow_push_4hao.py）
+- 已写入主日志 20260605101515/.workbuddy/memory/2026-10-06.md
+
+## 2026-10-07
+- 13:29轮次：sitemap维持490条（无新增），全量490条推送成功（HTTP 200，首次即成功，用 indexnow_push_4hao.py）
+- 已写入主日志 20260605101515/.workbuddy/memory/2026-10-07.md
+
+## 2026-10-08
+- 11:15轮次：sitemap增至532条（较10-07的490条新增42条），全量532条推送成功（HTTP 200，首次即成功，用 indexnow_push_4hao.py）
+- 已写入主日志 20260605101515/.workbuddy/memory/2026-10-08.md
+
+## 2026-10-09
+- 11:15轮次：sitemap维持532条（无新增），全量532条推送成功（HTTP 200，首次即成功，用 indexnow_push_4hao.py）
+- 已写入主日志 20260605101515/.workbuddy/memory/2026-10-09.md
+
+## 2026-10-10
+- 11:15轮次：sitemap增至652条（较10-09的532条增加120条，Run17扩容+当日博客），全量652条推送成功（HTTP 200，首次即成功，用 indexnow_push_4hao.py）
+- 已写入主日志 20260605101515/.workbuddy/memory/2026-10-10.md
+
+## 2026-10-11
+- 11:16轮次：sitemap增至668条（较10-10的652条增加16条），全量668条推送成功（HTTP 200，首次即成功，用 indexnow_push_4hao.py）
+- 已写入主日志 20260605101515/.workbuddy/memory/2026-10-11.md
+
+## 2026-10-12
+- 13:40轮次：sitemap维持668条（无新增），全量668条推送成功（HTTP 200）
+- 注意：indexnow_push_4hao.py 的 urllib 直连被目标拒绝（WinError 10061，重试2次仍失败），改用 curl --data-binary 走系统代理成功；后续轮次若urllib再失败直接走curl通道
+- 已写入主日志 20260605101515/.workbuddy/memory/2026-10-12.md
