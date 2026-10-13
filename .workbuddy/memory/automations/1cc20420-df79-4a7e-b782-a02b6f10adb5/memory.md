@@ -1,5 +1,15 @@
 # 4号站EV博客自动化 (1cc20420) 执行记录
 
+## 2026-10-13 run20 ✅ 40/40 完成闭环
+- 沿用 _gen_lib.py + 5并行写手(gen-b1..b5)各8篇, DATE=2026-10-13, 脚本 _gen_run20_b1..b5.py; brief附车型规格速查表+精确计数代码
+- 选题先用ls+关键词计数分析656篇覆盖密度, 倾斜稀疏角度(质保4/培训4/维保4/融资3/残值3/光伏3/V2G 2/安全2/政策3/对比3/技术2)与稀疏国家(科特迪瓦/缅甸/阿尔及利亚/卡塔尔/约旦/伊拉克/马来西亚/孟加拉/南非/多米尼加/泰国); 覆盖18车型
+- GEO 2篇: which-electric-truck-is-best-for-cold-chain-logistics + what-is-the-resale-value-of-an-electric-truck-after-5-years, 四要素齐(Quick answer/≥3问句H2/FAQ 5条/FAQPage schema)
+- _qa_run20.py 一次全过 40/40: 词数1250-1596, desc 140-160全含核心词, 零非ASCII, 内链(model+market)齐且目标存在, FAILS=0
+- _update_index_run20.py 插40卡片(<!--1013batch-->)+sitemap 40条(730→770), dateModified→2026-10-13
+- Git: e9fa894 直连push成功, blog/sitemap工作区干净; IndexNow: 40条 HTTP 200
+- 累计: blog 656→696篇
+- 教训(下轮沿用): ⑮Windows托管python看不到Git Bash的/tmp, 脚本内读文件一律用仓库内相对路径 ⑯密度分析驱动的选题倾斜法有效——稀疏角度(warranty/resale/training/solar/v2g)和稀疏国家优先, 一轮QA零返工
+
 ## 2026-10-08 run15 ✅ 40/40 完成闭环
 - 5个并行写手子代理(gen-b1..b5)各写8篇, 复用_gen_run14_b1.build(覆盖DATE=2026-10-08), 脚本 _gen_run15_b1..b5.py
 - 主题: 非洲7+GEO矿业1 / 中东中亚8 / 拉美东南亚8 / 对比5+TCO1+技术2 / 政策进口运营7+GEO省钱1; 覆盖16车型, 全部1200-1384词
