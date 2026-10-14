@@ -1,5 +1,17 @@
 # 4号站EV博客自动化 (1cc20420) 执行记录
 
+## 2026-10-14 run21 ✅ 40/40 完成闭环
+- 沿用 _gen_lib.py + 5并行写手(gen-b1..b5)各8篇, DATE=2026-10-14, 脚本 _gen_run21_b1..b5.py
+- 选题密度分析倾斜稀疏车型(kth1:7→10/kt3f:10→13/kt9x:11→14/tz5y:12→16/kth3:13→15)与稀疏国家(科特迪瓦/缅甸/孟加拉/马来西亚/伊拉克/卡塔尔/约旦/多米尼加/巴基斯坦/秘鲁等); 18车型+10角度
+- GEO 2篇: how-to-choose-an-electric-truck-for-mining-in-africa + how-long-does-an-electric-truck-motor-last, 四要素齐
+- _qa_run21.py: 首轮21 fail 其中19个是QA口径误报(body首个<p>是图片段落被当首段→改为取第一个>30字符的文本段落即全过), 真实2处: 缅甸搅拌篇desc缺精确短语"electric truck"(4处同步替换) + 矿业GEO篇缺<ul>(插入5条checklist) → 复测FAILS=0, 词数1253-1453
+- b4一篇撞名改为 kth3-vs-kt5m-electric-cargo-truck-specification-comparison
+- _update_index_run21.py 插40卡片(<!--1014batch-->)+sitemap 40条(770→810), dateModified→2026-10-14
+- Git: 直连超时→代理10090; 远端有并行SEO提交(country count 50+统一, 2个commit)→.workbuddy记忆文件挡住rebase, 先chore提交再pull --rebase→推送 524422a 成功, 工作区干净
+- IndexNow: 40条 HTTP 200; last_run.txt=2026-10-14
+- 累计: blog 696→736篇
+- 教训(下轮沿用): ⑰QA首段检查要跳过纯图片<p>——按"第一个文本>30字符的<p>"取值 ⑱desc核心词判定是精确短语"electric truck"/"EV truck", "electric mixer truck"不算——子代理brief里要强调精确短语 ⑲push被拒先查远端是否有并行自动化提交, rebase前把工作区.workbuddy记忆文件先提交避免挡路
+
 ## 2026-10-13 run20 ✅ 40/40 完成闭环
 - 沿用 _gen_lib.py + 5并行写手(gen-b1..b5)各8篇, DATE=2026-10-13, 脚本 _gen_run20_b1..b5.py; brief附车型规格速查表+精确计数代码
 - 选题先用ls+关键词计数分析656篇覆盖密度, 倾斜稀疏角度(质保4/培训4/维保4/融资3/残值3/光伏3/V2G 2/安全2/政策3/对比3/技术2)与稀疏国家(科特迪瓦/缅甸/阿尔及利亚/卡塔尔/约旦/伊拉克/马来西亚/孟加拉/南非/多米尼加/泰国); 覆盖18车型
