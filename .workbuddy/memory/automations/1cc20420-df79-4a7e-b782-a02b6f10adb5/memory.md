@@ -1,5 +1,16 @@
 # 4号站EV博客自动化 (1cc20420) 执行记录
 
+## 2026-10-19 run22 ✅ 40/40 完成闭环
+- 沿用 _gen_lib.py + 5并行写手(gen-b1..b5)各8篇, DATE=2026-10-19, 脚本 _gen_run22_b1..b5.py(被.gitignore忽略不提交, 符合仓库惯例)
+- 主控预写全部元数据(f/t/d/k/img/alt/net), 子代理只填body+faq → desc/内链格式零跑偏
+- 选题倾斜稀疏车型(kth1:10/kt3f:13/kt9x:14/kt3e:14/kt1d:14/kta1:15/kth3:15)与稀疏国家(algeria6/cote-divoire6/myanmar6/bangladesh7/malaysia7/thailand7/qatar8/jordan8/iraq8/egypt9等); 18车型+10角度
+- GEO 2篇: what-is-battery-swapping-for-electric-trucks + which-electric-truck-is-right-for-construction-fleets, 四要素齐(Quick answer/问句H2/FAQ 5条/FAQPage schema)
+- QA首轮31 fail: 30篇desc 128-139字符(我起草时按140口径写短了)+1篇GEO缺<ul>; 补丁脚本批量加后缀(" Get a FOB quote."+17/" Request pricing today."+23/" Get a quote."+13)把desc全部提到150-160并同步替换meta/og/twitter/JSON四处, 复测FAILS=0, 词数1255-1568
+- _update_index_run22.py 插40卡片(<!--1019batch-->)+sitemap 40条(810→850)
+- Git: 10f9a9f 直连push成功, 工作区干净; IndexNow: 40条 HTTP 200(curl --data-binary)
+- 累计: blog 736→776篇
+- 教训(下轮沿用): ⑳desc起草直接按150-160写(不是140), 主控预写元数据后子代理只填正文是最稳分工 ㉑_gen_*.py在.gitignore里, git add会报ignored, 直接不提交脚本即可
+
 ## 2026-10-14 run21 ✅ 40/40 完成闭环
 - 沿用 _gen_lib.py + 5并行写手(gen-b1..b5)各8篇, DATE=2026-10-14, 脚本 _gen_run21_b1..b5.py
 - 选题密度分析倾斜稀疏车型(kth1:7→10/kt3f:10→13/kt9x:11→14/tz5y:12→16/kth3:13→15)与稀疏国家(科特迪瓦/缅甸/孟加拉/马来西亚/伊拉克/卡塔尔/约旦/多米尼加/巴基斯坦/秘鲁等); 18车型+10角度
