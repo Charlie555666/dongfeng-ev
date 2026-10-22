@@ -1,5 +1,18 @@
 # 4号站EV博客自动化 (1cc20420) 执行记录
 
+## 2026-10-22 run25 ✅ 40/40 完成闭环
+- 沿用 _gen_lib.py + 5并行写手(gen-b1..b5)各8篇, DATE=2026-10-22, 脚本 _gen_run25_b1..b5.py(.gitignore忽略不提交)
+- 流程改进: 主控先写 _plan_run25.py(全40题元数据+内链目标) → _patch_run25.py 按长度缺口自动选后缀把desc补进150-160(一次成功, 零手动改) → _emit_run25.py 生成5批次脚本
+- 选题倾斜稀疏车型(kth1:13/kt3f:16/kt9x:18/kt7a:18/kt3e:18/kt5l:19/tz5y:19/kth3:19/kt1d:19)与稀疏国家(algeria7/cote-divoire7/myanmar8/saudi9/bangladesh9/malaysia9/thailand9/dominican10); 21车型页/27市场页
+- 新角度开拓(855篇查重后): 租赁leasing(首用)/二手翻新进口/MCS兆瓦充电/液冷/EV vs CNG(首用)/EV vs氢能/热泵冷链/畜牧饲料运输/智能充电负荷管理/电池SOH/车队telematics/配件供应链/欧盟电池护照/电网变压器扩容/夜间充电/关税节省
+- GEO 2篇: can-electric-trucks-operate-safely-in-monsoon-rain + do-electric-trucks-cost-more-to-insure, 四要素齐(Quick answer 51-55词/问句H2 6-8个/FAQ 5条/FAQPage schema)
+- QA _qa_run25.py 首轮17 fail全是口径误报: 16篇"no table"因子代理写了带属性的<table border=...>(改正则<table[ >]即过) + 1篇kt5j多米尼加1221词(主控补TCO段落到1300+), 复测 ALL PASS; 词数1266-1513
+- 索引插40卡片(<!--1022batch-->, 插到<!--1021batch-->前=列表最前)+sitemap 40条(930→970), lastmod=2026-10-22
+- Git: 030920a 直连push成功(未走代理), chore a8b6029+2ca245a, 工作区干净; IndexNow: 40条 HTTP 200(curl --data-binary, payload仓库内临时文件用后删)
+- 累计: blog 855→895篇
+- 教训(下轮沿用): ㉔QA的table检查要用正则<table[ >]——子代理会写带属性的table标签 ㉕b3代理自报1221词仍说"达标"——代理汇报词数不可全信, 主控QA才是准绳 ㉖desc补丁脚本按缺口选后缀法稳定, 继续用
+
+
 ## 2026-10-21 run24 ✅ 40/40 完成闭环
 - 沿用 _gen_lib.py + 5并行写手(gen-b1..b5)各8篇, DATE=2026-10-21, 脚本 _gen_run24_b1..b5.py(.gitignore忽略不提交)
 - 主控预写全部元数据(f/t/d/k/img/alt/net), 子代理只填body+faq; desc起草后本地预校验(150-160+核心词), 34条差1-6字符用映射补丁一次补齐, 复验0 fail
