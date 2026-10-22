@@ -1,5 +1,18 @@
 # 4号站EV博客自动化 (1cc20420) 执行记录
 
+## 2026-10-21 run24 ✅ 40/40 完成闭环
+- 沿用 _gen_lib.py + 5并行写手(gen-b1..b5)各8篇, DATE=2026-10-21, 脚本 _gen_run24_b1..b5.py(.gitignore忽略不提交)
+- 主控预写全部元数据(f/t/d/k/img/alt/net), 子代理只填body+faq; desc起草后本地预校验(150-160+核心词), 34条差1-6字符用映射补丁一次补齐, 复验0 fail
+- 选题倾斜稀疏车型(kth1:12/kt3f:15/tz5y:17/kt1d:17/kt7a:17/kt9x:17/kta1:18/kt5l:18)与稀疏国家(algeria/cote-divoire/dominican-republic/myanmar:7, thailand/bangladesh:8, malaysia/saudi:9); 19车型, 角度: 深评/对比/技术/TCO/政策/进口/运营/spotlight
+- 新角度开拓(816篇老文查重后): 钠离子电池/RHD右舵出口/Incoterms FOB-CIF-DDP/全球通行费减免/车身改装bodybuilding/矿业零排放标案/热带HVAC能耗/东非跨境走廊/峰值需量电费/电动vs LNG
+- GEO 2篇: do-electric-trucks-work-in-cold-climates + what-happens-to-electric-truck-battery-after-8-years, 四要素齐(Quick answer/问句H2 6-7个/FAQ 5条/FAQPage schema)
+- QA 40篇首轮仅1 fail: kt1d摩洛哥篇1244词(差6词), 主控直接补一句到1276, 复测全过; 词数1261-1465
+- 索引插40卡片(<!--1021batch-->, 插到<!--1019batch-->行后=列表最前)+sitemap 40条(890→930), lastmod=2026-10-21
+- Git: 7d8089f 直连Recv failure→代理10090推送成功, 工作区干净(顺带chore提交了9b83e05e自动化残留memory)
+- IndexNow: 40条 HTTP 200(curl --data-binary, payload写仓库内_indexnow_run24.json临时文件用后删)
+- 累计: blog 816→856篇
+- 教训(下轮沿用): ㉒desc预校验放派单前——映射补丁法比让子代理改meta更稳 ㉓/tmp坑依旧: IndexNow payload文件也要放仓库内 ㉔816篇密度下选题要先grep 2-3轮关键词, 常见角度(TCO/维保/培训/solar/租赁/续航)基本占满, 往"跨境/改装/通行费/钠电/RHD"等长尾走
+
 ## 2026-10-19 run22 ✅ 40/40 完成闭环
 - 沿用 _gen_lib.py + 5并行写手(gen-b1..b5)各8篇, DATE=2026-10-19, 脚本 _gen_run22_b1..b5.py(被.gitignore忽略不提交, 符合仓库惯例)
 - 主控预写全部元数据(f/t/d/k/img/alt/net), 子代理只填body+faq → desc/内链格式零跑偏
