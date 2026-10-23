@@ -95,3 +95,13 @@
 - Git: c2ec51a 直连push成功, blog/sitemap工作区干净; IndexNow: 62条 HTTP 200(python urllib走代理被拒, 改curl --data-binary成功)
 - 累计: blog 594→656篇
 - 教训(下轮沿用): ⑪到场先查 git status 未跟踪blog文件——可能有上一轮未闭环残留, 修复QA后发布比重写省时 ⑫python urllib在这台机器会走失效代理(10061), 网络请求一律用curl ⑬标题核心词检查要放宽到"标题或首段", 否则会误杀全部"Electric Dump/Cargo Truck"式标题 ⑭内容块扩写法可稳定把500-1000词薄文补到1250-1400且参数一致, 比派子代理扩写快且零返工
+
+## 2026-10-23 run26 ✅ 40/40 完成闭环
+- 沿用 _gen_lib.py + 5并行写手(gen-b1..b5)各8篇, DATE=2026-10-23, 脚本 _plan_run26.py → _emit_run26.py → _gen_run26_b1..b5.py
+- 选题: 非洲7+GEO payload1 / 中东中亚8 / 拉美东南亚南亚8 / 对比+技术+TCO 8 / 政策进口运营7+GEO充电1; 16车型页/24市场页
+- GEO 2篇: how-much-payload-does-an-electric-truck-lose-to-batteries + how-long-does-an-electric-truck-take-to-charge, 四要素齐
+- QA _qa_run26.py 一轮 ALL PASS(40篇, 词数1256-1619); 注意plan导入重跑输出的"FILE EXISTS/title missing"属预校验残留误报, 以QA末尾结论为准
+- 新教训: ㉗images/render_*.jpg实际在 images/models/ 下(img字段要写 models/render_XX.jpg), ls images/|head 的拼接输出会误导归属 ㉘写死断言的补丁脚本一处不符就全不写入——宽松替换+miss报告更稳
+- _update_index_run26.py 插40卡片(<!--1023batch-->, 锚1022batch前)+sitemap 40条(970→1010), lastmod=2026-10-23
+- Git: d9e805b 直连push成功, blog/sitemap工作区干净; IndexNow: 40条 HTTP 200(curl --data-binary; 注意curl -o /dev/null在这台机器exit 23但请求已发出, 以HTTP码为准)
+- 累计: blog 895→935篇
