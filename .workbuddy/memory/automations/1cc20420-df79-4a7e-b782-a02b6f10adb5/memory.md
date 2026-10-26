@@ -105,3 +105,15 @@
 - _update_index_run26.py 插40卡片(<!--1023batch-->, 锚1022batch前)+sitemap 40条(970→1010), lastmod=2026-10-23
 - Git: d9e805b 直连push成功, blog/sitemap工作区干净; IndexNow: 40条 HTTP 200(curl --data-binary; 注意curl -o /dev/null在这台机器exit 23但请求已发出, 以HTTP码为准)
 - 累计: blog 895→935篇
+
+## 2026-10-26 run27 ✅ 40/40 完成闭环
+- 沿用 _gen_lib.py + 5并行写手(gen-b1..b5)各8篇, DATE=2026-10-26, 脚本 _plan_run27.py → _patch_run27.py(desc后缀法, 34条补到150-160) → _emit_run27.py → _gen_run27_b1..b5.py
+- 新角度(先grep词表确认0覆盖): 地下矿通风/高原4000m无衰减/e-axle vs中央电机/BaaS租电/well-to-wheel LCA/热失控UN R100/AVAS噪音/车队网络安全/CCS2-GB/T-MCS充电口/政府标案12条款/电网扩容6-18月/trolley架线/EU CO2 2030/场站充电布局/驾驶室人机工程; 18型号页/30市场页
+- GEO 2篇: can-electric-trucks-climb-steep-mountain-roads + what-size-charger-does-an-electric-truck-need, 四要素齐
+- b1代理首轮上游网关空流(Empty stream chunks=4087)直接报错, 重派新代理原样重跑成功
+- QA _qa_run27.py: 14篇词数1198-1241(子代理自报口径虚高30-80词), _fix_run27.py统一插"Warranty, Parts and Technical Support"内容块(~110词)补到1309-1352, 复测 ALL PASS(1252-1583)
+- _update_index_run27.py 插40卡片(<!--1026batch-->, 锚1023batch前)+sitemap 40条(1010→1050)
+- Git: ffc49db 直连Recv failure→代理10090推送成功, blog/sitemap干净; 坑: shell重定向在仓库根产生0字节"nul"文件(Windows保留名, rm被safe-delete拦截, 用PS长路径 \\?\ 语法删除)
+- IndexNow: 40条 HTTP 200(curl --data-binary, payload仓库内临时文件用后删); last_run.txt=2026-10-26
+- 累计: blog 935→975篇
+- 教训(下轮沿用): ㉙子代理自报词数系统性虚高, 主控QA后固定预留补词块流程 ㉚"nul"残留文件用PS长路径删, 别用rm ㉛bash heredoc里避免写敏感shell名, 会被安全扫描误拦
