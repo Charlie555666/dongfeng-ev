@@ -117,3 +117,14 @@
 - IndexNow: 40条 HTTP 200(curl --data-binary, payload仓库内临时文件用后删); last_run.txt=2026-10-26
 - 累计: blog 935→975篇
 - 教训(下轮沿用): ㉙子代理自报词数系统性虚高, 主控QA后固定预留补词块流程 ㉚"nul"残留文件用PS长路径删, 别用rm ㉛bash heredoc里避免写敏感shell名, 会被安全扫描误拦
+
+## 2026-10-28 run29 ✅ 40/40 完成闭环
+- 沿用 _gen_lib.py + 5并行写手(gen-b1..b5)各8篇, DATE=2026-10-28, 脚本 _plan_run29.py → _emit_run29.py → _gen_run29_b1..b5.py
+- 到场发现: _plan_run28.py/_gen_run28_b1..b5.py 属 10-27 人工补跑(commit a7c66f9 已闭环), 故本轮命名 run29; git 无 blog 残留, 但有上轮遗留 0 字节 "nul" 文件(PS长路径 \?\ 语法删除)
+- 新角度(grep词表确认0覆盖): 编队行驶/L4矿山港口自动驾驶/HVO对比/空气动力学续航/轴重法规+EU 2t豁免/地理围栏/急救培训/刹车粉尘非排气排放/UN38.3运输认证/海运30%SOC规则/工厂验收测试FAT/路径调度软件/卧铺vs日间驾驶室/高温液冷续航/夜间配送噪音宵禁; 18型号页/30市场页全用上
+- GEO 2篇: how-much-does-it-cost-to-charge-an-electric-truck + do-electric-trucks-need-oil-changes, 四要素齐
+- QA _qa_run29.py: GEO oil篇1840词超上限(1790来自FAQ渲染), Edit裁段降到内; 其余39篇一轮过(1256-1494); 子代理本轮词数自报基本准确
+- _update_index_run29.py 插40卡片(<!--1028batch-->, 锚1019batch前——注意索引页实际最新锚是1019非1027)+sitemap 40条(1089→1129)
+- Git: 85ff4a5 直连Recv failure→代理10090推送成功, blog/sitemap干净; IndexNow: 40条 HTTP 200
+- last_run.txt=2026-10-28; 累计 blog ~1015→1055篇
+- 教训(下轮沿用): ㉜到场先核对 _plan/_gen 脚本编号是否与 git log 最新提交对应——人工补跑可能已占用下一编号 ㉝索引页批次锚乱序, 插卡前先 grep '<!--[0-9]*batch-->' 取实际首个锚 ㉞GEO篇FAQ渲染后计入总词数, 正文+FAQ合计控制在1750内留余量
