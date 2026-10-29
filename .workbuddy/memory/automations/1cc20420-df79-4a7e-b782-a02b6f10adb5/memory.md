@@ -128,3 +128,12 @@
 - Git: 85ff4a5 直连Recv failure→代理10090推送成功, blog/sitemap干净; IndexNow: 40条 HTTP 200
 - last_run.txt=2026-10-28; 累计 blog ~1015→1055篇
 - 教训(下轮沿用): ㉜到场先核对 _plan/_gen 脚本编号是否与 git log 最新提交对应——人工补跑可能已占用下一编号 ㉝索引页批次锚乱序, 插卡前先 grep '<!--[0-9]*batch-->' 取实际首个锚 ㉞GEO篇FAQ渲染后计入总词数, 正文+FAQ合计控制在1750内留余量
+
+## 2026-10-29 run30 ✅ 40/40 完成闭环
+- 沿用 _gen_lib.py + 5并行写手各8篇, DATE=2026-10-29, _plan_run30.py → _emit_run30.py → _gen_run30_b1..b5.py
+- 新角度(grep词表0覆盖): 电池碰撞安全(GEO)/洪水涉水(GEO)/驾驶员留任/燃油价格对冲/空气悬架vs板簧/盘式vs鼓式制动/电池预热快充/远程诊断预测维保/能耗仪表盘KPI/司机奖励机制/HS编码归类/充电桩维保备件/共享场站排队充电/试驾评估项目/电池健康报告/需求响应电网收益/沙尘防尘IP等级; 18型号页/26市场页; 科威特新市场页首用(kt5j篇)
+- QA _qa_run30.py 一轮 ALL PASS(词数1252-1512, desc 150-160全含核心词, 零非ASCII, 内链齐)
+- _update_index_run30.py 插40卡片(<!--1029batch-->, 锚1028batch前)+sitemap 40条(1130→1170)
+- Git: 885848a+72439fc chore, 直连Recv failure→代理10090推送成功, ls-remote=HEAD一致, 3篇抽样线上200, 工作区干净; IndexNow: 40条 HTTP 200; last_run.txt=2026-10-29
+- 累计: blog 1056→1096篇
+- 教训(下轮沿用): ㉟Edit工具对_plan文件的desc补丁本轮疑似未持久化(报成功但grep仍是旧值), desc微调直接用python replace补丁脚本更稳 ㊱"nul"文件在子代理运行期间会反复重建(本轮3次), 推送前和收尾各删一次, 不阻断流程 ㊲子代理可能遗留verify_*.py等临时脚本, QA后git status顺手清掉再提交
