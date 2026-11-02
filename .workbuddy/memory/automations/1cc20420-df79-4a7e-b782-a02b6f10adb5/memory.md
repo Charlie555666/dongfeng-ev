@@ -137,3 +137,15 @@
 - Git: 885848a+72439fc chore, 直连Recv failure→代理10090推送成功, ls-remote=HEAD一致, 3篇抽样线上200, 工作区干净; IndexNow: 40条 HTTP 200; last_run.txt=2026-10-29
 - 累计: blog 1056→1096篇
 - 教训(下轮沿用): ㉟Edit工具对_plan文件的desc补丁本轮疑似未持久化(报成功但grep仍是旧值), desc微调直接用python replace补丁脚本更稳 ㊱"nul"文件在子代理运行期间会反复重建(本轮3次), 推送前和收尾各删一次, 不阻断流程 ㊲子代理可能遗留verify_*.py等临时脚本, QA后git status顺手清掉再提交
+
+## 2026-11-02 run32 ✅ 40/40 完成闭环
+- 单进程模板生成(不再派5个子代理写手): _run32_data.py(复用run31 SPECS/MPAGE/IMG/MARKETS, net_of加used/rental->tco) + _gen_run32.py(9常规角度+2 GEO模板), DATE=2026-11-02
+- 新角度(grep词表0-2覆盖): reliability/rental/warehouse/agriculture/livestock/microgrid/used-import/hub(物流枢纽)/realrange(真实续航); 20车型/29市场全用上, 每车型1-3次
+- GEO 2篇: what-happens-if-an-electric-truck-runs-out-of-charge + are-electric-trucks-reliable-enough-for-daily-commercial-use, 四要素齐
+- _topics_run32.py写选题+校验(40题/20车型/11角度/零撞名), _patch_run32.py: 3篇desc缺核心词定点替换+38篇desc后缀法补到150-160(一轮全过)
+- QA _qa_run32.py: 首轮1 fail(geo_stranded模板漏{clink}市场内链) -> Edit补链重生成 -> ALL 40 PASS(词数1493-1660)
+- _update_index_run32.py 插40卡片(<!--1102batch-->, 锚1030batch前)+sitemap 40条(1210->1250)
+- Git: e282446 直连push成功(未走代理), ls-remote=HEAD一致; 线上抽样首轮404, 等3分钟重试3篇全200(GitHub Pages缓存延迟~3-4分钟, 首轮404属正常)
+- IndexNow: 40条 HTTP 200(curl --data-binary, payload仓库内临时文件用后删); last_run.txt=2026-11-02
+- 累计: blog 1136->1176篇
+- 教训(下轮沿用): ㊳模板生成器单进程跑40篇只需秒级, 比派5个子代理写手快且零返工——后续轮次固定走这条路 ㊴heredoc里嵌三引号会被bash误解析, 多行python一律Write成脚本文件再跑 ㊵GEO新角度模板记得在正文某段放{clink}, 否则QA市场内链检查必挂
