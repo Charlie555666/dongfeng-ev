@@ -161,3 +161,16 @@
 - IndexNow: 40条 HTTP 200(curl --data-binary, payload仓库内临时文件用后删); last_run.txt=2026-11-03
 - 累计: blog 1176→1216篇
 - 教训(下轮沿用): ㊶数据文件复用法(_run33_data从_run32_data导入, _gen_run33从_gen_run32导入共享块)让新轮只需写选题+新角度模板, 工时减半 ㊷patch正则的角度分组要写[a-z0-9_]+——角度名可能含数字(scope3) ㊸suffix补丁法对148-149字符的desc无解(最短suffix+13超160), 需备" Ask us."等短后缀或直接定点改写
+
+## 2026-11-04 run34 ✅ 40/40 完成闭环
+- 单进程模板生成: _run34_data.py(从 _run32_data 导入 SPECS/MPAGE/IMG/MARKETS, 新TOPICS+net_of) + _gen_run34.py(从 _gen_run32 导入 SUPP/CHECKLIST/SPEC_TABLE/fill, 9新角度模板+2 GEO模板), DATE=2026-11-04
+- 新角度(文件名覆盖0-1): tpms轮胎管理/crane随车吊/hurricane飓风台风季/nvh驾驶室舒适疲劳/corrosion沿海盐雾/epto电动取力器/brewery啤酒饮料配送/commissioning交付首90天/wind风电充电; 19车型/28市场
+- GEO 2篇: how-long-do-electric-truck-tires-really-last + can-you-charge-an-electric-truck-with-a-generator, 四要素齐
+- desc: 首轮22条偏短/缺核心词, 补丁脚本切片逻辑bug损坏文件→整体重写data文件内嵌修正desc+2条Edit微调, 复验0 bad
+- 人工QA发现epto模板笔误"Vocal about electric PTO"→4篇生成文件+生成器同步replace修复(生成器带os.path.exists断言, 改文件不重跑)
+- QA _qa_run34.py 一轮 ALL PASS(词数1550-1655, desc 150-160全含核心词, 零非ASCII, 内链齐)
+- _update_index_run34.py 插40卡片(<!--1104batch-->, 锚1103batch前)+sitemap 40条(1290->1330)
+- Git: 37180e1 直连Recv failure→代理10090推送成功, ls-remote=HEAD一致, 3篇抽样首轮404→等3分钟重试全200, 工作区干净(nul文件出现2次, PS长路径删除)
+- IndexNow: 40条 HTTP 200(curl --data-binary, payload仓库内临时文件用后删); last_run.txt=2026-11-04
+- 累计: blog 1216->1256篇
+- 教训(下轮沿用): ㊹desc补丁脚本的切片替换要用group边界而不是end(1)+1——本次直接整体重写更稳, 或干脆初稿就按150-160写够 ㊺生成器加os.path.exists断言后, 改文案bug要直接改生成文件+生成器双处, 不能重跑
