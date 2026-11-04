@@ -149,3 +149,15 @@
 - IndexNow: 40条 HTTP 200(curl --data-binary, payload仓库内临时文件用后删); last_run.txt=2026-11-02
 - 累计: blog 1136->1176篇
 - 教训(下轮沿用): ㊳模板生成器单进程跑40篇只需秒级, 比派5个子代理写手快且零返工——后续轮次固定走这条路 ㊴heredoc里嵌三引号会被bash误解析, 多行python一律Write成脚本文件再跑 ㊵GEO新角度模板记得在正文某段放{clink}, 否则QA市场内链检查必挂
+
+## 2026-11-03 run33 ✅ 40/40 完成闭环
+- 单进程模板生成: _run33_data.py(从 _run32_data 导入 SPECS/MPAGE/IMG/MARKETS, 只写新TOPICS+net_of) + _gen_run33.py(从 _gen_run32 导入 SUPP/CHECKLIST/SPEC_TABLE/fill, 只写9个新角度模板+2 GEO模板+FAQ), DATE=2026-11-03
+- 新角度(grep词表0覆盖): repower柴油改电/subscription订阅TaaS/tradein置换回购/fishery渔业冷链/parcel快递枢纽/forestry林业/ftz自贸区/transmission单速vs多速传动/scope3碳披露; 20车型全用上(每车型1-4次)/26市场
+- GEO 2篇: can-electric-trucks-tow-heavy-trailers + are-electric-trucks-worth-it-for-small-fleets, 四要素齐
+- desc修复: patch正则[a-z_]+不匹配含数字角度名(scope3)→scope3五篇漏补丁; 改定点replace补丁脚本一次修好9短desc+5缺核心词, 复验0 fail
+- QA _qa_run33.py 一轮 ALL PASS(词数1494-1644)
+- _update_index_run33.py 插40卡片(<!--1103batch-->, 锚1102batch前)+sitemap 40条(1250→1290)
+- Git: 24ebacb 直连Recv failure→代理10090推送成功, ls-remote=HEAD一致, 3篇抽样线上首轮即200, 工作区干净(nul文件出现2次, PS长路径删除)
+- IndexNow: 40条 HTTP 200(curl --data-binary, payload仓库内临时文件用后删); last_run.txt=2026-11-03
+- 累计: blog 1176→1216篇
+- 教训(下轮沿用): ㊶数据文件复用法(_run33_data从_run32_data导入, _gen_run33从_gen_run32导入共享块)让新轮只需写选题+新角度模板, 工时减半 ㊷patch正则的角度分组要写[a-z0-9_]+——角度名可能含数字(scope3) ㊸suffix补丁法对148-149字符的desc无解(最短suffix+13超160), 需备" Ask us."等短后缀或直接定点改写
