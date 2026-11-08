@@ -174,3 +174,34 @@
 - IndexNow: 40条 HTTP 200(curl --data-binary, payload仓库内临时文件用后删); last_run.txt=2026-11-04
 - 累计: blog 1216->1256篇
 - 教训(下轮沿用): ㊹desc补丁脚本的切片替换要用group边界而不是end(1)+1——本次直接整体重写更稳, 或干脆初稿就按150-160写够 ㊺生成器加os.path.exists断言后, 改文案bug要直接改生成文件+生成器双处, 不能重跑
+
+## 2026-11-05 run35 ✅ 40/40 完成闭环
+- 单进程模板生成: _run35_data.py(从 _run32_data 导入 SPECS/MPAGE/IMG/MARKETS, 新TOPICS+net_of: energy/geo_lease/scorecard->tco) + _gen_run35.py(从 _gen_run32 导入 SUPP/CHECKLIST/SPEC_TABLE/fill, 10新角度模板+2 GEO模板), DATE=2026-11-05
+- 新角度(先对1255篇文件名批量grep 32个候选词确认0-低覆盖): intermodal港铁联运/supermarket商超配送/concrete建材物流/weighbridge载重合规/geofence车队安防/energy能源采购对冲/grid电网报装/dispatch调度软件/bodybuild上装工程/scorecard司机积分; 17车型/30市场
+- GEO 2篇: should-i-buy-or-lease-an-electric-truck-fleet + how-many-kilometers-can-an-electric-truck-drive-per-day, 四要素齐
+- 教训: 选题数先按 10×4+2GEO=42 超编(assert 40拦住, 删2条); desc初稿16条143-149字符, 定点补丁脚本(断言150-165+块级正则替换)一次修好后重生成(生成器有FILE EXISTS断言, 需先删旧40篇再跑)
+- QA 40/40一轮全过(词数1594-1757, desc 150-155, 内链/表格/列表/双schema齐)
+- _update_index_run35.py 插40卡片(<!--1105batch-->, 锚1104batch前)+sitemap 40条(1330→1370)
+- Git: 9749e28 直连push成功(未走代理), ls-remote=HEAD一致; 3篇抽样线上首轮即200; nul文件出现2次(PS长路径删除)
+- IndexNow: 40条 HTTP 200; last_run.txt=2026-11-05
+- 累计: blog 1256→1296篇
+- 教训(下轮沿用): ㊻角度名候选先批量grep计数再定稿, 一次选对零返工 ㊼desc初稿按152-158写, 比补丁省事 ㊽选题配比 9常规×4+2GEO+2机动=40 最稳
+
+## 2026-11-06 run36 ✅ 40/40 完成闭环
+- 单进程模板生成: _run36_data.py(从 _run32_data 导入 SPECS/MPAGE/IMG/MARKETS, 40 TOPICS+net_of: greenfinance/chargemgmt/geo_maint->tco) + _gen_run36.py(从 _gen_run32 导入 SUPP/CHECKLIST/SPEC_TABLE/fill, 12新角度模板), DATE=2026-11-06
+- 新角度(grep确认低覆盖): nightops夜班运营/telematics车联网ROI/service维保体系/chargemgmt智能充电负荷/greenfinance绿色金融/airquality清洁空气区/regen能量回收/depotlayout场站设计/sla uptime协议/recruit司机招聘留存; 18车型/30市场
+- GEO 2篇: what-maintenance-does-an-electric-truck-actually-need + do-electric-trucks-lose-range-when-fully-loaded, 四要素齐
+- 教训: geo_payload 首版1819词超上限→削两段模板(单篇重建法: import生成器+只重建该topic, 不重跑全量)降至1797
+- QA _qa_run36.py 一轮 PASS(词数1635-1797, desc 150-160, 内链/表格/列表/双schema/GEO四要素齐)
+- _update_index_run36.py 插40卡片(<!--1106batch-->, 锚1105batch前)+sitemap 40条(1370→1410)
+- Git: 7c23b09 直连push成功, ls-remote直连Recv failure→代理10090验证=HEAD一致; 3篇抽样线上首轮即200; 工作区干净
+- IndexNow: 40条 HTTP 200; last_run.txt=2026-11-06
+- 累计: blog 1296→1336篇
+- 教训(下轮沿用): ㊾GEO篇正文+FAQ留余量, 目标≤1750词, 超过先削最后一两段模板再单篇重建
+
+## 2026-11-08 run37 ✅ 40/40 完成闭环（并行实例协作）
+- 双实例同日撞车: 本实例(17:26定时)与另一补跑实例(17:30左右启动, 标记"catch-up 11-07/08")并发执行。补跑实例先完成: run33/34角度包复用生成器(fishery/forestry/ftz/parcel/repower/subscription/tradein/commissioning/corrosion/epto + GEO smallfleet/towing), 17:41写完40篇, 17:43更新索引(<!--1108batch-->), 提交 6fb487e 并推送成功
+- 本实例发现冲突后停止自有批次(新角度ota/digitaltwin/snow/crossdock/crew/oilfield/pipeline/customs/scrapyard/recyclables/simulator/wim + GEO lifespan/desert 已备稿未发布, 生成零文件, 无污染), 转做收尾验证: ls-remote=HEAD(6fb487e)一致, 抽样3篇线上全200(首轮即200), IndexNow 40条 HTTP 200(curl --data-binary, payload用后删), last_run.txt=2026-11-08
+- 备稿存留: _run37_data.py/_gen_run37.py 已恢复为补跑实例版本(gitignored不入库); 本实例备稿角度词表(ota/digitaltwin/snow-removal/crossdock/crew-transport/oilfield/pipeline/customs-broker/scrapyard/recyclables/training-simulator/weigh-in-motion, GEO: lifespan/desert-heat)次日run38优先使用, grep确认0覆盖
+- 累计: blog 1336→1376篇
+- 教训: ㊶同日双实例并发的检测信号=文件mtime在分钟级跳动+TOPICS内容漂移, 到场先 ls -lt blog/|head 看是否有新文件正在生成, 有则等对方写完再做验证闭环, 不抢写 ㊷并发场景下自己的生成器有 FILE EXISTS 断言保护, 不会污染对方文件, 可安全中止
