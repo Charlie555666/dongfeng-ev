@@ -205,3 +205,13 @@
 - 备稿存留: _run37_data.py/_gen_run37.py 已恢复为补跑实例版本(gitignored不入库); 本实例备稿角度词表(ota/digitaltwin/snow-removal/crossdock/crew-transport/oilfield/pipeline/customs-broker/scrapyard/recyclables/training-simulator/weigh-in-motion, GEO: lifespan/desert-heat)次日run38优先使用, grep确认0覆盖
 - 累计: blog 1336→1376篇
 - 教训: ㊶同日双实例并发的检测信号=文件mtime在分钟级跳动+TOPICS内容漂移, 到场先 ls -lt blog/|head 看是否有新文件正在生成, 有则等对方写完再做验证闭环, 不抢写 ㊷并发场景下自己的生成器有 FILE EXISTS 断言保护, 不会污染对方文件, 可安全中止
+
+## 2026-11-09 run38 ✅ 40/40 完成闭环
+- 角度包复用法: _run38_data.py + _gen_run38.py, 复用 run32 角度包(reliability/rental/warehouse/agriculture/microgrid/used/hub/realrange/geo_stranded/geo_reliable)+run34(tpms/wind), DATE=2026-11-09
+- run37备稿(ota/digitaltwin等12新角度)未用——无对应模板, 写作成本高, 继续留作后续轮次备稿(_run37_ota_draft.py仍在库内gitignored)
+- desc: 首轮33条141-149偏短+1条缺核心词, _patch_run38.py后缀法(Ask us./Get a quote.等4档)一次修好, 复验0 bad
+- QA _qa_run38.py(从run36复制改data源)一轮 PASS: 词数1492-1677, 内链/表格/列表/双schema/GEO四要素齐; 额外检查(非ASCII/desc/CTA/Network)0 bad
+- _update_index_run38.py 插40卡片(<!--1109batch-->, 锚1108batch前)+sitemap 40条(1450->1490)
+- Git: 1b61d76+d549067 chore, 直连push成功, ls-remote=HEAD一致, 3篇抽样线上首轮即200; IndexNow 40条 HTTP 200
+- 17车型/25市场/12角度; 累计 blog 1376->1416篇
+- nul文件本轮出现3次(PS长路径删除), last_run.txt两处(20260605101515/.workbuddy + 仓库内)均已写2026-11-09
