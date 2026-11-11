@@ -226,3 +226,14 @@
 - IndexNow: 40条 HTTP 200(curl --data-binary, payload用后删); last_run.txt两处均已写2026-11-10
 - 累计: blog 1416->1456篇
 - 教训: ㊸run33的GEO模板Quick answer为通用文案, 跨轮次改标题复用安全; sed生成update脚本时批次锚替换顺序要把新批次号放前面
+
+## 2026-11-11 run40 ✅ 40/40 完成闭环
+- 角度包复用: _run40_data.py + _gen_run40.py, 复用 run35 十常规角度(intermodal/supermarket/concrete/weighbridge/geofence/energy/grid/dispatch/bodybuild/scorecard) + GEO包(geo_lease/geo_daily), DATE=2026-11-11
+- 17车型/23市场/12角度; GEO 2篇: should-you-buy-or-lease-electric-trucks-in-the-middle-east(te8p/uae) + how-many-hours-can-an-electric-truck-work-per-day(te9l/qatar)
+- desc: 19条144-149偏短, _patch_run40.py定点重写一次修好(预检全量长度再断言, 避免逐条中断); 复验40 ok
+- QA _qa_run40.py(从run39 sed改data源)一轮 PASS: 词数1600-1754, 内链/表格/列表/双schema/GEO四要素齐
+- _update_index_run40.py 插40卡片(<!--1111batch-->, 锚1110batch前)+sitemap 40条(1530->1570)
+- Git: 288342d 直连push成功(未走代理), ls-remote=HEAD一致; 3篇抽样线上首轮即200; 工作区干净
+- IndexNow: 40条 HTTP 200(curl --data-binary, payload用后删); last_run.txt两处均已写2026-11-11
+- 累计: blog 1456->1496篇
+- 教训: ㊹nul文件本轮又出现2次(PS长路径删除); sed批生成update脚本依旧注意批次锚顺序(新批次号替换放前面)
