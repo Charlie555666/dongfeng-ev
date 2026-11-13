@@ -237,3 +237,25 @@
 - IndexNow: 40条 HTTP 200(curl --data-binary, payload用后删); last_run.txt两处均已写2026-11-11
 - 累计: blog 1456->1496篇
 - 教训: ㊹nul文件本轮又出现2次(PS长路径删除); sed批生成update脚本依旧注意批次锚顺序(新批次号替换放前面)
+
+## 2026-11-12 run41 ✅ 40/40 完成闭环
+- 角度包复用(run37模式): _run41_data.py + _gen_run41.py, run33/run34角度包(fishery/forestry/ftz/parcel/repower/subscription/tradein/commissioning/corrosion/epto)经PICK注入run36管线; DATE=2026-11-12, 组合全部避开run37
+- 19车型(te46/te8l/te8m/te8p/te9l/tz3v/tz3z/tz5e/kta1/kt5j/kt5l/kt5m/kth3/kt7a/tz8j/kt9x等)/27市场/12角度
+- GEO 2篇: small-fleet-electric-trucks-peru-kt5j + small-fleet-electric-ethiopia-kt5m(geo_smallfleet), electric-truck-towing-qatar-te8p + electric-towing-capacity-kazakhstan-te9l(geo_towing)
+- desc首轮40条全部140-149偏短, _patch_run41.py后缀法(按词尾strip+add定点替换, 先断言长度区间再写回)一次修好; 生成器内置预检(碰撞+desc长度+核心词)再写文章
+- QA _qa_run41.py(从run40 sed) 一轮 PASS; 词数1497-1643
+- _update_index_run41.py(sed注意批次锚顺序: 先把1110占位再换) 插40卡片(<!--1112batch-->, 锚1111batch前)+sitemap 40条(1570->1610)
+- Git: d06d46f 直连push成功, ls-remote=HEAD一致; 3篇抽样线上首轮404→等3分钟重试全200; blog/工作区干净
+- IndexNow: 40条 HTTP 200(curl --data-binary, payload用后删); last_run.txt两处均已写2026-11-12
+- 累计: blog 1496->1536篇
+- 教训: ㊺desc初稿按模板写易系统性偏短, 生成器预检直接挡住, patch脚本按"strip词尾+add后缀"组合最稳; ㊻run41 GEO未超词数(1581/1577), run33 GEO模板比run36模板短, 复用安全
+
+## 2026-11-13 run42 ✅ 40/40 完成闭环
+- 角度包复用: _run42_data.py + _gen_run42.py, 复用 run31 角度包(customs/v2g/airport/resale/carbon/tender/warranty/safety/maintenance/solar/training + geo_airport/geo_carbon)经PICK注入run36管线; net_of在_gen_run42.py内重定义(resale/carbon/geo_carbon→tco)并赋值R36.net_of; DATE=2026-11-13
+- 18车型/23市场/13角度; GEO 2篇: which-electric-truck-is-best-for-airport-cargo-ground-support(kt5l/uae) + how-much-can-electric-truck-fleets-earn-from-carbon-credits(tz3v/south-africa)
+- desc首轮19条145-149偏短+3条NOCORE("electric sweeper/garbage/sprinkler truck"不含字面"electric truck"), _patch_run42.py后缀" Ask us."+3条重写一次修好; 教训㊼: 复合车型词(electric sweeper truck)不等于核心词, desc必须含字面"electric truck"/"EV truck"
+- QA _qa_run42.py(sed自run41) 一轮 PASS: 词数1438-1602, 内链/表格/列表/双schema/GEO四要素齐
+- _update_index_run42.py 插40卡片(<!--1113batch-->, 锚1112batch前)+sitemap 40条(1610->1650)
+- Git: e2102b7 直连push失败(Connection reset)→代理10090推送成功, ls-remote=HEAD一致; 3篇抽样首轮404/503/200→等3分钟重试全200; blog/工作区干净
+- IndexNow: 40条 HTTP 200(--data-binary, payload用后删); last_run.txt两处均已写2026-11-13
+- 累计: blog 1536->1576篇(含index)
