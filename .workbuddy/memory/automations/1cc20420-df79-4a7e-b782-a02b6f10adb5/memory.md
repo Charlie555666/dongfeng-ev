@@ -1,5 +1,18 @@
 # 4号站EV博客自动化 (1cc20420) 执行记录
 
+## 2026-11-14 run43 ✅ 40/40 完成闭环
+- 角度包复用: _run43_data.py + _gen_run43.py, 复用 run32(agriculture/livestock/warehouse/realrange/hub/rental) + run33(scope3/transmission) + run34(brewery/crane) 经PICK注入run36管线; 新增2个GEO包(geo_torque/geo_roadlegal)直接写在_gen_run43.py内(含ANGLES/INTRO/FAQ/KW/CHECKLIST五件套)
+- 16车型(tz5y/kt1d/kt3e等替补车型首次或少量使用)/21市场/12角度; GEO 2篇: do-electric-trucks-have-enough-torque-for-heavy-haulage(te9l/uae) + can-you-register-a-chinese-electric-truck-abroad(kt5l/mexico)
+- desc初稿23条142-149偏短, _patch_run43.py后缀法(8档轮换, 自动选落在150-160的档)一次修好21条(其余初稿已达标), 复验0 bad
+- GEO首版1905词超上限→删改模板H2#5/#6两段(压到1793)后单篇重建(删文件+import _gen_run43 只重建该topic), 两篇GEO均1793词
+- QA _qa_run43.py 一轮 ALL PASS(40/40, 词数1486-1793, desc 150-160, 零非ASCII, 模型+市场内链齐, GEO四要素+双schema齐)
+- _update_index_run43.py 插40卡片(<!--1114batch-->, 锚1113batch前)+sitemap 40条(1650→1690), lastmod=2026-11-14
+- Git: 4ec3c96 直连push成功, ls-remote=HEAD一致; 3篇抽样线上首轮404→等3分钟重试全200(curl报exit23写/dev/null失败但HTTP码准); 工作区干净
+- IndexNow: 40条 HTTP 200(--data-binary, payload仓库内临时文件用后删); last_run.txt两处均已写2026-11-14
+- 10-26遗留的0字节"nul"文件本轮终于清掉: rm/git clean均Permission denied, 用PS [System.IO.File]::Move("\\?\...\nul" → _nul_old.tmp) 再 Delete 成功 —— 这是删nul的正解, 下轮直接用
+- 累计: blog 1576→1616篇, sitemap 1690条
+- 教训: ㊼GEO两篇同批易一起超1800词, 写GEO模板时每段控制在3-4句(约120-150词), 总词数=正文6段+FAQ5条约1750最稳; ㊽nul删除用PS \\?\ Move 重命名法
+
 ## 2026-10-22 run25 ✅ 40/40 完成闭环
 - 沿用 _gen_lib.py + 5并行写手(gen-b1..b5)各8篇, DATE=2026-10-22, 脚本 _gen_run25_b1..b5.py(.gitignore忽略不提交)
 - 流程改进: 主控先写 _plan_run25.py(全40题元数据+内链目标) → _patch_run25.py 按长度缺口自动选后缀把desc补进150-160(一次成功, 零手动改) → _emit_run25.py 生成5批次脚本
