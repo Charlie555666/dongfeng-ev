@@ -1,5 +1,15 @@
 # 4号站EV博客自动化 (1cc20420) 执行记录
 
+## 2026-11-15 run44 ✅ 40/40 完成闭环
+- 角度包复用: _run44_data.py + _gen_run44.py, 复用 run35 十常规角度(intermodal/supermarket/concrete/weighbridge/geofence/energy/grid/dispatch/scorecard/bodybuild)经PICK注入run36管线; 新增2个GEO包(geo_battcost电池更换成本/geo_license驾驶执照)直接写在_gen_run44.py内
+- 19车型/26市场/12角度; GEO 2篇: how-much-does-an-electric-truck-battery-replacement-cost(tz3v/south-africa) + do-you-need-a-special-license-to-drive-an-electric-truck(kt5m/vietnam)
+- desc: 预检抓27条问题(20短+7缺核心词"electric tractor/mixer/mining truck"复合词陷阱重现), _patch_run44.py重写7条+后缀梯子(8-18字符7档)一次修好33条, 复验0 bad
+- QA _qa_run44.py(sed自run43) 一轮 ALL PASS(40/40, 词数1594-1750, desc 150-160, 零非ASCII, 内链/表格/列表/GEO四要素齐); GEO两篇1750/1735未超限
+- _update_index_run44.py 插40卡片(<!--1115batch-->, 锚1114batch前)+sitemap 40条(1690→1730), lastmod=2026-11-15
+- Git: dc7b53d 直连push成功(未走代理), ls-remote=HEAD一致, 3篇抽样线上首轮即200, blog/sitemap工作区干净; nul文件本轮未出现
+- IndexNow: 40条 HTTP 200(curl --data-binary, payload仓库内临时文件用后删); last_run.txt两处均已写2026-11-15
+- 累计: blog 1616→1656篇, sitemap 1730条
+
 ## 2026-11-14 run43 ✅ 40/40 完成闭环
 - 角度包复用: _run43_data.py + _gen_run43.py, 复用 run32(agriculture/livestock/warehouse/realrange/hub/rental) + run33(scope3/transmission) + run34(brewery/crane) 经PICK注入run36管线; 新增2个GEO包(geo_torque/geo_roadlegal)直接写在_gen_run43.py内(含ANGLES/INTRO/FAQ/KW/CHECKLIST五件套)
 - 16车型(tz5y/kt1d/kt3e等替补车型首次或少量使用)/21市场/12角度; GEO 2篇: do-electric-trucks-have-enough-torque-for-heavy-haulage(te9l/uae) + can-you-register-a-chinese-electric-truck-abroad(kt5l/mexico)
