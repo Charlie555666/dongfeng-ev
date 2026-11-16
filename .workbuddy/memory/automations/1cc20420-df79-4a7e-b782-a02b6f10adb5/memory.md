@@ -1,5 +1,16 @@
 # 4号站EV博客自动化 (1cc20420) 执行记录
 
+## 2026-11-16 run45 ✅ 40/40 完成闭环
+- 角度包复用: _run45_data.py + _gen_run45.py, run36原生十角度(nightops/telematics/service/chargemgmt/greenfinance/airquality/regen/depotlayout/sla/recruit) + run35 GEO包(geo_lease/geo_daily)经PICK注入R36; net_of内嵌(geo_lease/geo_daily→tco)
+- 20车型(kt1d/kt3e/kt3f特种车首用夜班/招聘/绿贷角度)/27市场/12角度; GEO 2篇: should-you-buy-or-lease-electric-trucks-in-the-gulf(te8m/uae) + how-many-kilometers-can-an-electric-truck-cover-per-day(tz5e/indonesia)
+- desc: 初稿40条全部142-149偏短, _patch_run45.py后缀梯子法(6档, 正则按tuple分组替换)一次修好, 复验0 bad; 撞名1处(night-sweeping-operations-qatar-kt1d已存在)改为night-sweeping-routes-doha-kt1d
+- QA _qa_run45.py(sed自run44) 一轮 ALL PASS: 词数1635-1758, desc 150-160全含核心词, 内链/表格/列表/双schema/GEO四要素齐
+- _update_index_run45.py(sed批次锚, 注意BATCH变量要单独Edit改1116——sed只换了注释串) 插40卡片(<!--1116batch-->, 锚1115batch前)+sitemap 40条(1730→1770)
+- Git: ad94a0f 直连push成功, ls-remote直连超时→代理10090验证=HEAD一致; 3篇抽样线上首轮即200; 工作区干净; nul文件本轮未出现
+- IndexNow: 40条 HTTP 200(curl --data-binary, payload用后rm——注意curl exit 23会断&&链, rm要单独跑); last_run.txt两处均已写2026-11-16
+- 累计: blog 1656→1696篇, sitemap 1770条
+- 教训: ㊾sed批生成update脚本时BATCH="MMDD"变量行无batch后缀不会被替换, 必须单独改
+
 ## 2026-11-15 run44 ✅ 40/40 完成闭环
 - 角度包复用: _run44_data.py + _gen_run44.py, 复用 run35 十常规角度(intermodal/supermarket/concrete/weighbridge/geofence/energy/grid/dispatch/scorecard/bodybuild)经PICK注入run36管线; 新增2个GEO包(geo_battcost电池更换成本/geo_license驾驶执照)直接写在_gen_run44.py内
 - 19车型/26市场/12角度; GEO 2篇: how-much-does-an-electric-truck-battery-replacement-cost(tz3v/south-africa) + do-you-need-a-special-license-to-drive-an-electric-truck(kt5m/vietnam)
