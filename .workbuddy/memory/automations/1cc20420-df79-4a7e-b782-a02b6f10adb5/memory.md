@@ -293,3 +293,14 @@
 - Git: e2102b7 直连push失败(Connection reset)→代理10090推送成功, ls-remote=HEAD一致; 3篇抽样首轮404/503/200→等3分钟重试全200; blog/工作区干净
 - IndexNow: 40条 HTTP 200(--data-binary, payload用后删); last_run.txt两处均已写2026-11-13
 - 累计: blog 1536->1576篇(含index)
+
+## 2026-11-18 run47 ✅ 40/40 完成闭环
+- 角度包复用: _run47_data.py + _gen_run47.py, run32 全量角度包(reliability/rental/warehouse/agriculture/livestock/microgrid/used/hub/realrange + geo_reliable/geo_stranded)经PICK注入run36管线; livestock角度自run32后首次复用
+- 20车型/27市场/11角度; GEO 2篇: are-electric-trucks-reliable-enough-for-mining-duty(tz3v/chile) + electric-truck-runs-out-of-charge-remote-site(te8p/kazakhstan)
+- desc初稿38条141-149偏短, _patch_run47.py后缀梯子法(4档)一次修好; 撞组合2处(vs run32)改malaysia/kazakhstan市场
+- QA _qa_run47.py(sed自run45) 一轮 ALL PASS(词数1487-1680, desc 150-160全含核心词, 内链/表格/列表/双schema/GEO四要素齐)
+- _update_index_run47.py 插40卡片(<!--1118batch-->, 锚1117batch前)+sitemap 40条(1810→1850)
+- Git: 9d751d7+5f9667d chore, 直连push成功, ls-remote=HEAD一致; 3篇抽样首轮404→等3分钟重试全200; 工作区干净
+- IndexNow: 40条 HTTP 200(curl --data-binary, payload用后删); last_run.txt两处均已写2026-11-18
+- 累计: blog 1696→1736篇, sitemap 1850条
+- 教训: ㊾选题手写易超编(本轮41条), data文件写完先断言len==40; ㊿desc补丁正则注意行尾是"),"不是","
