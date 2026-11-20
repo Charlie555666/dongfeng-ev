@@ -315,3 +315,14 @@
 - IndexNow: 40条 HTTP 200(curl --data-binary, payload用后rm); last_run.txt两处均已写2026-11-19
 - 累计: blog 1776→1816篇, sitemap 1890条
 - 剩余未用GEO模板: geo_maint/geo_payload(r36), geo_smallfleet/geo_towing(r33, run37/39用过题)——下轮可换新问句复用
+
+## 2026-11-20 run49 ✅ 40/40 完成闭环
+- 角度包复用: _run49_data.py + _gen_run49.py, PICK注入run36管线: r35八角度(intermodal/supermarket/concrete/weighbridge/geofence/dispatch/scorecard/bodybuild, 自run44后复用) + r33 GEO(geo_smallfleet/geo_towing, 自run41后换新问句复用模板) + r36原生regen/telematics(自run45后复用)
+- 19车型/22市场/12角度; GEO 4篇(超额完成, r33模板x4新问句): how-many-electric-trucks-small-fleet-first(kt5l/ghana) + are-electric-trucks-practical-for-owner-operators(kth3/nigeria) + how-far-can-electric-truck-tow-full-load(te8l/tanzania) + are-electric-trucks-strong-enough-heavy-haulage(te8p/uzbekistan)
+- desc初稿30条137-149偏短+1条NOCORE(mining truck), _patch_run49.py后缀梯子法修好; 教训⑴: 行级替换NOFAQ行时丢了行尾"),"致语法错; 教训⑵: rstrip(".")+","+filler会产出"team,Ask us"粘连, 已统一替换为". "分隔——下轮patch脚本直接用". "+filler不产生粘连
+- QA _qa_run49.py(sed自run48) 一轮 ALL PASS: 词数1581-1705, desc 150-160全含核心词, 内链/表格/列表/双schema/GEO四要素齐
+- _update_index_run49.py 插40卡片(<!--1120batch-->, 锚1119batch前)+sitemap 40条(1890→1930)
+- Git: 0c4adb5 直连push Connection reset→代理10090推送成功, ls-remote=HEAD一致; 3篇抽样首轮404→等3分钟重试全200; 工作区干净
+- IndexNow: 40条 HTTP 200(curl --data-binary, payload用后rm); last_run.txt两处均已写2026-11-20
+- 累计: blog 1856→1896篇(含index), sitemap 1930条
+- GEO模板使用状态: r33 geo_smallfleet/geo_towing本轮已用(4篇); 下轮可选r32(geo_reliable/geo_stranded, run47用)或r34(geo_tires/geo_generator, run48用)换新问句, 或新写GEO问句
