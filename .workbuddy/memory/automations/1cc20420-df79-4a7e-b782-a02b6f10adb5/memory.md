@@ -326,3 +326,14 @@
 - IndexNow: 40条 HTTP 200(curl --data-binary, payload用后rm); last_run.txt两处均已写2026-11-20
 - 累计: blog 1856→1896篇(含index), sitemap 1930条
 - GEO模板使用状态: r33 geo_smallfleet/geo_towing本轮已用(4篇); 下轮可选r32(geo_reliable/geo_stranded, run47用)或r34(geo_tires/geo_generator, run48用)换新问句, 或新写GEO问句
+
+## 2026-11-23 run50 ✅ 40/40 完成闭环
+- 角度包复用: _run50_data.py + _gen_run50.py, r36原生8角度(nightops/service/chargemgmt/greenfinance/airquality/depotlayout/sla/recruit, 自run45后复用) + r33 repower/subscription(自run41后复用)经PICK注入 + r36 GEO(geo_maint/geo_payload, 自run36后换新问句复用)
+- 18车型/26市场/11角度; GEO 2篇新问句: how-often-does-an-electric-truck-need-servicing(kt5m/colombia) + can-electric-trucks-carry-as-much-as-diesel(tz3v/uzbekistan)
+- desc初稿4条161-162超长, Edit工具2条未持久化(run30老坑再现)改python replace补丁, 一条修过头147再补后缀到153; 教训(51): desc初稿仍按152-158写最省事, Edit不持久化时直接用python replace别重试Edit
+- QA _qa_run50.py(sed自run49) 一轮 ALL PASS(词数1523-1800, GEO payload篇1800词贴上限)
+- _update_index_run50.py(sed自run49, 改run50/DATE/BATCH=1123/锚1120batch) 插40卡片+sitemap 40条(1930→1970)
+- Git: 346a190 直连Recv failure→代理10090推送成功, ls-remote=HEAD一致; 3篇抽样首轮404→等3分钟重试全200; blog/sitemap工作区干净, 无nul
+- IndexNow: 40条 HTTP 200(curl --data-binary, payload用后rm); last_run.txt两处均已写2026-11-23
+- 累计: blog 1896→1936篇(含index), sitemap 1970条
+- GEO模板使用状态: r36 geo_maint/geo_payload本轮已用(2篇新问句); 下轮可选r32(geo_reliable/geo_stranded, run47用)或r34(geo_tires/geo_generator, run48用)换新问句, 或r35(geo_lease/geo_daily, run45用)
