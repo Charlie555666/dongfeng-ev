@@ -337,3 +337,25 @@
 - IndexNow: 40条 HTTP 200(curl --data-binary, payload用后rm); last_run.txt两处均已写2026-11-23
 - 累计: blog 1896→1936篇(含index), sitemap 1970条
 - GEO模板使用状态: r36 geo_maint/geo_payload本轮已用(2篇新问句); 下轮可选r32(geo_reliable/geo_stranded, run47用)或r34(geo_tires/geo_generator, run48用)换新问句, 或r35(geo_lease/geo_daily, run45用)
+
+## 2026-11-24 run51 ✅ 40/40 完成闭环
+- 角度包复用: _run51_data.py + _gen_run51.py, r33五角度(fishery/forestry/ftz/parcel/tradein, 自r33后首用) + r34三角度(commissioning/corrosion/epto, 自run34后首用) + r35 GEO(geo_lease/geo_daily, 自run45后换新问句) 经PICK注入run36管线
+- 19车型/29市场/10角度; GEO 2篇新问句: is-leasing-an-electric-truck-worth-it-for-small-fleets(te8m/cote-divoire) + can-an-electric-truck-handle-a-full-day-of-delivery-work(kt5j/vietnam)
+- desc初稿40条全150-160一次通过(延续152-158写法, 无需patch); 无撞名无NOCORE
+- QA _qa_run51.py(sed自run50) 一轮 ALL PASS: 词数1523-1758, desc/内链/表格/列表/双schema/GEO四要素齐
+- _update_index_run51.py(sed自run50): 坑——BATCH="1123"行无batch后缀sed漏改, 报"batch already inserted", 手动Edit改1124后通过; 教训(52): sed批量改BATCH时要把 `BATCH = "NNNN"` 行单独处理
+- Git: c51daca 直连push成功, ls-remote=HEAD一致; 3篇抽样首轮404/503/404→等3分钟重试全200; blog/工作区干净
+- IndexNow: 40条 HTTP 200(--data-binary, payload用后rm); last_run.txt两处均已写2026-11-24
+- 累计: blog 1936→1976篇(含index), sitemap 2010条
+- GEO模板使用状态: r35 geo_lease/geo_daily本轮已用(2篇新问句); 下轮可选r32(geo_reliable/geo_stranded, run47用)或r34(geo_tires/geo_generator, run48用)换新问句; 常规角度下轮可选r32八角度(run47后)或r34 hurricane/nvh/tpms/wind/brewery/crane(run48后)
+
+## 2026-11-25 run52 ✅ 40/40 完成闭环
+- 角度包复用: _run52_data.py + _gen_run52.py, r34六角度(hurricane/nvh/tpms/wind/brewery/crane, 自run48后复用) + r32 GEO(geo_reliable/geo_stranded, 自run47后换新问句)经PICK注入run36管线
+- 18车型/24市场/8角度; GEO 2篇新问句: how-reliable-are-electric-trucks-for-daily-fleet-duty(te9l/nigeria) + what-to-do-when-an-electric-truck-runs-out-of-charge(tz3v/peru)
+- desc初稿4条161-163超长, python replace补丁修好(教训53: 写desc时"Ask us today for info."等长尾closer易超, 初稿按152-156写)
+- QA _qa_run52.py(sed自run51) 一轮 ALL PASS(词数1546-1680, desc/内链/表格/列表/双schema/GEO四要素齐)
+- _update_index_run52.py(sed自run51, 改run52/DATE=2026-11-25/BATCH=1125/锚1124batch四处) 插40卡片+sitemap 40条(2010→2050)
+- Git: 3a86bb0 直连push Recv failure→代理10090推送成功, ls-remote=HEAD一致; 3篇抽样首轮404→等3分钟重试全200; blog/工作区干净(仅memory文件改动)
+- IndexNow: 40条 HTTP 200(curl --data-binary, payload用后rm); last_run.txt两处均已写2026-11-25
+- 累计: blog 1936→1976篇(含index), sitemap 2050条
+- GEO模板使用状态: r32 geo_reliable/geo_stranded本轮已用(2篇新问句); 下轮可选r34(geo_tires/geo_generator, run48用)或r33(geo_smallfleet/geo_towing, run49用)换新问句; 常规角度下轮可选r32八角度(run47后)或r36原生(run50后)
