@@ -359,3 +359,13 @@
 - IndexNow: 40条 HTTP 200(curl --data-binary, payload用后rm); last_run.txt两处均已写2026-11-25
 - 累计: blog 1936→1976篇(含index), sitemap 2050条
 - GEO模板使用状态: r32 geo_reliable/geo_stranded本轮已用(2篇新问句); 下轮可选r34(geo_tires/geo_generator, run48用)或r33(geo_smallfleet/geo_towing, run49用)换新问句; 常规角度下轮可选r32八角度(run47后)或r36原生(run50后)
+
+## 2026-11-26 run53 ✅ 40/40 完成闭环
+- 角度包复用: _run53_data.py + _gen_run53.py, r32九角度(reliability/rental/warehouse/agriculture/livestock/microgrid/used/hub/realrange, 自run47后复用全新组合) + r34 GEO(geo_tires/geo_generator, 自run48后换新问句) 经PICK注入run36管线
+- 20车型/29市场/11角度; GEO 2篇新问句: what-tire-pressure-should-electric-trucks-run(tz3v/south-africa) + how-do-you-charge-electric-trucks-without-grid-power(kt5m/myanmar)
+- 词数1487-1650, desc初稿全部150-160一次通过(延续152-156写法, 零patch); QA _qa_run53.py(sed自run52) 一轮 FAILS 0
+- _update_index_run53.py(sed自run52, 四处替换含BATCH="1126"单独改) 插40卡片(<!--1126batch-->, 锚1125batch前)+sitemap 40条(2050→2090)
+- Git: 980c33b+dce0cda chore, 直连push成功, ls-remote=HEAD一致; 3篇抽样首轮2×200+1×404→等3分钟重试全200; blog/工作区干净, 无nul
+- IndexNow: 40条 HTTP 200(curl --data-binary, payload用后rm); last_run.txt两处均已写2026-11-26
+- 累计: blog 1976→2016篇(含index), sitemap 2090条
+- GEO模板使用状态: r34 geo_tires/geo_generator本轮已用; 下轮可选r33(geo_smallfleet/geo_towing, run49用)或r32(geo_reliable/geo_stranded, run52用)换新问句; 常规角度下轮可选r36原生(run50后)或r33/r34包(run51/52后)
